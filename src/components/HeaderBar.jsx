@@ -9,15 +9,15 @@ import pdfResume from "../assets/cv_eng.pdf";
 
 const navLinks = [
   {
-    name: "About",
+    name: "<About/>",
     href: "#about",
   },
   {
-    name: "Projects",
-    href: "#projects",
+    name: "<Portfolio/>",
+    href: "#portfolio",
   },
   {
-    name: "Contact",
+    name: "<Contact/>",
     href: "#contact",
   },
 ];
@@ -118,7 +118,7 @@ export default function HeaderBar() {
             <a
               key={index}
               href={link.href}
-              className="hover:text-primary-main transition-all"
+              className="hover:text-primary-main"
               onClick={() => scrollSectionIntoView(link.href)}
             >
               <span className="text-code text-primary-main font-semibold">{`0${

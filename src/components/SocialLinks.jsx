@@ -8,7 +8,6 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
     icon: <FiLinkedin />,
   },
-  { href: "mailto:ddimitrov1108@gmail.com", icon: <FiMail /> },
 ];
 
 export default function SocialLinks() {
@@ -19,7 +18,7 @@ export default function SocialLinks() {
           href={link.href}
           target="_blank"
           key={link.href}
-          className="fade-in-link cursor-pointer hover:text-primary-main transition-all"
+          className="fade-in-link cursor-pointer hover:text-primary-main"
         >
           {link.icon}
         </a>

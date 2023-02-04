@@ -25,7 +25,7 @@ export default function MobileNavBar({
           open ? "translate-x-0 " : "translate-x-full"
         )}
       >
-        <div className="relative p-6 flex flex-col">
+        <div className="p-6 flex flex-col">
           <button
             className="my-2 text-3xl w-fit ml-auto text-primary-main"
             onClick={onClose}
@@ -33,17 +33,18 @@ export default function MobileNavBar({
             <VscClose />
           </button>
 
-          <div className="h-[75vh] flex flex-col items-center justify-center header-links-mobile gap-8 text-base">
+          <div className="header-links-mobile h-[75vh] flex flex-col items-center justify-center gap-8 text-base">
             {navLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
-                className="grid hover:text-primary-main transition-all text-center"
+                className=" hover:text-primary-main text-center"
                 onClick={() => onNavLinkClick(link.href)}
               >
                 <span className="text-code text-primary-main font-semibold">{`0${
                   index + 1
                 }. `}</span>
+                <br />
                 {link.name}
               </a>
             ))}
