@@ -1,14 +1,16 @@
 import React from "react";
 import { FiLinkedin } from "react-icons/fi";
-import avatar from "../../assets/avatar.jpg";
+import StackIcons from "../StackIcons";
 
 export default function WelcomeSection() {
   return (
     <div
       id="welcome"
-      className="h-screen flex items-center justify-center lg:justify-start"
+      className="relative h-screen flex items-center justify-center sm:justify-start"
     >
-      <div className="welcome-animation text-center lg:text-left text-4xl sm:text-6xl lg:text-7xl">
+      <div className="w-full relative welcome-animation text-center lg:text-left text-4xl sm:text-6xl lg:text-7xl">
+        <StackIcons />
+
         <div className="fade-and-slide font-bold ">
           {"Hi! I'm "}
           <span className="text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400 font-bold ">
@@ -20,7 +22,7 @@ export default function WelcomeSection() {
         </div>
 
         <div className="welcome-description mt-8">
-          <p className="max-w-[600px] text-base font-semibold">
+          <p className="mx-auto lg:mx-0 max-w-[600px] text-base font-semibold">
             I'm a wannabe web developer specializing in building (and sometimes
             designing) stuff for the Web. I'm currently a student in search of
             more knowledge and opportunities.

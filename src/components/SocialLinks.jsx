@@ -1,5 +1,5 @@
 import React from "react";
-import { FiGithub, FiInstagram, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const socialLinks = [
   { href: "https://github.com/ddimitrov1108", icon: <FiGithub /> },
@@ -12,7 +12,7 @@ const socialLinks = [
 
 export default function SocialLinks() {
   return (
-    <div className="social-links hidden lg:fixed bottom-0 left-0 px-7 xl:px-14 lg:flex flex-col gap-6 items-center text-xl">
+    <div className="social-links hidden lg:fixed bottom-0 left-0 px-8 xl:px-16 lg:flex flex-col gap-6 items-center text-xl">
       {socialLinks.map((link) => (
         <a
           href={link.href}

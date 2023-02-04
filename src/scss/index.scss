@@ -64,6 +64,17 @@ header {
   }
 }
 
+#stack-icons {
+  animation: FadeIn 1s 1s linear both;
+
+  svg:nth-child(even) {
+    animation: BounceSlowly 5s ease-in-out both infinite;
+  }
+  svg:nth-child(odd) {
+    animation: BounceSlowly 4s ease-in-out reverse infinite;
+  }
+}
+
 @media (min-width: 1024px) {
   .social-links {
     a.fade-in-link {

@@ -27,7 +27,7 @@ export default function App() {
       <HeaderBar />
       <SocialLinks />
 
-      <main className="max-w-4xl xl:max-w-5xl mx-auto px-4 lg:px-6 ">
+      <main className="max-w-4xl xl:max-w-6xl mx-auto px-4 lg:px-6 ">
         <div className="grid space-y-10">
           <WelcomeSection />
           <AboutSection />
