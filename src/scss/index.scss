@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+@import "keyframes.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter";
+  color: #070606;
+}
+
+header {
+  div#logo {
+    animation: SlideAndFadeInFromTop 0.5s linear both;
+  }
+}
+
+.hidden-section {
+  opacity: 0;
+  background: red;
+  transition: all 2s;
+}
+
+.show-section {
+  opacity: 1 !important;
+}
+
+.text-code {
+  font-family: "Fira Code";
+}
+
+#welcome .welcome-animation {
+  .fade-and-slide {
+    animation: SlideAndFadeInFromBottom 0.5s linear both;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.05 + 0.5}s;
+      }
+    }
+  }
+
+  .welcome-description {
+    animation: SlideAndFadeInFromLeft 0.5s 1s linear both;
+  }
+}
+
+.header-links {
+  a,
+  svg {
+    animation: SlideAndFadeInFromTop 0.2s linear both;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.05 + 0.5}s;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-links {
+    a.fade-in-link {
+      animation: SlideAndFadeInFromLeft 0.2s linear both;
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}n) {
+          animation-delay: #{$i * 0.1 + 1}s;
+        }
+      }
+    }
+
+    div.fade-in-line {
+      animation: SlideInFromBottom 0.5s 1s linear both;
+    }
+  }
+
+  #welcome .welcome-animation {
+    .fade-and-slide {
+      animation: SlideAndFadeInFromBottom 0.3s linear both;
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}n) {
+          animation-delay: #{$i * 0.05 + 1}s;
+        }
+      }
+    }
+  }
+}
