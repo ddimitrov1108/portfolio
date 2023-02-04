@@ -17,7 +17,7 @@ export default function StackIcons() {
   return (
     <div
       id="stack-icons"
-      className="rounded-full w-[420px] h-[420px] -top-1/3 right-0 hidden lg:block absolute text-4xl"
+      className="rounded-full w-[420px] h-[420px] -top-1/3 right-0 hidden xl:block absolute text-4xl"
     >
       <div className="transition-all z-0 duration-1000 absolute top-10 right-12 bg-primary-light/[0.05] w-52 h-52 rounded-full"></div>
       <div className="transition-all z-0 absolute bottom-12 left-14 bg-primary-light/[0.05] w-72 h-72 rounded-full"></div>

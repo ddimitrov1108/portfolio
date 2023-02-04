@@ -99,7 +99,7 @@ export default function HeaderBar() {
       >
         <div id="logo">
           <a
-            href="http://localhost:5173/"
+            href="/"
             className="text-code text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-primary-main to-cyan-400"
           >
             {"{D}"}
