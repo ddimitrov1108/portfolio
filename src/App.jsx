@@ -30,13 +30,11 @@ export default function App() {
       <SocialLinks />
 
       <main className="max-w-4xl xl:max-w-6xl mx-auto px-4 lg:px-6 xl:px-10 ">
-        <div className="grid">
-          <WelcomeSection />
-          <AboutSection />
-          <ExperienceSection />
-          <PortfolioSection />
-          <ContactSection />
-        </div>
+        <WelcomeSection />
+        <AboutSection />
+        <ExperienceSection />
+        <PortfolioSection />
+        <ContactSection />
       </main>
     </>
   );
