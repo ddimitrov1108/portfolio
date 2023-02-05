@@ -96,7 +96,7 @@ export default function HeaderBar() {
 
       <header
         className={clsx(
-          "z-40 bg-white/80 backdrop-blur-sm duration-500 px-4 lg:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
+          "z-40 bg-white/80 backdrop-blur-sm duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
           yValue ? "shadow-xl py-3 " : "py-6"
         )}
@@ -104,7 +104,7 @@ export default function HeaderBar() {
         <div id="logo">
           <a
             href="/"
-            className="text-code text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-primary-main to-cyan-400"
+            className="text-code text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-semibold"
           >
             {"{D}"}
           </a>
@@ -114,7 +114,7 @@ export default function HeaderBar() {
           className="header-links lg:hidden p-2 text-3xl text-primary-main cursor-pointer"
           onClick={toggleMobileMenu}
         >
-          <HiOutlineBars3BottomRight className="slide-from-top"/>
+          <HiOutlineBars3BottomRight className="slide-from-top" />
         </div>
 
         <div className="header-links hidden lg:flex items-center gap-8 text-sm">
@@ -125,7 +125,7 @@ export default function HeaderBar() {
               className="slide-from-top hover:text-primary-main"
               onClick={() => scrollSectionIntoView(link.href)}
             >
-              <span className="text-code text-primary-main font-semibold">{`0${
+              <span className="text-code text-primary-main">{`0${
                 index + 1
               }. `}</span>
               {`<${link.name}/>`}

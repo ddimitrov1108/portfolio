@@ -41,7 +41,7 @@ export default function MobileNavBar({
                 className=" hover:text-primary-main text-center"
                 onClick={() => onNavLinkClick(link.href)}
               >
-                <span className="text-code text-primary-main font-semibold">{`0${
+                <span className="text-code text-primary-main">{`0${
                   index + 1
                 }. `}</span>
                 <br />

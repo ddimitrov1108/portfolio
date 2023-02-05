@@ -16,26 +16,43 @@ body {
 }
 
 header {
-  div#logo {
+  #logo {
     animation: SlideAndFadeInFromTop 0.5s linear both;
   }
-}
-
-.hidden-section {
-  opacity: 0;
-  background: red;
-  transition: all 1s;
-}
-
-.show-section {
-  opacity: 1 !important;
 }
 
 .text-code {
   font-family: "Fira Code";
 }
 
+.hidden-section {
+  opacity: 0;
+}
+
+.show-section {
+  opacity: 1 !important;
+
+  * {
+    animation-delay: 0.2s !important;
+  }
+
+  .section-header {
+    animation: SlideAndFadeInFromTop 0.5s linear both;
+  }
+
+  p {
+    animation: SlideAndFadeInFromLeft 0.5s linear both;
+  }
+
+  #stack-icons {
+    animation: SlideAndFadeInFromBottom 0.5s linear both;
+  }
+}
+
 #welcome .welcome-animation {
+  #avatar {
+    animation: SlideAndFadeInFromTop 0.5s 1s linear both;
+  }
   .fade-and-slide {
     animation: SlideAndFadeInFromBottom 0.5s linear both;
 

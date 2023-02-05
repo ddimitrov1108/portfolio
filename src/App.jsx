@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import WelcomeSection from "./components/sections/WelcomeSection";
 import AboutSection from "./components/sections/AboutSection";
-import ProjectsSection from "./components/sections/ProjectsSection";
+import PortfolioSection from "./components/sections/PortfolioSection";
 import HeaderBar from "./components/app/HeaderBar";
 import FooterBar from "./components/app/FooterBar";
 import ContactSection from "./components/sections/ContactSection";
@@ -29,12 +29,12 @@ export default function App() {
       <HeaderBar />
       <SocialLinks />
 
-      <main className="max-w-4xl xl:max-w-6xl mx-auto px-4 lg:px-6 ">
-        <div className="grid space-y-10">
+      <main className="max-w-4xl xl:max-w-6xl mx-auto px-4 lg:px-6 xl:px-10 ">
+        <div className="grid space-y-6">
           <WelcomeSection />
           <AboutSection />
           <ExperienceSection />
-          <ProjectsSection />
+          <PortfolioSection />
           <ContactSection />
         </div>
       </main>
