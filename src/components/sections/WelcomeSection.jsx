@@ -5,7 +5,7 @@ import avatarPng from "../../assets/avatar.png";
 export default function WelcomeSection() {
   return (
     <div id="welcome" className="h-screen flex items-center justify-center">
-      <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-12">
+      <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-8">
         <div className="w-full text-center lg:text-left text-4xl md:text-5xl xl:text-6xl">
           <div className="fade-and-slide font-bold ">
             {"Hi! I'm "}
