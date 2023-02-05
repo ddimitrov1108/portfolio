@@ -96,9 +96,9 @@ export default function HeaderBar() {
 
       <header
         className={clsx(
-          "z-40 bg-white/80 backdrop-blur-sm duration-500 px-4 py-3 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
+          "z-40 bg-white/80 backdrop-blur-sm duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
-          yValue && "shadow-xl"
+          yValue ? "shadow-xl py-2" : "py-3"
         )}
       >
         <div id="logo">

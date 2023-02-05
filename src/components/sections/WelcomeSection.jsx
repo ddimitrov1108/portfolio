@@ -5,7 +5,7 @@ export default function WelcomeSection() {
   return (
     <div id="welcome" className="h-screen flex items-center justify-center">
       <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-8">
-        <div className="w-full text-center lg:text-left">
+        <div className="text-center lg:text-left">
           <div className="text-4xl md:text-5xl xl:text-6xl">
             <div className="fade-and-slide font-bold ">
               <span>{"Hi! I'm "}</span>
@@ -34,17 +34,6 @@ export default function WelcomeSection() {
             </a>
           </div>
         </div>
-
-        {/* <div
-          id="avatar"
-          className="shadow-xl p-0.5 -mt-14 flex items-center justify-center w-fit h-fit lg:min-w-fit lg:min-h-fit mx-auto lg:mx-0 lg:ml-auto rounded-full bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-bold"
-        >
-          <img
-            src={avatarPng}
-            alt="avatarPng"
-            className="bg-white rounded-full w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
-          />
-        </div> */}
 
         <img
           id="avatar"
