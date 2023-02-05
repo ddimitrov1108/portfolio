@@ -26,7 +26,7 @@ export default function AboutSection() {
                 deeper into the Web Development world.
               </p>
 
-              <div className="mt-4 mb-8">
+              <div className="mt-6 mb-8">
                 <p className="font-semibold">
                   Here are a few technologies I’ve been working with recently:
                 </p>
