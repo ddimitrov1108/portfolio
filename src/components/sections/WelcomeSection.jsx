@@ -6,7 +6,7 @@ export default function WelcomeSection() {
   return (
     <div id="welcome" className="h-screen flex items-center justify-center">
       <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-4 lg:gap-12">
-        <div className="w-full text-center lg:text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+        <div className="w-full text-center lg:text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           <div className="fade-and-slide font-bold ">
             {"Hi! I'm "}
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400 font-bold">
