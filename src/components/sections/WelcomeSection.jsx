@@ -8,7 +8,7 @@ export default function WelcomeSection() {
       id="welcome"
       className="relative h-screen flex items-center justify-center sm:justify-start"
     >
-      <div className="w-full relative welcome-animation text-center lg:text-left text-4xl sm:text-6xl lg:text-7xl">
+      <div className="w-full relative welcome-animation text-center lg:text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         <StackIcons />
 
         <div className="fade-and-slide font-bold ">

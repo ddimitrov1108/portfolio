@@ -1,23 +1,27 @@
 import { useState, useEffect } from "react";
+import MobileNavBar from "./MobileNavBar";
+import pdfResume from "../assets/cv_eng.pdf";
 import {
   HiOutlineBars3BottomRight,
   HiOutlineClipboardDocumentList,
 } from "react-icons/hi2";
 import clsx from "clsx";
-import MobileNavBar from "./MobileNavBar";
-import pdfResume from "../assets/cv_eng.pdf";
 
 const navLinks = [
   {
-    name: "<About/>",
+    name: "About",
     href: "#about",
   },
   {
-    name: "<Portfolio/>",
+    name: "Experience",
+    href: "#experience",
+  },
+  {
+    name: "Portfolio",
     href: "#portfolio",
   },
   {
-    name: "<Contact/>",
+    name: "Contact",
     href: "#contact",
   },
 ];
@@ -124,7 +128,7 @@ export default function HeaderBar() {
               <span className="text-code text-primary-main font-semibold">{`0${
                 index + 1
               }. `}</span>
-              {link.name}
+              {`<${link.name}/>`}
             </a>
           ))}
 

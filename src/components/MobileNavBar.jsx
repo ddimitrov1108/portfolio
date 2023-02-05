@@ -15,7 +15,7 @@ export default function MobileNavBar({
       <div
         onClick={onClose}
         className={clsx(
-          "z-50 transition-all fixed top-0 right-0 left-0 bottom-0 bg-black/30 backdrop-blur-sm",
+          "z-50 transition-all fixed top-0 right-0 left-0 bottom-0 bg-black/20 backdrop-blur-sm",
           open ? "block" : "hidden"
         )}
       ></div>
@@ -45,7 +45,7 @@ export default function MobileNavBar({
                   index + 1
                 }. `}</span>
                 <br />
-                {link.name}
+                {`<${link.name}/>`}
               </a>
             ))}
 
