@@ -35,7 +35,7 @@ export default function WelcomeSection() {
           </div>
         </div>
 
-        <div
+        {/* <div
           id="avatar"
           className="shadow-xl p-0.5 -mt-14 flex items-center justify-center w-fit h-fit lg:min-w-fit lg:min-h-fit mx-auto lg:mx-0 lg:ml-auto rounded-full bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-bold"
         >
@@ -44,7 +44,14 @@ export default function WelcomeSection() {
             alt="avatarPng"
             className="bg-white rounded-full w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
           />
-        </div>
+        </div> */}
+
+        <img
+          id="avatar"
+          src={avatarPng}
+          alt="avatarPng"
+          className="bg-white rounded-full shadow-xl border border-secondary-light/30 -mt-14 mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+        />
       </div>
     </div>
   );
