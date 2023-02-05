@@ -21,9 +21,9 @@ export default function AboutSection() {
 
         <div className="section-main lg:max-w-md xl:max-w-xl">
           <p>
-            I started my adventure in programming when I was in high school with
-            basic knowledge in HTML,CSS and JavaScript. I loved building with
-            them so I started digging deeper in the Web Development world.
+          I started my adventure in programming when I was in high school with
+            basic knowledge of HTML, CSS, and JavaScript. I loved building basic applications with
+            them so I started digging deeper into the Web Development world.
             Learned how to create apps using Bootstrap/JQuery and moved on to
             some Back-end basics with Node.js.
           </p>
@@ -44,14 +44,6 @@ export default function AboutSection() {
               ))}
             </div>
           </div>
-
-          <p>
-            I am ambitious and motivated. I can work alone or in a team. I
-            accept criticism and advice from more experienced colleagues in the
-            environment where I will be placed. I am ready for opportunities and
-            challenges in an environment where innovation, education, and work
-            are valued and encouraged.
-          </p>
         </div>
       </div>
     </div>
