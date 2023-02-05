@@ -37,7 +37,7 @@ export default function WelcomeSection() {
 
         <div
           id="avatar"
-          className="shadow-xl lg:-mt-14 flex items-center justify-center w-fit h-fit lg:min-w-fit lg:min-h-fit mx-auto lg:mx-0 lg:ml-auto rounded-full p-0.5 bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-bold"
+          className="shadow-xl p-0.5 -mt-14 flex items-center justify-center w-fit h-fit lg:min-w-fit lg:min-h-fit mx-auto lg:mx-0 lg:ml-auto rounded-full bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-bold"
         >
           <img
             src={avatarPng}
