@@ -3,7 +3,7 @@ import StackIcons from "../StackIcons";
 import SectionHeader from "./components/SectionHeader";
 
 const techStack = [
-  "React",
+  "React.js",
   "JavaScript(ES6)",
   "TailwindCSS",
   "Node.js",
