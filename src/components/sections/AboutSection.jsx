@@ -13,7 +13,7 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="h-screen flex items-center">
+    <div id="about" className="h-screen flex items-start py-4 lg:items-center ">
       <div className="hidden-section w-full flex flex-col justify-center md:flex-row md:justify-between items-center">
         <div>
           <SectionHeader number={1} text="About Me" />
@@ -22,7 +22,7 @@ export default function AboutSection() {
               <p>
                 I started my adventure in programming when I was in high school
                 with basic knowledge of HTML, CSS, and JavaScript. I loved
-                building basic applications with them so I started digging
+                building basic applications with them so I went digging
                 deeper into the Web Development world.
               </p>
 
