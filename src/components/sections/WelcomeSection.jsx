@@ -14,7 +14,7 @@ export default function WelcomeSection() {
             </span>
           </div>
 
-          <div className="fade-and-slide md:mt-4 text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400 font-bold">
+          <div className="fade-and-slide text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400 font-bold">
             <span>Web Developer.</span>
           </div>
 
