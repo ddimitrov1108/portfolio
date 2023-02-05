@@ -17,7 +17,7 @@ export default function AboutSection() {
       <div className="hidden-section w-full flex flex-col justify-center md:flex-row md:justify-between items-center">
         <div>
           <SectionHeader number={1} text="About Me" />
-          <div className="section-main">
+          {/* <div className="section-main">
             <div className="sm:max-w-md xl:max-w-xl">
               <p>
                 I started my adventure in programming when I was in high school
@@ -43,7 +43,7 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <StackIcons />
