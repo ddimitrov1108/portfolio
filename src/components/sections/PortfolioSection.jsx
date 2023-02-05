@@ -2,7 +2,7 @@ import SectionHeader from "./components/SectionHeader";
 
 export default function PortfolioSection() {
   return (
-    <div id="portfolio" className="h-screen flex items-center">
+    <div id="portfolio" className="h-screen flex items-start py-4 lg:items-center">
       <div className="hidden-section w-full grid justify-start">
         <SectionHeader number={3} text="Some Things I’ve Built" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias

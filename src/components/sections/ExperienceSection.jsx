@@ -2,7 +2,7 @@ import SectionHeader from "./components/SectionHeader";
 
 export default function ExperienceSection() {
   return (
-    <div id="experience" className="h-screen flex items-center">
+    <div id="experience" className="h-screen flex items-start py-4 lg:items-center">
       <div className="hidden-section w-full grid justify-start">
         <SectionHeader number={2} text="Professional Experience" />
         <div className="section-main">

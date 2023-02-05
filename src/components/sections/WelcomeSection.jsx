@@ -5,7 +5,7 @@ import avatarPng from "../../assets/avatar.png";
 export default function WelcomeSection() {
   return (
     <div id="welcome" className="h-screen flex items-center justify-center">
-      <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-8 lg:gap-12">
+      <div className="w-full welcome-animation flex flex-col-reverse lg:flex-row justify-between gap-4 lg:gap-12">
         <div className="w-full text-center lg:text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           <div className="fade-and-slide font-bold ">
             {"Hi! I'm "}
@@ -18,7 +18,7 @@ export default function WelcomeSection() {
             <span>Web Developer.</span>
           </div>
 
-          <div className="welcome-description mt-8">
+          <div className="welcome-description mt-6">
             <p className="mx-auto lg:mx-0 max-w-[600px] text-base">
               I'm a wannabe web developer specializing in building (and
               sometimes designing) stuff for the Web. I'm currently a student in

@@ -13,7 +13,7 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="h-screen flex items-start py-4 lg:items-center ">
+    <div id="about" className="h-screen flex items-start py-4 lg:items-center">
       <div className="hidden-section w-full flex flex-col justify-center md:flex-row md:justify-between items-center">
         <div>
           <SectionHeader number={1} text="About Me" />
