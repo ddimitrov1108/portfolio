@@ -67,11 +67,24 @@ header {
 #stack-icons {
   animation: FadeIn 1s 1s linear both;
 
-  svg:nth-child(even) {
-    animation: BounceSlowly 5s ease-in-out both infinite;
+  .scale-xs {
+    animation: BounceScaleXS 5s ease-in-out both infinite;
   }
-  svg:nth-child(odd) {
-    animation: BounceSlowly 4s ease-in-out reverse infinite;
+
+  .scale-sm {
+    animation: BounceScaleSM 5s ease-in-out both infinite;
+  }
+
+  .scale-md {
+    animation: BounceScaleMD 5s ease-in-out both infinite;
+  }
+
+  .scale-lg {
+    animation: BounceScaleLG 5s ease-in-out both infinite;
+  }
+
+  .scale-xl {
+    animation: BounceScaleXL 5s ease-in-out both infinite;
   }
 }
 

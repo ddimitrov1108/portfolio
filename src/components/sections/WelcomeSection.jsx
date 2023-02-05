@@ -22,7 +22,7 @@ export default function WelcomeSection() {
         </div>
 
         <div className="welcome-description mt-8">
-          <p className="mx-auto lg:mx-0 max-w-[600px] text-base font-semibold">
+          <p className="mx-auto lg:mx-0 max-w-[600px] text-base">
             I'm a wannabe web developer specializing in building (and sometimes
             designing) stuff for the Web. I'm currently a student in search of
             more knowledge and opportunities.
