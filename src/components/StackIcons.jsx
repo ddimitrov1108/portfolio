@@ -16,12 +16,7 @@ import { TbCSharp } from "react-icons/tb";
 
 export default function StackIcons() {
   return (
-    <div
-      id="stack-icons"
-      className="rounded-full w-[420px] h-[420px] top-0 right-0 hidden lg:block absolute text-4xl"
-    >
-      <div className="absolute top-4 right-6 bg-secondary-light/[0.15] w-52 h-52 rounded-full"></div>
-      <div className="absolute bottom-12 left-14 bg-secondary-light/[0.15] w-72 h-72 rounded-full"></div>
+    <div id="stack-icons" className="-ml-8 md:-ml-0 w-72 h-72 text-4xl">
       <SiReact className="scale-xl absolute top-[18%] left-[20%] text-cyan-600" />
       <SiRedux className="scale-md absolute top-[12%] right-[16%] text-purple-900" />
       <SiTypescript className="scale-xs absolute top-[28%] right-[6%] text-blue-900" />

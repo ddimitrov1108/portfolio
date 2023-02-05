@@ -12,7 +12,7 @@ export default function SectionHeader({
 
   return (
     <div
-      className={clsx("section-header mb-6 flex items-center gap-4 lg:max-w-lg", className)}
+      className={clsx("section-header mb-4 flex items-center gap-4 lg:max-w-lg", className)}
       {...restProps}
     >
       <div>
