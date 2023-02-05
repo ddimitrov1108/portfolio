@@ -111,7 +111,7 @@ export default function HeaderBar() {
         </div>
 
         <div
-          className="header-links lg:hidden p-2 text-3xl text-primary-main cursor-pointer"
+          className="header-links lg:hidden p-1 text-4xl text-primary-main cursor-pointer"
           onClick={toggleMobileMenu}
         >
           <HiOutlineBars3BottomRight className="slide-from-top" />
