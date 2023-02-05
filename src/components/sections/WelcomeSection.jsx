@@ -39,7 +39,7 @@ export default function WelcomeSection() {
           id="avatar"
           src={avatarPng}
           alt="avatarPng"
-          className="lg:-mt-14 border-2 border-secondary-light/20 rounded-full shadow-2xl mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+          className="lg:-mt-14 border-2 border-secondary-light/20 rounded-full shadow-lg mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
         />
       </div>
     </div>

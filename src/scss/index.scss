@@ -51,7 +51,7 @@ header {
 
 #welcome .welcome-animation {
   #avatar {
-    animation: SlideAndFadeInFromRight 0.5s 1s linear both;
+    animation: SlideAndFadeInFromTop 0.5s 1s linear both;
   }
   .fade-and-slide {
     animation: SlideAndFadeInFromBottom 0.5s linear both;
@@ -104,9 +104,8 @@ header {
   }
 }
 
-@media(max-width: 321px) {
+@media (max-width: 321px) {
   #stack-icons {
-    
   }
 }
 
@@ -128,6 +127,10 @@ header {
   }
 
   #welcome .welcome-animation {
+    #avatar {
+      animation-name: SlideAndFadeInFromRight;
+    }
+
     .fade-and-slide {
       animation: SlideAndFadeInFromBottom 0.3s linear both;
 
