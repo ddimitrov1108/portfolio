@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { VscClose } from "react-icons/vsc";
-import pdfResume from "../assets/cv_eng.pdf";
+import pdfResume from "../../assets/cv_eng.pdf";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 
 export default function MobileNavBar({

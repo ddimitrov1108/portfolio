@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import MobileNavBar from "./MobileNavBar";
-import pdfResume from "../assets/cv_eng.pdf";
 import {
   HiOutlineBars3BottomRight,
   HiOutlineClipboardDocumentList,
 } from "react-icons/hi2";
+import pdfResume from "../../assets/cv_eng.pdf";
 import clsx from "clsx";
 
 const navLinks = [
@@ -114,7 +114,7 @@ export default function HeaderBar() {
           className="header-links lg:hidden p-2 text-3xl text-primary-main cursor-pointer"
           onClick={toggleMobileMenu}
         >
-          <HiOutlineBars3BottomRight />
+          <HiOutlineBars3BottomRight className="slide-from-top"/>
         </div>
 
         <div className="header-links hidden lg:flex items-center gap-8 text-sm">
@@ -122,7 +122,7 @@ export default function HeaderBar() {
             <a
               key={index}
               href={link.href}
-              className="hover:text-primary-main"
+              className="slide-from-top hover:text-primary-main"
               onClick={() => scrollSectionIntoView(link.href)}
             >
               <span className="text-code text-primary-main font-semibold">{`0${
@@ -135,7 +135,7 @@ export default function HeaderBar() {
           <a
             href={pdfResume}
             target="_blank"
-            className="flex gap-4 items-center border border-primary-main font-semibold rounded-md px-4 py-2.5"
+            className="slide-from-top flex gap-4 items-center border border-primary-main font-semibold rounded-md px-4 py-2.5"
           >
             <HiOutlineClipboardDocumentList className="text-primary-main text-xl" />
             Resume

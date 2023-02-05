@@ -24,7 +24,7 @@ header {
 .hidden-section {
   opacity: 0;
   background: red;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .show-section {
@@ -52,11 +52,10 @@ header {
 }
 
 .header-links {
-  a,
-  svg {
+  .slide-from-top {
     animation: SlideAndFadeInFromTop 0.2s linear both;
 
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.05 + 0.5}s;
       }

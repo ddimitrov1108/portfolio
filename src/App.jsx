@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import WelcomeSection from "./components/sections/WelcomeSection";
 import AboutSection from "./components/sections/AboutSection";
 import ProjectsSection from "./components/sections/ProjectsSection";
-import HeaderBar from "./components/HeaderBar";
+import HeaderBar from "./components/app/HeaderBar";
+import FooterBar from "./components/app/FooterBar";
 import ContactSection from "./components/sections/ContactSection";
 import SocialLinks from "./components/SocialLinks";
+import ExperienceSection from "./components/sections/ExperienceSection";
 
 export default function App() {
   useEffect(() => {
@@ -31,6 +33,7 @@ export default function App() {
         <div className="grid space-y-10">
           <WelcomeSection />
           <AboutSection />
+          <ExperienceSection />
           <ProjectsSection />
           <ContactSection />
         </div>
