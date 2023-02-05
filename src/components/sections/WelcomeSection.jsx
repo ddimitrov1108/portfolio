@@ -35,12 +35,16 @@ export default function WelcomeSection() {
           </div>
         </div>
 
-        <img
+        <div
           id="avatar"
-          src={avatarPng}
-          alt="avatarPng"
-          className="lg:-mt-14 border-2 border-secondary-light/20 rounded-full shadow-lg mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
-        />
+          className="shadow-2xl -mt-14 flex items-center justify-center w-fit h-fit lg:min-w-fit lg:min-h-fit mx-auto lg:mx-0 lg:ml-auto rounded-full p-0.5 bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-bold"
+        >
+          <img
+            src={avatarPng}
+            alt="avatarPng"
+            className="bg-white rounded-full w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+          />
+        </div>
       </div>
     </div>
   );
