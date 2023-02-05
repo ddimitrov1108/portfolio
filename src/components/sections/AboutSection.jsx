@@ -42,14 +42,6 @@ export default function AboutSection() {
                   ))}
                 </div>
               </div>
-
-              <p className="text-sm">
-                I'm also ambitious and motivated. I can work alone or in a team.
-                I accept criticism and advice from more experienced colleagues
-                in the environment where I will be placed. I am ready for
-                opportunities and challenges in an environment where innovation,
-                education, and work are valued and encouraged.
-              </p>
             </div>
           </div>
         </div>
