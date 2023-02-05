@@ -26,7 +26,7 @@ export default function AboutSection() {
                 deeper into the Web Development world.
               </p>
 
-              <div className="my-6">
+              <div className="mt-4 mb-8">
                 <p className="font-semibold">
                   Here are a few technologies I’ve been working with recently:
                 </p>
@@ -42,6 +42,14 @@ export default function AboutSection() {
                   ))}
                 </div>
               </div>
+
+              <p className="text-sm">
+                I'm also ambitious and motivated. I can work alone or in a team.
+                I accept criticism and advice from more experienced colleagues
+                in the environment where I will be placed. I am ready for
+                opportunities and challenges in an environment where innovation,
+                education, and work are valued and encouraged.
+              </p>
             </div>
           </div>
         </div>
