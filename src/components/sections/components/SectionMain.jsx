@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SectionMain({ className, children, ...restProps }) {
   return (
-    <div className={clsx("", className)} {...restProps}>
+    <div className={clsx("section-main w-full py-8", className)} {...restProps}>
       {children}
     </div>
   );
