@@ -109,7 +109,7 @@ export default function HeaderBar() {
         className={clsx(
           "z-40 bg-white/90 duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
-          yValue ? "shadow-xl py-3" : "py-6"
+          yValue ? "shadow-md py-2" : "py-6"
         )}
       >
         <a
