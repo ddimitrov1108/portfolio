@@ -1,5 +1,5 @@
 import { FiLinkedin } from "react-icons/fi";
-import avatarPng from "../../assets/avatar.png";
+import avatarWebp from "../../assets/avatar.webp";
 
 export default function WelcomeSection() {
   return (
@@ -39,8 +39,8 @@ export default function WelcomeSection() {
           <div className="rounded-md hidden lg:block -z-10 transition-all w-full h-full border-2 border-primary-main absolute lg:-top-12 lg:-right-4 group-hover:lg:-top-[52px] group-hover:lg:-right-3 xl:-top-10 xl:-right-4 group-hover:xl:-top-11 group-hover:xl:-right-3"></div>
 
           <img
-            src={avatarPng}
-            alt="avatarPng"
+            src={avatarWebp}
+            alt="avatarWebp"
             className="bg-white rounded-full lg:rounded-md shadow-lg border border-secondary-light/60 -mt-14 mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
           />
         </div>
