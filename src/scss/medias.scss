@@ -13,13 +13,13 @@
   }
 
   .social-links {
-    a.fade-in-link {
+    a {
       animation: FadeIn 0.2s linear both, SlideInFromLeft 0.2s linear both,
-        BounceInFromLeft 0.2s linear both !important;
+        BounceInFromLeft 0.2s linear both;
 
-      @for $i from 1 through 4 {
+      @for $i from 1 through 3 {
         &:nth-child(#{$i}n) {
-          animation-delay: #{$i * 0.1 + 0.5}s !important;
+          animation-delay: #{$i * 0.1 + 1}s !important;
         }
       }
     }

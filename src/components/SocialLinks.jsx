@@ -18,7 +18,7 @@ export default function SocialLinks() {
           href={link.href}
           target="_blank"
           key={link.href}
-          className="fade-in-link cursor-pointer hover:text-primary-main"
+          className="cursor-pointer hover:text-primary-main"
         >
           {link.icon}
         </a>
