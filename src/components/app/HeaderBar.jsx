@@ -93,7 +93,7 @@ export default function HeaderBar() {
           "cursor-pointer fixed bottom-4 right-4 md:bottom-8 md:right-8 transition-all p-1.5 md:p-2.5 text-2xl rounded-full bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 text-white",
           yValue > 400 ? "opacity-1" : "opacity-0"
         )}
-        onClick={() => scrollSectionIntoView("#welcome")}
+        onClick={() => scrollSectionIntoView("welcome")}
       >
         <FaChevronUp />
       </div>
