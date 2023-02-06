@@ -11,7 +11,7 @@ const socialLinks = [
 
 export default function FooterBar() {
   return (
-    <div className="lg:hidden w-full px-6 py-8 max-w-screen-lg flex items-center justify-between text-xl gap-6">
+    <div className="lg:hidden w-full p-6 max-w-screen-lg flex items-center justify-between text-xl gap-6">
       <div className="mx-auto grow h-0.5 bg-primary-main"></div>
 
       <div className="max-w-fit flex gap-8">
