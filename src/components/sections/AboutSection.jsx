@@ -15,11 +15,11 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="py-16">
+    <div id="about" className="py-12">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<AboutMe>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-12">
-          <div className="lg:max-w-lg space-y-6">
+          <div className="lg:max-w-lg space-y-4">
             <p>
               Hello! My name is Daniel and I enjoy bringing ideas to life by
               creating web apps. I started my adventure in programming when I
