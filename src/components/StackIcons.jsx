@@ -24,7 +24,7 @@ export default function StackIcons({ className, ...restProps }) {
         className
       )}
     >
-      <SiReact className="scale-xl absolute top-[18%] left-[20%] text-cyan-600" />
+      <SiReact className="scale-lg absolute top-[18%] left-[20%] text-cyan-600" />
       <SiRedux className="scale-md absolute top-[12%] right-[21%] text-purple-900" />
       <SiTypescript className="scale-xs absolute top-[28%] right-[6%] text-blue-900" />
       <FaNodeJs className="scale-sm absolute top-[30%] left-[36%] text-green-900" />
@@ -33,10 +33,9 @@ export default function StackIcons({ className, ...restProps }) {
       <SiMysql className="scale-sm absolute top-[16%] left-[48%] text-primary-dark" />
       <SiJquery className="scale-xs absolute top-[65%] right-[30%] text-blue-500" />
       <SiMongodb className="scale-lg absolute top-[48%] right-[20%] text-green-600" />{" "}
-      <SiJavascript className="scale-md absolute top-[74%] right-[11%] bg-black text-yellow-400" />
+      <SiJavascript className="scale-sm absolute top-[50%] left-[50%] bg-black text-yellow-400" />
       <SiCss3 className="scale-xs absolute top-[42%] left-[23%] text-primary-light" />
       <SiBootstrap className="scale-xs absolute top-[32%] right-[30%] text-purple-500" />
-      <SiHtml5 className="scale-sm absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-orange-600" />
     </div>
   );
 }
