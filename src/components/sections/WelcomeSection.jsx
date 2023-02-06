@@ -45,7 +45,7 @@ export default function WelcomeSection() {
             loading="lazy"
             src={avatarWebp}
             alt="avatarWebp"
-            className="bg-white rounded-full lg:rounded-md shadow-lg border border-secondary-light/60 lg:-mt-14 mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+            className="bg-white rounded-full lg:rounded-md shadow-lg border border-secondary-light/40 lg:-mt-14 mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
           />
         </div>
       </div>
