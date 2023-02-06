@@ -1,16 +1,12 @@
 import { FiLinkedin } from "react-icons/fi";
 import avatarWebp from "../../assets/avatar.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function WelcomeSection() {
   return (
     <div id="welcome" className="h-screen flex items-center justify-center">
       <div className="w-full flex flex-col-reverse lg:flex-row justify-between gap-8">
         <div className="text-center lg:text-left">
-          <div
-            id="me-introduction"
-            className="text-4xl md:text-5xl xl:text-6xl"
-          >
+          <div id="me-introduction" className="text-4xl md:text-5xl xl:text-6xl">
             <div className="font-bold ">
               <span>{"Hi! I'm "}</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400 font-bold">
@@ -42,7 +38,7 @@ export default function WelcomeSection() {
         <div id="avatar" className="relative group">
           <div className="rounded-md hidden lg:block -z-10 transition-all w-full h-full border-2 border-primary-main absolute lg:-top-12 lg:-right-4 group-hover:lg:-top-[52px] group-hover:lg:-right-3 xl:-top-10 xl:-right-4 group-hover:xl:-top-11 group-hover:xl:-right-3"></div>
 
-          <LazyLoadImage
+          <img
             src={avatarWebp}
             alt="avatarWebp"
             className="bg-white rounded-full lg:rounded-md shadow-lg border border-secondary-light/60 -mt-14 mx-auto lg:mx-0 lg:ml-auto w-36 h-36 md:w-40 md:h-40 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
