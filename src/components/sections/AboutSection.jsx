@@ -17,6 +17,14 @@ export default function AboutSection() {
     <div id="about" className="h-screen grid items-center">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<a little about me>" />
+        <SectionMain>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          accusamus id porro cumque distinctio eos quos, ullam doloremque nam
+          cupiditate sint ea optio, neque suscipit esse est animi eum aperiam
+          quam. Temporibus non, voluptatum ullam deleniti ut numquam, modi ea
+          corporis omnis blanditiis voluptas! Possimus officiis alias quis?
+          Ipsum, nulla.
+        </SectionMain>
         <SectionFooter text="</a little about me>" />
       </div>
     </div>
