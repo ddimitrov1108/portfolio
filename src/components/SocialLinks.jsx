@@ -12,7 +12,7 @@ const socialLinks = [
 
 export default function SocialLinks() {
   return (
-    <div className="social-links hidden xl:fixed bottom-0 left-0 px-8 xl:px-12 xl:flex flex-col gap-6 items-center text-xl">
+    <div className="social-links hidden lg:fixed bottom-0 left-0 px-8 xl:px-12 lg:flex flex-col gap-6 items-center text-xl">
       {socialLinks.map((link) => (
         <a
           href={link.href}
