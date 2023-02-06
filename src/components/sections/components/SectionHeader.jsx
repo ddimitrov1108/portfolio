@@ -11,16 +11,11 @@ export default function SectionHeader({
   }. `;
 
   return (
-    <div
-      className={clsx("section-header mb-4 flex items-center gap-4 lg:max-w-lg", className)}
-      {...restProps}
-    >
-      <div>
-        <span className="text-lg text-code text-primary-main">{formatNumber}</span>
-        <span className="text-xl md:text-2xl font-bold">{text}</span>
-      </div>
-
-      <div className="hidden xs:block grow h-[1px] bg-primary-main/60"></div>
+    <div className={clsx("section-header", className)} {...restProps}>
+      <span className="text-lg text-code text-primary-main">
+        {formatNumber}
+      </span>
+      <span className="text-2xl md:text-3xl xl:text-4xl font-bold text-black/80">{text}</span>
     </div>
   );
 }

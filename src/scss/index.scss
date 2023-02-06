@@ -4,57 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
+@import "globals.scss";
 @import "keyframes.scss";
+@import "medias.scss";
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Inter";
-  color: #070606;
-}
-
-header {
-  #logo {
-    animation: SlideAndFadeInFromTop 0.5s linear both;
-  }
-}
-
-.text-code {
-  font-family: "Fira Code";
-}
-
-.hidden-section {
-  opacity: 0;
-}
-
-.show-section {
-  opacity: 1 !important;
-
-  * {
-    animation-delay: 0.2s !important;
-  }
-
-  .section-header {
-    animation: SlideAndFadeInFromTop 0.5s linear both;
-  }
-
-  p {
-    animation: SlideAndFadeInFromLeft 0.5s linear both;
-  }
-
-  #stack-icons {
-    animation: SlideAndFadeInFromBottom 0.5s linear both;
-  }
-}
-
-#welcome .welcome-animation {
+#welcome {
   #avatar {
-    animation: SlideAndFadeInFromTop 0.5s 1s linear both;
+    animation: FadeIn 0.5s 1s linear both, SlideInFromTop 0.5s 1s linear both;
   }
-  .fade-and-slide {
-    animation: SlideAndFadeInFromBottom 0.5s linear both;
+  #me-introduction {
+    animation: SlideInFromBottom 0.5s linear both, FadeIn 0.4s linear both;
 
     @for $i from 1 through 4 {
       &:nth-child(#{$i}n) {
@@ -64,7 +24,9 @@ header {
   }
 
   .welcome-description {
-    animation: SlideAndFadeInFromLeft 0.5s 1s linear both;
+    animation: FadeIn 0.3s 1.35s linear both,
+      SlideInFromLeft 0.4s 1.35s linear both,
+      BounceInFromLeft 0.4s 1.35s linear both;
   }
 }
 
@@ -80,62 +42,52 @@ header {
   }
 }
 
-#stack-icons {
-  animation: FadeIn 1s 1s linear both;
+// #stack-icons {
+//   animation: FadeIn 1s 1s linear both;
 
-  .scale-xs {
-    animation: BounceScaleXS 5s ease-in-out both infinite;
+//   .scale-xs {
+//     animation: BounceScaleXS 5s ease-in-out both infinite;
+//   }
+
+//   .scale-sm {
+//     animation: BounceScaleSM 5s ease-in-out both infinite;
+//   }
+
+//   .scale-md {
+//     animation: BounceScaleBase 5s ease-in-out both infinite;
+//   }
+
+//   .scale-lg {
+//     animation: BounceScaleLG 5s ease-in-out both infinite;
+//   }
+
+//   .scale-xl {
+//     animation: BounceScaleXL 5s ease-in-out both infinite;
+//   }
+// }
+
+.show-section {
+  opacity: 1 !important;
+
+  * {
+    animation-delay: 0.2s !important;
   }
 
-  .scale-sm {
-    animation: BounceScaleSM 5s ease-in-out both infinite;
+  .section-header {
+    animation: FadeIn 0.3s linear both, SlideInFromLeft 0.4s linear both,
+      BounceInFromLeft 0.4s linear both;
   }
 
-  .scale-md {
-    animation: BounceScaleBase 5s ease-in-out both infinite;
+  .section-footer {
+    animation: FadeIn 0.3s linear both, SlideInFromRight 0.4s linear both,
+      BounceInFromRight 0.4s linear both;
   }
 
-  .scale-lg {
-    animation: BounceScaleLG 5s ease-in-out both infinite;
+  p {
+    animation: SlideAndFadeInFromLeft 0.5s linear both;
   }
 
-  .scale-xl {
-    animation: BounceScaleXL 5s ease-in-out both infinite;
-  }
-}
-
-@media (max-width: 321px) {
   #stack-icons {
-  }
-}
-
-@media (min-width: 1024px) {
-  .social-links {
-    a.fade-in-link {
-      animation: SlideAndFadeInFromLeft 0.2s linear both;
-
-      @for $i from 1 through 4 {
-        &:nth-child(#{$i}n) {
-          animation-delay: #{$i * 0.1 + 1}s;
-        }
-      }
-    }
-
-    div.fade-in-line {
-      animation: SlideInFromBottom 0.5s 1s linear both;
-    }
-  }
-
-  #welcome .welcome-animation {
-
-    .fade-and-slide {
-      animation: SlideAndFadeInFromBottom 0.3s linear both;
-
-      @for $i from 1 through 4 {
-        &:nth-child(#{$i}n) {
-          animation-delay: #{$i * 0.05 + 1}s;
-        }
-      }
-    }
+    animation: SlideAndFadeInFromBottom 0.5s linear both;
   }
 }

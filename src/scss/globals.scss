@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter";
+  color: #070606;
+}
+
+header {
+  #logo {
+    animation: SlideAndFadeInFromTop 0.5s linear both;
+  }
+}
+
+.text-code {
+  font-family: "Fira Code";
+}
+
+.hidden-section {
+  opacity: 0;
+}
