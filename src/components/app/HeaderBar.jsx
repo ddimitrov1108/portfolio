@@ -33,7 +33,7 @@ export default function HeaderBar() {
   const [yValue, setYValue] = useState(window.scrollY);
 
   const scrollSectionIntoView = (sectionId) => {
-    const domElement = document.querySelector(sectionId);
+    const domElement = document.getElementById(sectionId);
 
     if (domElement) domElement.scrollIntoView();
   };
