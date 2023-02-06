@@ -25,7 +25,7 @@ export default function AboutSection() {
               creating web apps. I started my adventure in programming when I
               was in high school with basic knowledge of HTML, CSS, and
               JavaScript. I loved building basic applications with them so I
-              went digging deeper into the Web Development world.
+              went digging deeper into the world of web development.
             </p>
 
             <p>
