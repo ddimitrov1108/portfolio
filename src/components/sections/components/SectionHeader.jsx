@@ -8,7 +8,7 @@ export default function SectionHeader({
 }) {
   const formatNumber = `${
     number >= 1 && number <= 9 ? `0${number}` : number
-  }. `;
+  }.`;
 
   return (
     <div className={clsx("section-header", className)} {...restProps}>

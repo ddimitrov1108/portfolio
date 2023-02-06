@@ -15,19 +15,25 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="py-4">
+    <div id="about" className="py-16">
       <div className="hidden-section w-full">
-        <SectionHeader number={1} text="<a little about me>" />
+        <SectionHeader number={1} text="<AboutMe>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-12">
-          <div className="lg:max-w-xl text-justify">
+          <div className="lg:max-w-lg space-y-6">
             <p>
-              I started my adventure in programming when I was in high school
-              with basic knowledge of HTML, CSS, and JavaScript. I loved
-              building basic applications with them so I went digging deeper
-              into the Web Development world.
+              Hello! My name is Daniel and I enjoy bringing ideas to life by
+              creating web apps. I started my adventure in programming when I
+              was in high school with basic knowledge of HTML, CSS, and
+              JavaScript. I loved building basic applications with them so I
+              went digging deeper into the Web Development world.
             </p>
 
-            <div className="mt-6 mb-8">
+            <p>
+              Im a Compute Science student at Technical University of Varna and
+              im currently in my 4th year.
+            </p>
+
+            <div>
               <p className="font-semibold text-primary-main">
                 Here are a few technologies I’ve been working with recently:
               </p>
@@ -47,7 +53,7 @@ export default function AboutSection() {
 
           <StackIcons />
         </SectionMain>
-        <SectionFooter text="</a little about me>" />
+        <SectionFooter text="</AboutMe>" />
       </div>
     </div>
     // <div id="about" className="h-screen flex items-start py-4">
