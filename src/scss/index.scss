@@ -31,9 +31,8 @@ header {
   }
 
   .welcome-description {
-    animation: FadeIn 0.3s 1.35s linear both,
-      SlideInFromLeft 0.4s 1.35s linear both,
-      BounceInFromLeft 0.4s 1.35s linear both;
+    animation: FadeIn 0.3s 0.5s linear both, SlideInFromLeft 0.4s 0.5s linear both,
+      BounceInFromLeft 0.4s 0.5s linear both;
   }
 }
 
@@ -44,7 +43,7 @@ header {
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.05 + 0.5}s;
+        animation-delay: #{$i * 0.05 + 0.1}s;
       }
     }
   }

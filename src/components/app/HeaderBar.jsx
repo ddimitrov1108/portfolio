@@ -107,26 +107,23 @@ export default function HeaderBar() {
 
       <header
         className={clsx(
-          "z-40 bg-white/80 backdrop-blur-sm duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
+          "z-40 bg-white/90 duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
           yValue ? "shadow-xl py-2" : "py-3"
         )}
       >
-        <div id="logo">
-          <a
-            href="/"
-            className="text-code text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-semibold"
-          >
-            {"{D}"}
-          </a>
-        </div>
-
-        <div
-          className="header-links lg:hidden p-1 text-4xl text-primary-main cursor-pointer"
-          onClick={toggleMobileMenu}
+        <a
+          id="logo"
+          href="/"
+          className="text-code text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 font-semibold"
         >
-          <HiOutlineBars3BottomRight className="slide-from-top" />
-        </div>
+          {"{D}"}
+        </a>
+
+        <HiOutlineBars3BottomRight
+          className="header-links lg:hidden text-4xl text-primary-main cursor-pointer"
+          onClick={toggleMobileMenu}
+        />
 
         <div className="header-links hidden lg:flex items-center gap-8 text-sm">
           {navLinks.map((link, index) => (
