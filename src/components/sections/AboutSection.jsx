@@ -1,7 +1,6 @@
-import { FaCaretRight } from "react-icons/fa";
-import StackIcons from "../StackIcons";
 import SectionHeader from "./components/SectionHeader";
 import SectionFooter from "./components/SectionFooter";
+import SectionMain from "./components/SectionMain";
 
 const techStack = [
   "React.js",
