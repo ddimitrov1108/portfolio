@@ -1,4 +1,3 @@
-import React from "react";
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const socialLinks = [
