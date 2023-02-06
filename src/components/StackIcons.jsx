@@ -18,10 +18,10 @@ export default function StackIcons() {
   return (
     <div
       id="stack-icons"
-      className="-ml-8 md:-ml-0 w-72 h-72 lg:w-96 lg:h-96 text-4xl"
+      className="relative -ml-[15%] lg:-ml-0 grow h-72 lg:-top-20 lg:h-96 text-4xl"
     >
       <SiReact className="scale-xl absolute top-[18%] left-[20%] text-cyan-600" />
-      <SiRedux className="scale-md absolute top-[12%] right-[16%] text-purple-900" />
+      <SiRedux className="scale-md absolute top-[12%] right-[21%] text-purple-900" />
       <SiTypescript className="scale-xs absolute top-[28%] right-[6%] text-blue-900" />
       <FaNodeJs className="scale-sm absolute top-[30%] left-[36%] text-green-900" />
       <SiTailwindcss className="scale-lg absolute top-[60%] left-[29%] text-cyan-400" />

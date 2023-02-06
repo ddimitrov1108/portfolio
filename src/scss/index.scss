@@ -60,26 +60,26 @@ header {
   }
 }
 
-// #stack-icons {
-//   animation: FadeIn 1s 1s linear both;
+#stack-icons {
+  animation: FadeIn 1s 1s linear both;
 
-//   .scale-xs {
-//     animation: BounceScaleXS 5s ease-in-out both infinite;
-//   }
+  .scale-xs {
+    animation: BounceScaleXS 5s ease-in-out both infinite;
+  }
 
-//   .scale-sm {
-//     animation: BounceScaleSM 5s ease-in-out both infinite;
-//   }
+  .scale-sm {
+    animation: BounceScaleSM 5s ease-in-out both infinite;
+  }
 
-//   .scale-md {
-//     animation: BounceScaleBase 5s ease-in-out both infinite;
-//   }
+  .scale-md {
+    animation: BounceScaleBase 5s ease-in-out both infinite;
+  }
 
-//   .scale-lg {
-//     animation: BounceScaleLG 5s ease-in-out both infinite;
-//   }
+  .scale-lg {
+    animation: BounceScaleLG 5s ease-in-out both infinite;
+  }
 
-//   .scale-xl {
-//     animation: BounceScaleXL 5s ease-in-out both infinite;
-//   }
-// }
+  .scale-xl {
+    animation: BounceScaleXL 5s ease-in-out both infinite;
+  }
+}
