@@ -15,19 +15,19 @@ export default function MobileNavBar({
       <div
         onClick={onClose}
         className={clsx(
-          "z-50 transition-all fixed top-0 right-0 left-0 bottom-0 bg-black/20 backdrop-blur-sm",
+          "z-50 transition-all fixed top-0 right-0 left-0 bottom-0 bg-black/60",
           open ? "block" : "hidden"
         )}
       ></div>
       <div
         className={clsx(
-          "z-50 fixed top-0 right-0 w-3/4 sm:w-1/2 h-full bg-white transition-all ease-in-out duration-300",
+          "z-50 fixed top-0 right-0 w-full sm:w-1/2 h-full bg-white transition-all ease-in-out duration-300",
           open ? "translate-x-0 " : "translate-x-full"
         )}
       >
         <div className="p-6 flex flex-col">
           <button
-            className="my-2 text-3xl w-fit ml-auto text-primary-main"
+            className="text-4xl w-fit ml-auto text-primary-main"
             onClick={onClose}
           >
             <VscClose />

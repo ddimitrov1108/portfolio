@@ -18,21 +18,19 @@ header {
 
 #welcome {
   #avatar {
-    animation: FadeIn 0.3s 1s linear both, SlideInFromTop 0.3s 1s linear both;
+    animation: FadeIn 0.3s 0.5s linear both,
+      SlideInFromTop 0.3s 0.5s linear both,
+      BounceInFromTop 0.3s 0.5s linear both;
   }
+
   #me-introduction {
     animation: SlideInFromBottom 0.3s linear both, FadeIn 0.5s linear both;
-
-    @for $i from 1 through 4 {
-      &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.05 + 0.5}s;
-      }
-    }
   }
 
   .welcome-description {
-    animation: FadeIn 0.3s 0.5s linear both, SlideInFromLeft 0.4s 0.5s linear both,
-      BounceInFromLeft 0.4s 0.5s linear both;
+    animation: FadeIn 0.3s 0.25s linear both,
+      SlideInFromLeft 0.4s 0.25s linear both,
+      BounceInFromLeft 0.4s 0.25s linear both;
   }
 }
 
@@ -40,6 +38,19 @@ header {
   .slide-from-top {
     animation: FadeIn 0.15s linear both, SlideInFromTop 0.25s linear both,
       BounceInFromTop 0.25s linear both;
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.05 + 0.1}s;
+      }
+    }
+  }
+}
+
+.header-links-mobile {
+  a {
+    animation: FadeIn 0.15s linear both, SlideInFromRight 0.25s linear both,
+      BounceInFromRight 0.25s linear both;
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
