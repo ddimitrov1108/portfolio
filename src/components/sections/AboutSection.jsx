@@ -19,7 +19,7 @@ export default function AboutSection() {
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<a little about me>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-12">
-          <div className="lg:max-w-lg text-justify">
+          <div className="lg:max-w-xl text-justify">
             <p>
               I started my adventure in programming when I was in high school
               with basic knowledge of HTML, CSS, and JavaScript. I loved
