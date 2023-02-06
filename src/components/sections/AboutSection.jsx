@@ -6,10 +6,10 @@ import { FaCaretRight } from "react-icons/fa";
 
 const techStack = [
   "React.js",
-  "JavaScript(ES6)",
-  "TailwindCSS",
   "Node.js",
+  "JavaScript(ES6)",
   "Express.js",
+  "TailwindCSS",
   "MongoDb",
 ];
 
