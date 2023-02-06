@@ -32,12 +32,8 @@ export default function HeaderBar() {
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(window.scrollY);
 
-  const scrollToTop = () => {
-    document.querySelector("#welcome").scrollIntoView();
-  };
-
   const scrollSectionIntoView = (sectionId) => {
-    const domElement = document.getDocumentById(sectionId);
+    const domElement = document.querySelector(sectionId);
 
     if (domElement) domElement.scrollIntoView();
   };
@@ -97,7 +93,7 @@ export default function HeaderBar() {
           "cursor-pointer fixed bottom-4 right-4 md:bottom-8 md:right-8 transition-all p-1.5 md:p-2.5 text-2xl rounded-full bg-gradient-to-tr from-primary-dark via-primary-main to-cyan-400 text-white",
           yValue > 400 ? "opacity-1" : "opacity-0"
         )}
-        onClick={scrollToTop}
+        onClick={() => scrollSectionIntoView("#welcome")}
       >
         <FaChevronUp />
       </div>
