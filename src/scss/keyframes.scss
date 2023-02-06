@@ -1,6 +1,6 @@
 @keyframes FadeIn {
   from {
-    opacity: 0.5;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -9,7 +9,7 @@
 
 @keyframes SlideInFromTop {
   from {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
   to {
     transform: translateY(0px);
@@ -18,7 +18,16 @@
 
 @keyframes SlideInFromBottom {
   from {
-    transform: translateY(15px);
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes SlideInFromBottomFull {
+  from {
+    transform: translateY(100%);
   }
   to {
     transform: translateY(0px);
@@ -27,7 +36,7 @@
 
 @keyframes SlideInFromLeft {
   from {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
   to {
     transform: translateY(0px);
@@ -36,7 +45,7 @@
 
 @keyframes SlideInFromRight {
   from {
-    transform: translateX(15px);
+    transform: translateX(10px);
   }
   to {
     transform: translateY(0px);
@@ -49,7 +58,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
 }
 
@@ -59,7 +68,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 
@@ -69,7 +78,7 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(15px)
+    transform: translateX(10px);
   }
 }
 
@@ -79,11 +88,9 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(-15px)
+    transform: translateX(-10px);
   }
 }
-
-
 
 @keyframes BounceScaleXS {
   0%,
@@ -91,7 +98,7 @@
     transform: scale(0.5) translateY(0px);
   }
   50% {
-    transform: scale(0.5) translateY(-15px);
+    transform: scale(0.5) translateY(-10px);
   }
 }
 
@@ -101,7 +108,7 @@
     transform: scale(0.75) translateY(0px);
   }
   50% {
-    transform: scale(0.75) translateY(-15px);
+    transform: scale(0.75) translateY(-10px);
   }
 }
 
@@ -111,7 +118,7 @@
     transform: scale(1) translateY(0px);
   }
   50% {
-    transform: scale(1) translateY(-15px);
+    transform: scale(1) translateY(-10px);
   }
 }
 
@@ -121,7 +128,7 @@
     transform: scale(1.25) translateY(0px);
   }
   50% {
-    transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-10px);
   }
 }
 
@@ -131,79 +138,6 @@
     transform: scale(1.5) translateY(0px);
   }
   50% {
-    transform: scale(1.5) translateY(-15px);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes FadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-@keyframes SlideAndFadeInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes SlideAndFadeInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes SlideAndFadeInFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-15px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes SlideAndFadeInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(15px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(-15px);
-  }
-  100% {
-    transform: translateX(0px);
+    transform: scale(1.5) translateY(-10px);
   }
 }
