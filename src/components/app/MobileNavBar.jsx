@@ -33,7 +33,7 @@ export default function MobileNavBar({
             <VscClose />
           </button>
 
-          <div className="header-links-mobile h-[75vh] flex flex-col items-center justify-center gap-8 text-base">
+          <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-base">
             {navLinks.map((link, index) => (
               <a
                 key={index}

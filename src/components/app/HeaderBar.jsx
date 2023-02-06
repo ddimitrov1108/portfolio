@@ -109,7 +109,7 @@ export default function HeaderBar() {
         className={clsx(
           "z-40 bg-white/90 duration-500 px-4 xl:px-8 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
-          yValue ? "shadow-xl py-2" : "py-3"
+          yValue ? "shadow-xl py-2" : "py-4"
         )}
       >
         <a
@@ -130,7 +130,7 @@ export default function HeaderBar() {
             <a
               key={index}
               href={link.href}
-              className="slide-from-top hover:text-primary-main"
+              className="hover:text-primary-main"
               onClick={() => scrollSectionIntoView(link.href)}
             >
               <span className="text-code text-primary-main">{`0${
@@ -143,7 +143,7 @@ export default function HeaderBar() {
           <a
             href={pdfResume}
             target="_blank"
-            className="slide-from-top flex gap-4 items-center border border-primary-main font-semibold rounded-md px-4 py-2.5"
+            className="flex gap-4 items-center border border-primary-main font-semibold rounded-md px-4 py-2.5"
           >
             <HiOutlineClipboardDocumentList className="text-primary-main text-xl" />
             Resume

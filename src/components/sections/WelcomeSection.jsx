@@ -21,7 +21,7 @@ export default function WelcomeSection() {
             </span>
           </div>
 
-          <div className="welcome-description mt-4">
+          <div id="me-description" className="mt-4">
             <p className="mx-auto lg:mx-0 max-w-[600px] text-base">
               I'm a wannabe web developer specializing in building (and
               sometimes designing) stuff for the Web. I'm currently a student in
