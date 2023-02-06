@@ -34,7 +34,7 @@ export default function AboutSection() {
             </p>
 
             <div>
-              <p className="font-semibold text-primary-main">
+              <p className="font-semibold">
                 Here are a few technologies I’ve been working with recently:
               </p>
               <div className="grid grid-cols-2 mt-4">
