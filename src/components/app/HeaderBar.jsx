@@ -37,7 +37,7 @@ export default function HeaderBar() {
   };
 
   const scrollSectionIntoView = (sectionId) => {
-    const domElement = document.querySelector(sectionId);
+    const domElement = document.getDocumentById(sectionId);
 
     if (domElement) domElement.scrollIntoView();
   };
