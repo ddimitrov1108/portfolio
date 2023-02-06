@@ -41,7 +41,7 @@ header {
   opacity: 1 !important;
 
   * {
-    animation: FadeIn 0.3s  0.35s linear both, SlideInFromBottom 0.4s 0.35s !important;
+    animation: FadeIn 0.3s 0.35s linear both, SlideInFromBottom 0.4s 0.35s !important;
   }
 
   // .section-header {
@@ -58,31 +58,27 @@ header {
   //   animation: SlideAndFadeInFromLeft 0.5s linear both;
   // }
 
-  // #stack-icons {
-  //   animation: SlideAndFadeInFromBottom 0.5s linear both;
-  // }
-}
-
-#stack-icons {
-  animation: FadeIn 1s 1s linear both;
-
-  .scale-xs {
-    animation: BounceScaleXS 5s ease-in-out both infinite;
-  }
-
-  .scale-sm {
-    animation: BounceScaleSM 5s ease-in-out both infinite;
-  }
-
-  .scale-md {
-    animation: BounceScaleBase 5s ease-in-out both infinite;
-  }
-
-  .scale-lg {
-    animation: BounceScaleLG 5s ease-in-out both infinite;
-  }
-
-  .scale-xl {
-    animation: BounceScaleXL 5s ease-in-out both infinite;
+  #stack-icons {
+    animation: FadeIn 1s 1s linear both;
+  
+    .scale-xs {
+      animation: BounceScaleXS 5s ease-in-out both infinite !important;
+    }
+  
+    .scale-sm {
+      animation: BounceScaleSM 5s ease-in-out both infinite !important;
+    }
+  
+    .scale-md {
+      animation: BounceScaleBase 5s ease-in-out both infinite !important;
+    }
+  
+    .scale-lg {
+      animation: BounceScaleLG 5s ease-in-out both infinite !important;
+    }
+  
+    .scale-xl {
+      animation: BounceScaleXL 5s ease-in-out both infinite !important;
+    }
   }
 }
