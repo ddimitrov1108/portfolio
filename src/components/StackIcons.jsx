@@ -13,12 +13,16 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbCSharp } from "react-icons/tb";
+import clsx from "clsx";
 
-export default function StackIcons() {
+export default function StackIcons({ className, ...restProps }) {
   return (
     <div
       id="stack-icons"
-      className="relative -ml-[15%] lg:-ml-0 grow h-72 lg:-top-20 lg:h-96 text-4xl"
+      className={clsx(
+        "relative -ml-[15%] lg:-ml-0 grow h-72 lg:-top-20 lg:h-96 text-4xl",
+        className
+      )}
     >
       <SiReact className="scale-xl absolute top-[18%] left-[20%] text-cyan-600" />
       <SiRedux className="scale-md absolute top-[12%] right-[21%] text-purple-900" />

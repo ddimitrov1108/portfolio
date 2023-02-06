@@ -18,7 +18,7 @@ export default function AboutSection() {
     <div id="about" className="py-14">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<about me>" />
-        <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-12">
+        <SectionMain className="relative flex flex-col lg:flex-row justify-between xl:gap-12">
           <div className="lg:max-w-lg space-y-4">
             <p>
               Hello! My name is Daniel and I enjoy bringing ideas to life by
@@ -51,7 +51,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <StackIcons />
+          <StackIcons className="hidden lg:block" />
         </SectionMain>
         <SectionFooter text="</about me>" />
       </div>
