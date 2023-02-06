@@ -14,7 +14,7 @@
     animation: FadeIn 0.5s 1s linear both, SlideInFromTop 0.5s 1s linear both;
   }
   #me-introduction {
-    animation: SlideInFromBottom 0.5s linear both, FadeIn 0.4s linear both;
+    animation: SlideInFromBottom 0.3s linear both, FadeIn 0.5s linear both;
 
     @for $i from 1 through 4 {
       &:nth-child(#{$i}n) {
@@ -32,7 +32,9 @@
 
 .header-links {
   .slide-from-top {
-    animation: SlideAndFadeInFromTop 0.2s linear both;
+    animation: FadeIn 0.15s linear both,
+      SlideInFromTop 0.25s linear both,
+      BounceInFromTop 0.25s linear both;
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
