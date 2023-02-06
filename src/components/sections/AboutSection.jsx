@@ -51,7 +51,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <StackIcons className="hidden lg:block" />
+          <StackIcons />
         </SectionMain>
         <SectionFooter text="</about me>" />
       </div>
