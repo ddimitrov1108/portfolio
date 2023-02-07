@@ -18,7 +18,7 @@ export default function AboutSection() {
     <div id="about" className="min-h-screen grid items-center py-8">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<About Me>" />
-        <SectionMain className="relative flex flex-col lg:flex-row justify-between gap-12">
+        <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-x-12 xl:gap-x-52 gap-y-14">
           <div className="lg:max-w-lg space-y-8">
             <p>
               Hello! My name is Daniel and I enjoy bringing ideas to life by
