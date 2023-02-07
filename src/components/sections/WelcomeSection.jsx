@@ -9,13 +9,13 @@ export default function WelcomeSection() {
         <div className="text-center lg:text-left">
           <div
             id="me-introduction"
-            className="text-4xl md:text-5xl xl:text-6xl font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold"
           >
             <span>{"Hi! I'm "}</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
-              Daniel
+              Daniel.
             </span>
-            <span>{", a"}</span>
+
             <br />
 
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
@@ -25,9 +25,9 @@ export default function WelcomeSection() {
 
           <div id="me-description" className="space-y-6 mt-6">
             <p className="mx-auto lg:mx-0 max-w-lg lg:max-w-md xl:max-w-lg text-base">
-              I'm a wannabe web developer specializing in building (and
-              sometimes designing) stuff for the Web. I'm currently a student in
-              search of more knowledge and opportunities.
+              I'm a wannabe web developer specializing in building and designing
+              stuff for the web. I'm currently a student in search of more
+              knowledge and opportunities.
             </p>
 
             <a

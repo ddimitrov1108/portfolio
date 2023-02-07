@@ -47,26 +47,29 @@ export default function AboutSection() {
               </p>
               <div className="grid grid-cols-2 mt-4">
                 {techStack.map((tech, index) => (
-                  <p
+                  <div
                     key={index}
                     className="w-fit col-span-1 flex items-center justify-center gap-2"
                   >
                     <FaCaretRight className="text-sm text-primary-main" />
                     <span>{tech}</span>
-                  </p>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
 
-          <div id="avatar" className="w-fit mx-auto relative group">
-            <div className="rounded-md -z-10 transition-all w-44 h-44 md:w-52 md:h-52 lg:w-64 lg:h-64 xl:w-72 xl:h-72 absolute top-4 left-4 border-2 border-primary-main group-hover:top-3 group-hover:left-3"></div>
+          <div
+            id="avatar"
+            className="w-fit h-fit mx-auto relative group mb-4 shadow-lg"
+          >
+            <div className="rounded-md -z-10 transition-all w-52 h-52 xs:w-60 xs:h-60 md:w-72 md:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72 absolute top-4 left-4 border-2 border-primary-main group-hover:top-3 group-hover:left-3"></div>
 
             <img
               loading="lazy"
               src={avatarWebp}
               alt="avatarWebp"
-              className="bg-white rounded-md lg:rounded-md shadow-lg border border-secondary-light/40 w-44 h-44 md:w-52 md:h-52 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+              className="bg-white rounded-md lg:rounded-md shadow-lg border border-secondary-light/40 w-52 h-52 xs:w-60 xs:h-60 md:w-72 md:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
             />
           </div>
         </SectionMain>
