@@ -69,7 +69,7 @@ export default function AboutSection() {
               loading="lazy"
               src={avatarWebp}
               alt="avatarWebp"
-              className="bg-white rounded-md lg:rounded-md shadow-lg border border-secondary-light/40 w-52 h-52 xs:w-60 xs:h-60 md:w-72 md:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+              className="bg-white rounded-md lg:rounded-md shadow-lg w-52 h-52 xs:w-60 xs:h-60 md:w-72 md:h-72 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
             />
           </div>
         </SectionMain>
