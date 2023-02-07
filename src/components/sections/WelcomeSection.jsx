@@ -24,7 +24,7 @@ export default function WelcomeSection() {
 
           <div id="me-description" className="space-y-6 mt-6">
             <p className="mx-auto lg:mx-0 max-w-lg lg:max-w-md xl:max-w-lg text-base">
-              I'm a wannabe web developer specializing in building and designing
+              I'm a growing developer specializing in building and designing
               stuff for the web. I'm currently a student in search of more
               knowledge and opportunities.
             </p>
