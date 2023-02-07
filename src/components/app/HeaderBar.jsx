@@ -11,19 +11,19 @@ import clsx from "clsx";
 const navLinks = [
   {
     name: "About",
-    href: "#about",
+    navigateTo: "about",
   },
   {
     name: "Experience",
-    href: "#experience",
+    navigateTo: "experience",
   },
   {
     name: "Portfolio",
-    href: "#portfolio",
+    navigateTo: "portfolio",
   },
   {
     name: "Contact",
-    href: "#contact",
+    navigateTo: "contact",
   },
 ];
 
@@ -128,10 +128,9 @@ export default function HeaderBar() {
         <div className="header-links hidden lg:flex items-center gap-8 text-sm">
           {navLinks.map((link, index) => (
             <a
-              key={index}
-              href={link.href}
-              className="hover:text-primary-main"
-              onClick={() => scrollSectionIntoView(link.href)}
+              key={link.navigateTo}
+              className=" hover:text-primary-main text-center cursor-pointer"
+              onClick={() => scrollSectionIntoView(link.navigateTo)}
             >
               <span className="text-code text-primary-main">{`0${
                 index + 1

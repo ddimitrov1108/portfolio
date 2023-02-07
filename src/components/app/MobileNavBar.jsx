@@ -36,10 +36,9 @@ export default function MobileNavBar({
           <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-base">
             {navLinks.map((link, index) => (
               <a
-                key={index}
-                href={link.href}
-                className=" hover:text-primary-main text-center"
-                onClick={() => onNavLinkClick(link.href)}
+                key={link.navigateTo}
+                className=" hover:text-primary-main text-center cursor-pointer"
+                onClick={() => onNavLinkClick(link.navigateTo)}
               >
                 <span className="text-code text-primary-main">{`0${
                   index + 1
