@@ -14,7 +14,7 @@ export default function WelcomeSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
               Daniel
             </span>
-            <span>{", a"}</span>
+
             <br />
 
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
