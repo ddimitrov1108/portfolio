@@ -15,7 +15,7 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="py-16">
+    <div id="about" className="py-12">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<about me>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between xl:gap-12">
@@ -25,7 +25,7 @@ export default function AboutSection() {
               creating web apps. I started my adventure in programming when I
               was in high school with basic knowledge of HTML, CSS, and
               JavaScript. I loved building basic applications with them so I
-              went digging deeper into the Web Development world.
+              went digging deeper into the world of web development.
             </p>
 
             <p>
@@ -34,7 +34,7 @@ export default function AboutSection() {
             </p>
 
             <div>
-              <p className="font-semibold text-primary-main">
+              <p className="font-semibold">
                 Here are a few technologies I’ve been working with recently:
               </p>
               <div className="grid grid-cols-2 mt-4">
