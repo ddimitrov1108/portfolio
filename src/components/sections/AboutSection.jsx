@@ -39,9 +39,9 @@ export default function AboutSection() {
             </p>
 
             <div>
-              <p>
+              <span>
                 Here are a few technologies I’ve been working with recently:
-              </p>
+              </span>
               <div className="grid grid-cols-2 mt-4">
                 {techStack.map((tech, index) => (
                   <div
