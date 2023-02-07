@@ -28,7 +28,7 @@ export default function App() {
       <HeaderBar />
       <SocialLinks />
 
-      <main className="max-w-4xl xl:max-w-6xl mx-auto px-4 lg:px-6 xl:px-10 ">
+      <main className="max-w-4xl xl:max-w-6xl mx-auto px-6 md:px-10">
         <WelcomeSection />
         <AboutSection />
         <ExperienceSection />
