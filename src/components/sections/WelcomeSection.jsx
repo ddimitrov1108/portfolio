@@ -31,15 +31,15 @@ export default function WelcomeSection() {
                   2000,
                 ]}
                 speed={35}
-                wrapper="span"
+                wrapper="div"
                 cursor={true}
                 repeat={Infinity}
-                className="text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400"
+                className="text-center text-[26px] md:text-5xl lg:text-6xl xl:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-400"
               />
             </div>
           </div>
 
-          <div id="me-description" className="space-y-6 mt-6">
+          <div id="me-description" className="space-y-6 mt-10">
             <p className="mx-auto lg:mx-0 max-w-lg lg:max-w-md xl:max-w-lg text-base">
               I'm a growing web developer specializing in building and designing
               stuff for the web. I'm currently a student in search of more
