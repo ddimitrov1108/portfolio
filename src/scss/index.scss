@@ -33,7 +33,7 @@ header {
   }
 
   #stack-icons {
-    animation: FadeIn 1s 0.5s linear both;
+    animation: FadeIn 0.5s 1s linear both;
 
     .scale-xs {
       animation: BounceScaleXS 5s ease-in-out both infinite !important;
