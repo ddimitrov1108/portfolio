@@ -27,9 +27,7 @@ header {
   }
 
   #me-description {
-    animation: FadeIn 0.3s 0.75s linear both,
-      SlideInFromLeft 0.4s 0.75s linear both,
-      BounceInFromLeft 0.4s 0.75s linear both;
+    animation: FadeIn 0.3s 1s linear both, SlideInFromBottom 0.4s 1s linear both;
   }
 
   #stack-icons {

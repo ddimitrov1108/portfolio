@@ -15,7 +15,7 @@ const techStack = [
 
 export default function AboutSection() {
   return (
-    <div id="about" className="py-8">
+    <div id="about" className="min-h-screen grid items-center py-8">
       <div className="hidden-section w-full">
         <SectionHeader number={1} text="<AboutMe>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between gap-12">
@@ -42,7 +42,7 @@ export default function AboutSection() {
             </p>
 
             <div>
-              <p className="font-semibold">
+              <p>
                 Here are a few technologies I’ve been working with recently:
               </p>
               <div className="grid grid-cols-2 mt-4">

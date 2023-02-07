@@ -37,11 +37,5 @@
     #me-introduction {
       animation: FadeIn 0.5s 0.75s linear both !important;
     }
-
-    #me-description {
-      animation: FadeIn 0.3s 0.65s linear both,
-        SlideInFromLeft 0.4s 0.75s linear both,
-        BounceInFromLeft 0.4s 0.75s linear both !important;
-    }
   }
 }

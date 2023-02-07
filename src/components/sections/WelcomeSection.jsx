@@ -45,3 +45,33 @@ export default function WelcomeSection() {
     </div>
   );
 }
+
+/*
+
+            <button
+              target="_blank"
+              className="text-base mx-auto lg:mx-0 w-fit px-6 py-3 flex gap-4 items-center rounded-md border border-primary-main font-semibold"
+              onClick={() => scrollSectionIntoView("about")}
+            >
+              About Me
+              <FaChevronCircleDown className="text-primary-main text-lg" />
+            </button>
+
+            <div className="w-full flex justify-center lg:justify-start gap-4 text-2xl">
+              {socialLinks.map((link) => (
+                <div
+                  key={link.href}
+                  className="p-2"
+                >
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    key={link.href}
+                    className="transition-all cursor-pointer hover:text-primary-main"
+                  >
+                    {link.icon}
+                  </a>
+                </div>
+              ))}
+            </div>
+            */
