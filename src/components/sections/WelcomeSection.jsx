@@ -11,12 +11,12 @@ export default function WelcomeSection() {
             className="text-4xl md:text-5xl xl:text-6xl font-bold"
           >
             <span>{"Hi! I'm "}</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-200">
+            <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
               Daniel.
             </span>
             <br />
 
-            <span className="text-transparent bg-clip-text bg-gradient-to-t from-primary-dark via-primary-main to-cyan-200">
+            <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
               Web Developer.
             </span>
           </div>

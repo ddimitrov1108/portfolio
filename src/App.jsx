@@ -7,8 +7,25 @@ import FooterBar from "./components/app/FooterBar";
 import ContactSection from "./components/sections/ContactSection";
 import SocialLinks from "./components/SocialLinks";
 import ExperienceSection from "./components/sections/ExperienceSection";
+import { useHref, useLocation } from "react-router-dom";
 
 export default function App() {
+  // const location = useLocation();
+
+  // const scrollSectionIntoView = (sectionId) => {
+  //   const domElement = document.getElementById(sectionId);
+
+  //   if (domElement) domElement.scrollIntoView();
+  // };
+
+  // useEffect(() => {
+  //   if(!location.hash)
+  //     return;
+
+  //   scrollSectionIntoView(location.hash.slice(1));
+  //   console.log(location);
+  // }, [location]);
+
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -37,7 +54,7 @@ export default function App() {
         <ContactSection />
       </main>
 
-      <FooterBar/>
+      <FooterBar />
     </>
   );
 }
