@@ -1,5 +1,4 @@
 import { FiLinkedin } from "react-icons/fi";
-
 import StackIcons from "../StackIcons";
 
 export default function WelcomeSection() {
