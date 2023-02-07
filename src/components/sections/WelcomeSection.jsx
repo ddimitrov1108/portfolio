@@ -8,16 +8,16 @@ export default function WelcomeSection() {
         <div className="">
           <div
             id="me-introduction"
-            className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold"
           >
             <span>{"Hi! I'm "}</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
-              Daniel.
+              Daniel
             </span>
             <br />
 
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-blue-800 via-primary-main to-cyan-400">
-              Web Developer.
+              Web Developer
             </span>
           </div>
 
