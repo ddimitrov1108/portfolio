@@ -17,9 +17,9 @@ export default function AboutSection() {
   return (
     <div id="about" className="min-h-screen grid items-center py-8">
       <div className="hidden-section w-full">
-        <SectionHeader number={1} text="<AboutMe>" />
+        <SectionHeader number={1} text="<About Me>" />
         <SectionMain className="relative flex flex-col lg:flex-row justify-between gap-12">
-          <div className="lg:max-w-lg space-y-4 text-justify">
+          <div className="lg:max-w-lg space-y-8">
             <p>
               Hello! My name is Daniel and I enjoy bringing ideas to life by
               creating web apps. I started my adventure in programming when I
@@ -30,15 +30,12 @@ export default function AboutSection() {
 
             <p>
               I'm a Compute Science student at Technical University of Varna and
-              I'm currently in my 4th year.
-            </p>
-
-            <p>
-              Also I'm ambitious and motivated. I can work alone or in a team. I
-              accept criticism and advice from more experienced colleagues in
-              the environment in which I will be placed. I'm ready for
-              opportunities and challenges in an environment where innovation,
-              education, and work are valued and encouraged.
+              I'm currently in my 4th year. Also I'm ambitious and motivated. I
+              can work alone or in a team. I accept criticism and advice from
+              more experienced colleagues in the environment in which I will be
+              placed. I'm ready for opportunities and challenges in an
+              environment where innovation, education, and work are valued and
+              encouraged.
             </p>
 
             <div>
@@ -73,7 +70,7 @@ export default function AboutSection() {
             />
           </div>
         </SectionMain>
-        <SectionFooter text="</AboutMe>" />
+        <SectionFooter text="</About Me>" />
       </div>
     </div>
   );
