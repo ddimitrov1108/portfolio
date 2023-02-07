@@ -6,16 +6,16 @@ export default function SectionHeader({
   className,
   ...restProps
 }) {
-  const formatNumber = `${
-    number >= 1 && number <= 9 ? `0${number}` : number
-  }.`;
+  const formatNumber = `${number >= 1 && number <= 9 ? `0${number}` : number}.`;
 
   return (
     <div className={clsx("section-header", className)} {...restProps}>
       <span className="text-lg text-code text-primary-main">
         {formatNumber}
       </span>
-      <span className="text-xl lg:text-2xl xl:text-3xl font-bold text-black/80">{text}</span>
+      <span className="text-2xl md:text-3xl xl:text-4xl font-bold text-black/80">
+        {text}
+      </span>
     </div>
   );
 }
