@@ -20,7 +20,7 @@ export default function StackIcons({ className, ...restProps }) {
     <div
       id="stack-icons"
       className={clsx(
-        "relative -ml-[15%] lg:-ml-0 grow md:w-72 h-72 lg:-top-20 lg:h-96 text-4xl",
+        "relative -ml-[15%] lg:-ml-0 grow h-72 lg:h-96 text-4xl",
         className
       )}
     >
