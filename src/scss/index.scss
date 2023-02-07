@@ -18,18 +18,42 @@ header {
 
 #welcome {
   #avatar {
-    animation: FadeIn 0.3s 1s linear both,
-      SlideInFromTop 0.4s 1s linear both;
+    animation: FadeIn 0.3s 1s linear both, SlideInFromTop 0.4s 1s linear both;
   }
 
   #me-introduction {
-    animation: SlideInFromBottom 0.3s 0.5s linear both, FadeIn 0.5s 0.5s linear both;
+    animation: SlideInFromBottom 0.3s 0.5s linear both,
+      FadeIn 0.5s 0.5s linear both;
   }
 
   #me-description {
     animation: FadeIn 0.3s 0.75s linear both,
       SlideInFromLeft 0.4s 0.75s linear both,
       BounceInFromLeft 0.4s 0.75s linear both;
+  }
+
+  #stack-icons {
+    animation: FadeIn 1s 0.5s linear both;
+
+    .scale-xs {
+      animation: BounceScaleXS 5s ease-in-out both infinite !important;
+    }
+
+    .scale-sm {
+      animation: BounceScaleSM 5s ease-in-out both infinite !important;
+    }
+
+    .scale-md {
+      animation: BounceScaleBase 5s ease-in-out both infinite !important;
+    }
+
+    .scale-lg {
+      animation: BounceScaleLG 5s ease-in-out both infinite !important;
+    }
+
+    .scale-xl {
+      animation: BounceScaleXL 5s ease-in-out both infinite !important;
+    }
   }
 }
 
@@ -57,28 +81,4 @@ header {
   // p {
   //   animation: SlideAndFadeInFromLeft 0.5s linear both;
   // }
-
-  #stack-icons {
-    animation: FadeIn 1s 1s linear both;
-  
-    .scale-xs {
-      animation: BounceScaleXS 5s ease-in-out both infinite !important;
-    }
-  
-    .scale-sm {
-      animation: BounceScaleSM 5s ease-in-out both infinite !important;
-    }
-  
-    .scale-md {
-      animation: BounceScaleBase 5s ease-in-out both infinite !important;
-    }
-  
-    .scale-lg {
-      animation: BounceScaleLG 5s ease-in-out both infinite !important;
-    }
-  
-    .scale-xl {
-      animation: BounceScaleXL 5s ease-in-out both infinite !important;
-    }
-  }
 }
