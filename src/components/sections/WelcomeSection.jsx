@@ -23,7 +23,7 @@ export default function WelcomeSection() {
           </div>
 
           <div id="me-description" className="space-y-6 mt-6">
-            <p className="text-sm md:text-base max-w-lg lg:max-w-md xl:max-w-lg">
+            <p className="text-base">
               I'm a growing developer specializing in building and designing
               stuff for the web. I'm currently a student in search of more
               knowledge and opportunities.
