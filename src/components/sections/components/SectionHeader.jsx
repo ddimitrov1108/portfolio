@@ -11,9 +11,9 @@ export default function SectionHeader({
   return (
     <div className={clsx("section-header", className)} {...restProps}>
       <span className="text-lg text-code text-primary-main">
-        {formatNumber}
+        {`${formatNumber} `}
       </span>
-      <span className="text-2xl md:text-3xl xl:text-4xl font-bold text-black/80">
+      <span className="text-2xl font-bold text-black/80">
         {text}
       </span>
     </div>

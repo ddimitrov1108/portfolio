@@ -11,7 +11,11 @@ export default function App() {
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle("show-section", entry.isIntersecting);
+        if(entry.isIntersecting) {
+          entry.target.classList.add("show-section");
+          entry.target.classList.remove("hidden-section");
+        }
+
       });
     });
 

@@ -21,16 +21,13 @@ export default function AboutSection() {
         <SectionMain className="relative flex flex-col lg:flex-row justify-between lg:gap-x-12 xl:gap-x-52 gap-y-12">
           <div className="lg:max-w-lg space-y-8">
             <p>
-              Hello! My name is Daniel and I enjoy bringing ideas to life by
-              creating web apps. I started my adventure in programming when I
-              was in high school with basic knowledge of HTML, CSS, and
-              JavaScript. I loved building basic applications with them so I
-              went digging deeper into the world of web development.
-            </p>
-
-            <p>
-              I'm a Compute Science student at Technical University of Varna and
-              I'm currently in my 4th year.
+              Hello! My name is Daniel and I'm currently in my 4th year as a
+              Computer Science student at the Technical University of Varna. I
+              enjoy bringing ideas to life by creating web apps. I started my
+              adventure in programming when I was in high school with basic
+              knowledge of HTML, CSS, and JavaScript. I loved building basic
+              applications with them so I went digging deeper into the world of
+              web development
             </p>
 
             <div>
