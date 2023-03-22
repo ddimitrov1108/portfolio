@@ -28,8 +28,7 @@ export default function MobileNavigation({
         )}
       >
         <div className="p-6 grid">
-          <div className="flex items-center justify-between">
-            <Logo className="sm:hidden" />
+          <div className="flex justify-end">
             <button
               aria-label="Затвори меню"
               className="text-4xl w-fit ml-auto text-headerText hover:text-primary transition-all duration-300"

@@ -1,13 +1,16 @@
-import HeaderNavigation from './components/navigation/HeaderNavigation'
-import WelcomeView from './views/WelcomeView'
+import HeaderNavigation from "./components/navigation/HeaderNavigation";
+import WelcomeSection from "./components/sections/WelcomeSection";
 
 function App() {
   return (
     <>
-      <HeaderNavigation/>
-      <WelcomeView/>
+      <HeaderNavigation />
+
+      <main>
+        <WelcomeSection />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

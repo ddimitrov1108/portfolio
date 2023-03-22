@@ -11,7 +11,7 @@ export default function Logo({ className, ...restProps }) {
       )}
       {...restProps}
     >
-      {"{ D }"}
+      {"{D}"}
     </a>
   );
 }
