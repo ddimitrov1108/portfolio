@@ -1,0 +1,7 @@
+User-agent: DanielDevWebPortfolio
+Disallow: /admin/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dimitrovdev.netlify.app/sitemap.xml

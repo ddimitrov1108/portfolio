@@ -90,7 +90,7 @@ export default function WelcomeSection() {
               ))}
             </div>
           </div>
-          <div className="img-morph overflow-hidden shadow-lg bg-white">
+          <div className="avatar-wobble overflow-hidden shadow-lg bg-white">
             <img
               src={avatarWebp}
               alt="avatar.webp"
