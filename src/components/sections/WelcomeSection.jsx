@@ -99,7 +99,7 @@ export default function WelcomeSection() {
           </div>
         </div>
         <div className="mt-16 md:mt-24 flex flex-col lg:flex-row items-center gap-10">
-          <div className="max-h-fit border-b-2 text-center px-6 py-2 lg:py-0 lg:pr-6 lg:border-b-0 lg:border-r-2 border-black/60 font-semibold">
+          <div className="max-h-fit border-b-2 text-center px-6 py-2 lg:py-0 lg:pl-0 lg:pr-6 lg:border-b-0 lg:border-r-2 border-black/60 font-semibold">
             Tech Stack
           </div>
           <div className="flex justify-center flex-wrap gap-6">
