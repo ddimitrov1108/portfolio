@@ -94,7 +94,7 @@ export default function WelcomeSection() {
             <img
               src={avatarWebp}
               alt="avatar.webp"
-              className="w-[240px] xs:[320px] sm:[360px] lg:w-[440px]"
+              className="w-[200px] xs:[320px] sm:[360px] lg:w-[440px]"
             />
           </div>
         </div>
