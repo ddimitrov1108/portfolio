@@ -6,8 +6,9 @@ import sassSvg from "../../assets/sass.svg";
 import htmlSvg from "../../assets/html.svg";
 import cssSvg from "../../assets/css.svg";
 import jsSvg from "../../assets/js.svg";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
+import Section from "../ui/Section";
 
 const socials = [
   {
@@ -19,6 +20,11 @@ const socials = [
     id: uuidv4(),
     icon: <FiGithub />,
     href: "https://github.com/ddimitrov1108",
+  },
+  {
+    id: uuidv4(),
+    icon: <FiInstagram />,
+    href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
   },
 ];
 
@@ -64,26 +70,26 @@ const techStack = [
 
 export default function WelcomeSection() {
   return (
-    <div className="px-6 max-w-5xl mx-auto min-h-screen grid items-center py-24">
+    <Section id="home" className="mx-auto min-h-screen grid items-center py-24">
       <div>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-0">
           <div className="grid space-y-6">
             <div className="text-center lg:text-left text-3xl xs:text-5xl md:text-6xl md:leading-tight font-bold">
-              Front-End React Developer
+              Front-End React Developer 👋🏼
             </div>
-            <div className="text-center lg:text-left text-[#767676] md:w-3/4 mx-auto lg:mx-0">
+            <div className="leading-relaxed text-center lg:text-left text-secondary md:w-3/4 mx-auto lg:mx-0">
               Hello! I'm Daniel Dimitrov. A passionate Front-end React Developer
-              based in Burgas, Bulgaria.
+              based in Burgas, Bulgaria. 📍
             </div>
 
-            <div className="flex justify-center lg:justify-start gap-2 text-3xl">
+            <div className="flex justify-center lg:justify-start gap-3 text-3xl pt-4">
               {socials.map(({ id, icon, href }) => (
                 <a
                   key={id}
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2 text-black hover:text-primary transition-all"
+                  className="text-black hover:text-primary transition-all"
                 >
                   {icon}
                 </a>
@@ -94,7 +100,7 @@ export default function WelcomeSection() {
             <img
               src={avatarWebp}
               alt="avatar.webp"
-              className="w-[200px] xs:[320px] sm:[360px] lg:w-[440px]"
+              className="w-[260px] xs:[320px] sm:[360px] lg:w-[440px]"
             />
           </div>
         </div>
@@ -117,6 +123,6 @@ export default function WelcomeSection() {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }

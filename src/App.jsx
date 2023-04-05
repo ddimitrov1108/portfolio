@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeaderNavigation from "./components/navigation/HeaderNavigation";
-import AboutSection from "./components/sections/AboutSection";
 import WelcomeSection from "./components/sections/WelcomeSection";
-import { useEffect } from "react";
+import AboutSection from "./components/sections/AboutSection";
+import PortfolioSection from "./components/sections/PortfolioSection";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
       <main>
         <WelcomeSection />
         <AboutSection />
+        <PortfolioSection/>
       </main>
     </>
   );

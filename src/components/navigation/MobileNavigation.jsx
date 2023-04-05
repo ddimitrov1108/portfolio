@@ -1,9 +1,7 @@
-import Logo from "../ui/Logo";
 import Link from "../ui/Link";
-import pdfResume from "../../assets/cv_eng.pdf";
-import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
+import { NavLink } from "react-router-dom";
 
 export default function MobileNavigation({
   navLinks = [],
@@ -43,15 +41,12 @@ export default function MobileNavigation({
               <Link key={id} to={href} text={text} onClick={onNavLinkClick} />
             ))}
 
-            <a
-              href={pdfResume}
-              target="_blank"
-              rel="noreferrer"
-              className="flex gap-4 items-center border text-primary border-primary font-semibold rounded-md px-4 py-2"
+            <NavLink
+              to="contact"
+              className="py-3 px-6 bg-primary text-white font-semibold rounded-full"
             >
-              <HiOutlineClipboardDocumentList className="text-primary text-xl" />
-              Resume
-            </a>
+              Let's Talk
+            </NavLink>
           </nav>
         </div>
       </div>

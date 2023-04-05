@@ -10,13 +10,12 @@ import pdfResume from "../../assets/cv_eng.pdf";
 import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
 import Logo from "../ui/Logo";
+import { NavLink } from "react-router-dom";
 
 const navLinks = [
   { id: uuidv4(), text: "Home", href: "/" },
   { id: uuidv4(), text: "About", href: "about" },
-  { id: uuidv4(), text: "Experience", href: "experience" },
   { id: uuidv4(), text: "Portfolio", href: "portfolio" },
-  { id: uuidv4(), text: "Get in touch", href: "get-in-touch" },
 ];
 
 export default function HeaderNavigation() {
@@ -81,9 +80,9 @@ export default function HeaderNavigation() {
           className="lg:hidden flex flex-col gap-1.5 min-w-[25px] cursor-pointer group"
           onClick={toggleMobileMenu}
         >
-          <div className="w-full h-[3px] rounded-full bg-primary"></div>
-          <div className="w-full h-[3px] rounded-full bg-primary ml-1.5"></div>
-          <div className="w-full h-[3px] rounded-full bg-primary"></div>
+          <div className="w-full h-[2px] rounded-full bg-primary"></div>
+          <div className="w-full h-[2px] rounded-full bg-primary ml-1.5"></div>
+          <div className="w-full h-[2px] rounded-full bg-primary"></div>
         </div>
 
         <nav className="hidden lg:flex items-center gap-6">
@@ -91,15 +90,12 @@ export default function HeaderNavigation() {
             <Link key={id} text={text} to={href} />
           ))}
 
-          <a
-            href={pdfResume}
-            target="_blank"
-            rel="noreferrer"
-            className="flex gap-4 items-center border text-primary border-primary font-semibold rounded-md px-4 py-2"
+          <NavLink
+            to="contact"
+            className="py-3 px-6 bg-primary text-white font-semibold rounded-full"
           >
-            <HiOutlineClipboardDocumentList className="text-primary text-xl" />
-            Resume
-          </a>
+            Let's Talk
+          </NavLink>
         </nav>
       </header>
     </>

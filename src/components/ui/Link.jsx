@@ -13,7 +13,7 @@ export default function Link({
       className={clsx("relative group p-2", className)}
       {...restProps}
     >
-      <span className="transition-all group-hover:text-primary font-semibold">
+      <span className="transition-all duration-300 group-hover:text-primary font-semibold">
         {text}
       </span>
       <div className="absolute bottom-0 right-[50%] transition-all duration-300 w-0 group-hover:w-[50%] h-0.5 bg-primary"></div>

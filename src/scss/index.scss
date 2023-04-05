@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
 
@@ -15,7 +16,7 @@
 }
 
 .avatar-wobble {
-  border: 2px solid #147efb;
+  border: 2px solid #2F80ED;
   border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
   animation: wobble 6s ease-in-out alternate infinite;
 }
@@ -27,5 +28,5 @@ html {
 body {
   background-color: #f9f9f9;
   color: #2d2e32;
-  font-family: "Poppins", "Inter";
+  font-family: "Poppins", "Open Sans", "Inter";
 }
