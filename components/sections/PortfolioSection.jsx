@@ -33,7 +33,7 @@ const portfolioProjects = [
     url: "https://sellstone.eu/",
     type: "featured project",
     name: "Marketing Landing Page",
-    description: `Freelance project to help a small company with their growth in the Digital Marketing industry.`,
+    description: `Freelance project to help a small company with their growth in the industry of Digital Marketing.`,
     technologies: [
       { id: uuidv4(), src: "react.svg" },
       {
