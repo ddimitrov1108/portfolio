@@ -12,7 +12,7 @@ export default function Logo({ className, ...restProps }) {
       )}
       {...restProps}
     >
-      {"{D}"}
+      
     </Link>
   );
 }
