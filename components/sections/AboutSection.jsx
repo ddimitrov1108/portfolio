@@ -18,7 +18,7 @@ export default function AboutSection() {
           </div>
 
           <div className="col-span-3">
-            <SectionHeader>
+            <SectionHeader className='pb-6'>
               About Me
               <h4 className="normal-case mt-3 font-bold text-black text-3xl">
                 A dedicated Front-end Developer based in Burgas, Bulgaria 📍

@@ -74,7 +74,7 @@ const portfolioProjects = [
 export default function PortfolioSection() {
   return (
     <Section id="portfolio" className="py-8 md:py-24">
-      <SectionHeader className="mb-8">
+      <SectionHeader className="pb-16">
         Featured Projects
         <h4 className="normal-case mt-3 font-bold text-black text-3xl">
           Each project is a unique piece of development 🧩
@@ -87,7 +87,7 @@ export default function PortfolioSection() {
             key={project.id}
             className="w-full relative flex flex-col lg:flex-row even:lg:justify-end even:lg:text-left odd:lg:text-right"
           >
-            <div className="z-30 overflow-hidden w-full lg:max-w-[600px] max-h-[165px] sm:max-h-[240px] md:max-h-[306px] rounded-2xl border-2 border-white">
+            <div className="z-30 lg:shadow-xl overflow-hidden w-full h-full lg:max-w-[600px] max-h-[165px] sm:max-h-[240px] md:max-h-[306px] rounded-2xl">
               <Link
                 href={project.url}
                 target="_blank"
@@ -106,7 +106,7 @@ export default function PortfolioSection() {
 
             <div
               className={clsx(
-                "lg:absolute flex flex-col gap-4 top-0 bottom-0 py-4 lg:p-0 lg:top-6 lg:w-[50%]",
+                "lg:absolute flex flex-col gap-4 top-0 bottom-0 py-4 lg:p-0 lg:top-4 lg:w-[50%]",
                 index % 2 ? "lg:left-0" : "lg:right-0"
               )}
             >
@@ -117,7 +117,7 @@ export default function PortfolioSection() {
                 </h4>
               </SectionHeader>
 
-              <p className="relative z-30 rounded-2xl lg:bg-white text-secondary lg:shadow-md lg:p-4 h-fit lg:h-[120px]">
+              <p className="relative z-30 rounded-2xl lg:bg-white text-secondary lg:shadow-md lg:p-4 h-fit">
                 {project.description}
               </p>
 
