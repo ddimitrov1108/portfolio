@@ -1,9 +1,9 @@
-import Link from "../ui/Link";
 import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
-import { NavLink } from "react-router-dom";
+import StyledLink from "../ui/StyledLink";
+import Link from "next/link";
 
-export default function MobileNavigation({
+export default function MobileNav({
   navLinks = [],
   open,
   onNavLinkClick,
@@ -38,15 +38,22 @@ export default function MobileNavigation({
 
           <nav className="h-[80vh] flex flex-col items-center justify-center gap-8 text-lg">
             {navLinks.map(({ id, text, href }) => (
-              <Link key={id} to={href} text={text} onClick={onNavLinkClick} />
+              <StyledLink
+                key={id}
+                to={href}
+                text={text}
+                onClick={onNavLinkClick}
+              />
             ))}
 
-            <NavLink
-              to="contact"
-              className="py-3 px-6 bg-primary text-white font-semibold rounded-full"
+            <Link
+              href="/cv_eng.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-2 px-6 bg-primary text-white font-semibold rounded-full"
             >
-              Let's Talk
-            </NavLink>
+              {"Resume"}
+            </Link>
           </nav>
         </div>
       </div>

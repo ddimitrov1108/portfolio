@@ -1,27 +1,24 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import MobileNavigation from "./MobileNavigation";
-import Link from "../ui/Link";
-import { FaChevronUp } from "react-icons/fa";
-import {
-  HiOutlineBars3BottomRight,
-  HiOutlineClipboardDocumentList,
-} from "react-icons/hi2";
-import pdfResume from "../../assets/cv_eng.pdf";
+import Link from "next/link";
+import Logo from "../ui/Logo";
 import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
-import Logo from "../ui/Logo";
-import { NavLink } from "react-router-dom";
+import StyledLink from "../ui/StyledLink";
+import MobileNav from "./MobileNav";
 
 const navLinks = [
   { id: uuidv4(), text: "Home", href: "/" },
-  { id: uuidv4(), text: "About", href: "about" },
-  { id: uuidv4(), text: "Portfolio", href: "portfolio" },
+  { id: uuidv4(), text: "About", href: "/#about" },
+  { id: uuidv4(), text: "Portfolio", href: "/#portfolio" },
+  { id: uuidv4(), text: "Contact", href: "/#contact" },
 ];
 
-export default function HeaderNavigation() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("scroll-up");
-  const [yValue, setYValue] = useState(window.scrollY);
+  const [yValue, setYValue] = useState(0);
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
   const closeMobileMenu = () => setIsOpen(false);
@@ -60,7 +57,7 @@ export default function HeaderNavigation() {
 
   return (
     <>
-      <MobileNavigation
+      <MobileNav
         navLinks={navLinks}
         open={isOpen}
         onNavLinkClick={closeMobileMenu}
@@ -69,9 +66,9 @@ export default function HeaderNavigation() {
 
       <header
         className={clsx(
-          "backdrop-blur-sm z-40 bg-white duration-500 px-6 xl:px-12 fixed top-0 left-0 right-0 flex justify-between items-center",
+          "backdrop-blur-sm z-40 py-5 bg-white duration-500 px-6 xl:px-12 fixed top-0 left-0 right-0 flex justify-between items-center",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
-          yValue ? "shadow-md py-3" : "shadow-sm py-4 sm:py-5"
+          yValue ? "shadow-md" : "shadow-sm"
         )}
       >
         <Logo />
@@ -86,16 +83,18 @@ export default function HeaderNavigation() {
         </div>
 
         <nav className="hidden lg:flex items-center gap-6">
-          {navLinks.map(({ id, text, href }, index) => (
-            <Link key={id} text={text} to={href} />
+          {navLinks.map(({ id, text, href }) => (
+            <StyledLink key={id} href={href} text={text} />
           ))}
 
-          <NavLink
-            to="contact"
-            className="py-3 px-6 bg-primary text-white font-semibold rounded-full"
+          <Link
+            href="/cv_eng.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-2 px-6 bg-primary text-white font-semibold rounded-full"
           >
-            Let's Talk
-          </NavLink>
+            {"Resume"}
+          </Link>
         </nav>
       </header>
     </>

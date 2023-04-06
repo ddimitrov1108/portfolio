@@ -1,17 +1,18 @@
 import clsx from "clsx";
+import Link from "next/link";
 
 export default function Logo({ className, ...restProps }) {
   return (
-    <a
+    <Link
       id="logo"
       href="/"
       className={clsx(
-        "font-semibold text-code text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-blue-800 via-primary to-cyan-400",
+        "font-bold text-3xl",
         className
       )}
       {...restProps}
     >
-      {"{D}"}
-    </a>
+      
+    </Link>
   );
 }
