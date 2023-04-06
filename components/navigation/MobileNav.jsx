@@ -40,7 +40,7 @@ export default function MobileNav({
             {navLinks.map(({ id, text, href }) => (
               <StyledLink
                 key={id}
-                to={href}
+                href={href}
                 text={text}
                 onClick={onNavLinkClick}
               />

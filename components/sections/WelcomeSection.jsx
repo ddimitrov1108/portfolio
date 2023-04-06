@@ -8,50 +8,44 @@ const socials = [
   {
     id: uuidv4(),
     icon: <FiLinkedin />,
-    href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
+    href: "https://www.linkedin.com",
   },
   {
     id: uuidv4(),
     icon: <FiGithub />,
-    href: "https://github.com/ddimitrov1108",
+    href: "https://github.com",
   },
   {
     id: uuidv4(),
     icon: <FiInstagram />,
-    href: "https://www.instagram.com/ddimit7r0v/",
+    href: "https://www.instagram.com",
   },
 ];
 
 const techStack = [
-  { id: uuidv4(), href: "https://react.dev/", src: "react.svg" },
+  { id: uuidv4(), title: "React", src: "react.svg" },
   {
     id: uuidv4(),
-    href: "https://tailwindcss.com/",
     src: "tailwindcss.svg",
   },
   {
     id: uuidv4(),
-    href: "https://headlessui.com/",
     src: "headlessui.svg",
   },
   {
     id: uuidv4(),
-    href: "https://sass-lang.com/",
     src: "sass.svg",
   },
   {
     id: uuidv4(),
-    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     src: "html.svg",
   },
   {
     id: uuidv4(),
-    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     src: "css.svg",
   },
   {
     id: uuidv4(),
-    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     src: "js.svg",
   },
 ];
@@ -99,13 +93,10 @@ export default function WelcomeSection() {
             Tech Stack
           </div>
           <div className="flex justify-center flex-wrap gap-6">
-            {techStack.map(({ id, href, src }) => (
-              <Link
+            {techStack.map(({ id, title, src }) => (
+              <div
                 key={id}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="grid items-center p-4 bg-white shadow-md rounded-full"
+                className="grid items-center p-4 bg-white shadow-md rounded-full cursor-pointer"
               >
                 <Image
                   src={`/${src}`}
@@ -114,7 +105,7 @@ export default function WelcomeSection() {
                   height="32"
                   className="w-[32px] h-[32px]"
                 />
-              </Link>
+              </div>
             ))}
           </div>
         </div>

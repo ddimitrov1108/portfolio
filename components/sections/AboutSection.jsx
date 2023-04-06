@@ -4,16 +4,16 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div id="about" className="bg-white pb-20 lg:py-32">
+    <div id="about" className="bg-white py-6 md:py-24">
       <Section className="mx-auto">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-20">
-          <div className="col-span-2">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-16">
+          <div className="col-span-2 mb-8 lg:mb-0">
             <Image
               src="/responsive-svgrepo-com.svg"
               width="360"
               height='360'
               alt="responsive_svg.svg"
-              className="mx-auto max-w-[360px] bg-[#EAF2FD] px-8 rounded-2xl"
+              className="mx-auto w-full max-w-[360px] bg-[#EAF2FD] px-8 rounded-2xl"
             />
           </div>
 

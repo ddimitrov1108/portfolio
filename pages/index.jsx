@@ -4,6 +4,8 @@ import Header from "@/components/navigation/Header";
 import WelcomeSection from "@/components/sections/WelcomeSection";
 import AboutSection from "@/components/sections/AboutSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
+import { register } from 'swiper/element/bundle';
+register();
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
