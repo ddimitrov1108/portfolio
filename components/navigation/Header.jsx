@@ -77,9 +77,9 @@ export default function Header() {
           className="lg:hidden flex flex-col gap-1.5 min-w-[25px] cursor-pointer group"
           onClick={toggleMobileMenu}
         >
-          <div className="w-full h-[2px] rounded-full bg-primary"></div>
-          <div className="w-full h-[2px] rounded-full bg-primary ml-1.5"></div>
-          <div className="w-full h-[2px] rounded-full bg-primary"></div>
+          <div className="w-full h-[3px] rounded-full bg-primary"></div>
+          <div className="w-full h-[3px] rounded-full bg-primary ml-1.5"></div>
+          <div className="w-full h-[3px] rounded-full bg-primary"></div>
         </div>
 
         <nav className="hidden lg:flex items-center gap-6">
