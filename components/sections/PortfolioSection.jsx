@@ -110,7 +110,7 @@ export default function PortfolioSection() {
                 index % 2 ? "lg:left-0" : "lg:right-0"
               )}
             >
-              <SectionHeader className="pb-0 w-full relative z-30 lg:-z-10">
+              <SectionHeader style={{ paddingBottom: '0px !important'}} className="pb-0 w-full relative z-30 lg:-z-10">
                 {project.type}
                 <h4 className="capitalize font-bold text-black text-xl z-30">
                   {project.name}
