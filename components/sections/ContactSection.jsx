@@ -26,7 +26,6 @@ export default function ContactSection() {
                   alt={src}
                   width={64}
                   height={64}
-                  priority
                   className="object-fill w-[32px] h-[32px] md:w-[48px] md:h-[48px]"
                 />
               </div>
