@@ -6,19 +6,19 @@ export const socials = [
     id: uuidv4(),
     ariaLabel: "Linkedin",
     icon: <FiLinkedin />,
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
   },
   {
     id: uuidv4(),
     ariaLabel: "GitHub",
     icon: <FiGithub />,
-    href: "https://github.com",
+    href: "https://github.com/ddimitrov1108",
   },
   {
     id: uuidv4(),
     ariaLabel: "Instagram",
     icon: <FiInstagram />,
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/ddimit7r0v/",
   },
 ];
 
