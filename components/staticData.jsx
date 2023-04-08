@@ -73,7 +73,7 @@ export const portfolioProjects = [
     img: "tickets-burgas-screen.webp",
     url: "https://github.com/ddimitrov1108/tickets-burgas",
     type: "Course Work",
-    name: "Bus Tickets App",
+    name: "Public Transport Ticketing System",
     description: `Application that helps the bus transport system by integrating online system for buying and verifying tickets using QR code.`,
     technologies: [
       { id: uuidv4(), src: "react.svg" },
