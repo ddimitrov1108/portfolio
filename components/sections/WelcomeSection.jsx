@@ -37,8 +37,8 @@ export default function WelcomeSection() {
             <Image
               src="/avatar.webp"
               alt="avatar.webp"
-              width="440"
-              height="440"
+              width="500"
+              height="500"
               className="w-[220px] xs:w-[260px] sm:w-[300px] lg:w-[440px]"
             />
           </div>
