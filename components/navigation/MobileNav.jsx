@@ -1,8 +1,8 @@
+import Link from "next/link";
+import StyledLink from "../ui/StyledLink";
+import Logo from "../ui/Logo";
 import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
-import StyledLink from "../ui/StyledLink";
-import Link from "next/link";
-import Logo from "../ui/Logo";
 
 export default function MobileNav({
   navLinks = [],

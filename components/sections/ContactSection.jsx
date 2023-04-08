@@ -1,9 +1,7 @@
+import Image from "next/image";
 import Section from "../ui/Section";
 import SectionHeader from "../ui/SectionHeader";
 import { v4 as uuidv4 } from "uuid";
-import SvgIcon from "../ui/SvgIcon";
-import Image from "next/image";
-import clsx from "clsx";
 
 const contactDetails = [
   {

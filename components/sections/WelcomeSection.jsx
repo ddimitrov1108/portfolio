@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Section from "../ui/Section";
+import SvgIcon from "../ui/SvgIcon";
 import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
-import SvgIcon from "../ui/SvgIcon";
 
 const socials = [
   {

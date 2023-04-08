@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Section from "../ui/Section";
 import SectionHeader from "../ui/SectionHeader";
-import Image from "next/image";
 
 export default function AboutSection() {
   return (

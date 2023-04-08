@@ -1,5 +1,5 @@
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Section from "../ui/Section";
+import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
 
 const socials = [

@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import Image from "next/image";
+import clsx from "clsx";
 
 export default function SvgIcon({ src, size = 32, className, ...restProps }) {
   return (

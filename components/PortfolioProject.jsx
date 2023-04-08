@@ -5,7 +5,6 @@ import SvgIcon from "./ui/SvgIcon";
 import { FiExternalLink } from "react-icons/fi";
 import clsx from "clsx";
 
-
 export default function PortfolioProject({ project = null, domIndex = 0 }) {
   return (
     project != null && (

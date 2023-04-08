@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "../ui/Logo";
-import { v4 as uuidv4 } from "uuid";
-import clsx from "clsx";
 import StyledLink from "../ui/StyledLink";
 import MobileNav from "./MobileNav";
+import { v4 as uuidv4 } from "uuid";
+import clsx from "clsx";
 
 const navLinks = [
   { id: uuidv4(), text: "Home", href: "/" },

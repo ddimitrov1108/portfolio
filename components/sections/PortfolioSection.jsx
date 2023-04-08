@@ -3,26 +3,6 @@ import SectionHeader from "../ui/SectionHeader";
 import PortfolioProject from "../PortfolioProject";
 import { v4 as uuidv4 } from "uuid";
 
-const techStack = [
-  { id: uuidv4(), src: "react.svg" },
-  {
-    id: uuidv4(),
-    src: "tailwindcss.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "headlessui.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "sass.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "swiperjs.svg",
-  },
-];
-
 const portfolioProjects = [
   {
     id: uuidv4(),
