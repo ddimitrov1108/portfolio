@@ -58,7 +58,7 @@ export default function WelcomeSection() {
       <div>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-0">
           <div className="grid space-y-6">
-            <div className="text-center lg:text-left text-2xl xs:text-5xl md:text-6xl md:leading-tight font-bold">
+            <div className="text-center lg:text-left text-3xl xs:text-5xl md:text-6xl md:leading-tight font-bold">
               Front-End React Developer 👋🏼
             </div>
             <div className="leading-relaxed text-center lg:text-left text-secondary md:w-3/4 mx-auto lg:mx-0">

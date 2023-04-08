@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeader from "./ui/SectionHeader";
+import SvgIcon from "./ui/SvgIcon";
 import { FiExternalLink } from "react-icons/fi";
 import clsx from "clsx";
-import SvgIcon from "./ui/SvgIcon";
+
 
 export default function PortfolioProject({ project = null, domIndex = 0 }) {
   return (

@@ -26,7 +26,7 @@ export default function ContactSection() {
       <Section>
         <SectionHeader className="pb-6">
           Contact Me
-          <h4 className="normal-case mt-3 font-bold text-black text-2xl lg:text-3xl">
+          <h4 className="normal-case mt-3 font-bold text-black text-3xl">
             {"Don't be shy! Hit me up! 👇"}
           </h4>
         </SectionHeader>

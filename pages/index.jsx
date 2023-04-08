@@ -6,6 +6,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import { register } from "swiper/element/bundle";
 import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/navigation/Footer";
 register();
 
 const poppins = Poppins({
@@ -33,6 +34,8 @@ export default function Home() {
           <PortfolioSection />
           <ContactSection />
         </main>
+
+        <Footer/>
       </div>
     </>
   );

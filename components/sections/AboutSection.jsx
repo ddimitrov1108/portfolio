@@ -20,7 +20,7 @@ export default function AboutSection() {
           <div className="text-center lg:text-left col-span-3">
             <SectionHeader className="pb-6">
               About Me
-              <h4 className="normal-case mt-3 font-bold text-black text-2xl lg:text-3xl">
+              <h4 className="normal-case mt-3 font-bold text-black text-3xl">
                 A dedicated Front-end Developer based in Burgas, Bulgaria 📍
               </h4>
             </SectionHeader>

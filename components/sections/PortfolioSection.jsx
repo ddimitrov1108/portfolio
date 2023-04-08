@@ -73,7 +73,7 @@ export default function PortfolioSection() {
     <Section id="portfolio" className="py-24">
       <SectionHeader className="pb-12">
         Portfolio
-        <h4 className="normal-case mt-3 font-bold text-black text-2xl lg:text-3xl">
+        <h4 className="normal-case mt-3 font-bold text-black text-3xl">
           Each project is a unique piece of development 🧩
         </h4>
       </SectionHeader>
