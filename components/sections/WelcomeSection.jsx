@@ -1,8 +1,8 @@
+import Image from "next/image";
+import Section from "../ui/Section";
 import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
-import Section from "../ui/Section";
-import Image from "next/image";
-import Link from "next/link";
+import SvgIcon from "../ui/SvgIcon";
 
 const socials = [
   {
@@ -23,7 +23,8 @@ const socials = [
 ];
 
 const techStack = [
-  { id: uuidv4(), title: "React", src: "react.svg" },
+  { id: uuidv4(), src: "nextjs.svg" },
+  { id: uuidv4(), src: "react.svg" },
   {
     id: uuidv4(),
     src: "tailwindcss.svg",
@@ -31,6 +32,10 @@ const techStack = [
   {
     id: uuidv4(),
     src: "headlessui.svg",
+  },
+  {
+    id: uuidv4(),
+    src: "mui.svg",
   },
   {
     id: uuidv4(),
@@ -93,19 +98,8 @@ export default function WelcomeSection() {
             Tech Stack
           </div>
           <div className="flex justify-center flex-wrap gap-6">
-            {techStack.map(({ id, title, src }) => (
-              <div
-                key={id}
-                className="grid items-center p-4 bg-white shadow-md rounded-full cursor-pointer"
-              >
-                <Image
-                  src={`/${src}`}
-                  alt={src}
-                  width="32"
-                  height="32"
-                  className="w-[32px] h-[32px]"
-                />
-              </div>
+            {techStack.map(({ id, src }) => (
+              <SvgIcon key={id} src={src} size={32} />
             ))}
           </div>
         </div>
