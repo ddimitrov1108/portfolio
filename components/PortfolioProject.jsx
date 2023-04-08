@@ -8,7 +8,7 @@ export default function PortfolioProject({ project = null }) {
   return (
     project != null && (
       <div className="group w-full gap-y-2 relative flex flex-col lg:flex-row even:lg:justify-end even:lg:text-left odd:lg:text-right">
-        <div className="z-30 overflow-hidden w-full h-full lg:max-w-[600px] max-h-[180px] xs:max-h-[200px] sm:max-h-[300px] md:max-h-[360px] lg:max-h-[310px] rounded-2xl p-2 border-white shadow-md lg:shadow-lg">
+        <div className="z-30 overflow-hidden w-full h-full lg:max-w-[600px] max-h-[170px] xs:max-h-[200px] sm:max-h-[300px] md:max-h-[360px] lg:max-h-[310px] rounded-2xl p-2 border-white shadow-md lg:shadow-lg">
           <Link href={project?.url} target="_blank" rel="noopener noreferrer">
             <Image
               src={`/${project?.img}`}
