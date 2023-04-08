@@ -7,12 +7,12 @@ export default function Logo({ className, ...restProps }) {
       id="logo"
       href="/"
       className={clsx(
-        "font-semibold text-3xl",
+        "font-bold text-xl",
         className
       )}
       {...restProps}
     >
-      
+      {"Dimitrov.dev"}
     </Link>
   );
 }

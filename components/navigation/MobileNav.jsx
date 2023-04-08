@@ -2,6 +2,7 @@ import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
 import StyledLink from "../ui/StyledLink";
 import Link from "next/link";
+import Logo from "../ui/Logo";
 
 export default function MobileNav({
   navLinks = [],
@@ -15,7 +16,7 @@ export default function MobileNav({
       <div
         onClick={onClose}
         className={clsx(
-          "z-50  fixed top-0 right-0 left-0 bottom-0 sm:backdrop-blur-sm sm:bg-gray-200/60",
+          "z-50  fixed top-0 right-0 left-0 bottom-0 sm:backdrop-blur-sm sm:bg-gray-200/20",
           open ? "block" : "hidden"
         )}
       ></div>
@@ -25,8 +26,10 @@ export default function MobileNav({
           open ? "translate-x-0 " : "translate-x-full"
         )}
       >
-        <div className="p-6 grid">
-          <div className="flex justify-end">
+        <div className="p-6 pt-4 pr-4 grid">
+          <div className="flex items-center justify-between sm:justify-end">
+            <Logo className="block sm:hidden"/>
+
             <button
               aria-label="Затвори меню"
               className="text-4xl w-fit ml-auto text-headerText hover:text-primary transition-all duration-300"
