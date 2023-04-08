@@ -4,21 +4,21 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div id="about" className="bg-white py-6 md:py-24">
-      <Section className="mx-auto">
+    <div id="about" className="bg-white py-24">
+      <Section>
         <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-16">
-          <div className="col-span-2 mb-8 lg:mb-0">
+          <div className="col-span-2 mb-8 lg:mb-0 bg-[#EAF2FD] rounded-2xl">
             <Image
               src="/responsive-svgrepo-com.svg"
               width="360"
-              height='360'
+              height="360"
               alt="responsive_svg.svg"
-              className="mx-auto w-full max-w-[360px] bg-[#EAF2FD] px-8 rounded-2xl"
+              className="mx-auto w-full max-w-[320px] px-8"
             />
           </div>
 
-          <div className="col-span-3">
-            <SectionHeader className='pb-6'>
+          <div className="text-center lg:text-left col-span-3">
+            <SectionHeader className="pb-6">
               About Me
               <h4 className="normal-case mt-3 font-bold text-black text-3xl">
                 A dedicated Front-end Developer based in Burgas, Bulgaria 📍
