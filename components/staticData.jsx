@@ -66,10 +66,6 @@ export const portfolioProjects = [
         id: uuidv4(),
         src: "tailwindcss.svg",
       },
-      {
-        id: uuidv4(),
-        src: "headlessui.svg",
-      },
     ],
   },
   {
@@ -87,11 +83,11 @@ export const portfolioProjects = [
       },
       {
         id: uuidv4(),
-        src: "headlessui.svg",
+        src: "sass.svg",
       },
       {
         id: uuidv4(),
-        src: "sass.svg",
+        src: "csharp.svg",
       },
     ],
   },
