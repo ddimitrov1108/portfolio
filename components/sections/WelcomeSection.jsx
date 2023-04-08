@@ -25,6 +25,7 @@ const socials = [
 const techStack = [
   { id: uuidv4(), src: "nextjs.svg" },
   { id: uuidv4(), src: "react.svg" },
+  { id: uuidv4(), src: "redux.svg" },
   {
     id: uuidv4(),
     src: "tailwindcss.svg",
@@ -40,10 +41,6 @@ const techStack = [
   {
     id: uuidv4(),
     src: "sass.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "html.svg",
   },
   {
     id: uuidv4(),
@@ -94,10 +91,10 @@ export default function WelcomeSection() {
           </div>
         </div>
         <div className="mt-16 md:mt-24 flex flex-col lg:flex-row items-center gap-10">
-          <div className="max-h-fit border-b-2 text-center px-6 py-2 lg:py-0 lg:pl-0 lg:pr-6 lg:border-b-0 lg:border-r-2 border-black/60 font-semibold">
+          <div className="min-w-fit max-h-fit border-b-2 text-center px-6 py-2 lg:py-0 lg:pl-0 lg:pr-6 lg:border-b-0 lg:border-r-2 border-black/60 font-semibold">
             Tech Stack
           </div>
-          <div className="flex justify-center flex-wrap gap-6">
+          <div className="flex justify-center lg:justify-start flex-wrap gap-6">
             {techStack.map(({ id, src }) => (
               <SvgIcon key={id} src={src} size={32} />
             ))}

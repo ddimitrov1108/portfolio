@@ -3,6 +3,7 @@ import Link from "next/link";
 import SectionHeader from "./ui/SectionHeader";
 import { FiExternalLink } from "react-icons/fi";
 import clsx from "clsx";
+import SvgIcon from "./ui/SvgIcon";
 
 export default function PortfolioProject({ project = null, domIndex = 0 }) {
   return (
@@ -45,18 +46,7 @@ export default function PortfolioProject({ project = null, domIndex = 0 }) {
             )}
           >
             {project?.technologies.map(({ id, src }) => (
-              <div
-                key={id}
-                className="grid items-center p-2 bg-white shadow-md rounded-full cursor-pointer"
-              >
-                <Image
-                  src={`/${src}`}
-                  alt={src}
-                  width="32"
-                  height="32"
-                  className="w-[32px] h-[32px]"
-                />
-              </div>
+              <SvgIcon key={id} src={src} size={24} />
             ))}
           </div>
 
