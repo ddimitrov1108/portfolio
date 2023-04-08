@@ -14,12 +14,8 @@ export default function PortfolioSection() {
       </SectionHeader>
 
       <div className="grid w-full gap-10 lg:gap-36">
-        {portfolioProjects?.map((project, index) => (
-          <PortfolioProject
-            key={project.id}
-            project={project}
-            domIndex={index}
-          />
+        {portfolioProjects?.map((project) => (
+          <PortfolioProject key={project.id} project={project} />
         ))}
       </div>
     </Section>
