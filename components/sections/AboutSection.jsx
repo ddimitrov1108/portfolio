@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <div id="about" className="bg-white py-24">
       <Section>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-16">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-28">
           <div className="col-span-2 mb-8 lg:mb-0 bg-[#EAF2FD] rounded-2xl">
             <Image
               src="/responsive-svgrepo-com.svg"
@@ -20,7 +20,7 @@ export default function AboutSection() {
           <div className="text-center lg:text-left col-span-3">
             <SectionHeader className="pb-6">
               About Me
-              <h4 className="normal-case mt-3 font-bold text-black text-3xl">
+              <h4 className="normal-case mt-3 font-bold text-black text-2xl lg:text-3xl">
                 A dedicated Front-end Developer based in Burgas, Bulgaria 📍
               </h4>
             </SectionHeader>
