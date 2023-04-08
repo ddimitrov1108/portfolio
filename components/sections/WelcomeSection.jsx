@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import Section from "../ui/Section";
 import SvgIcon from "../ui/SvgIcon";
@@ -18,16 +19,17 @@ export default function WelcomeSection() {
             </div>
 
             <div className="flex justify-center lg:justify-start gap-3 text-3xl pt-4">
-              {socials?.map(({ id, icon, href }) => (
-                <a
+              {socials?.map(({ id, ariaLabel, icon, href }) => (
+                <Link
                   key={id}
                   href={href}
+                  ariaLabel={ariaLabel}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="text-black hover:text-primary transition-all"
                 >
                   {icon}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

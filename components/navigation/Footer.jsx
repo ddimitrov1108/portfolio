@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Section from "../ui/Section";
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
@@ -27,16 +28,17 @@ export default function Footer() {
         <span className="text-center">Copyright © 2023. All rights are reserved</span>
 
         <div className="flex justify-center lg:justify-start gap-3 text-2xl">
-          {socials.map(({ id, icon, href }) => (
-            <a
+          {socials.map(({ id, ariaLabel, icon, href }) => (
+            <Link
               key={id}
               href={href}
+              ariaLabel={ariaLabel}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="text-white"
             >
               {icon}
-            </a>
+            </Link>
           ))}
         </div>
       </Section>

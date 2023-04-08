@@ -4,16 +4,19 @@ import { v4 as uuidv4 } from "uuid";
 export const socials = [
   {
     id: uuidv4(),
+    ariaLabel: "Linkedin",
     icon: <FiLinkedin />,
     href: "https://www.linkedin.com",
   },
   {
     id: uuidv4(),
+    ariaLabel: "GitHub",
     icon: <FiGithub />,
     href: "https://github.com",
   },
   {
     id: uuidv4(),
+    ariaLabel: "Instagram",
     icon: <FiInstagram />,
     href: "https://www.instagram.com",
   },
