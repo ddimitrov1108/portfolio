@@ -17,7 +17,7 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="text-center lg:text-left col-span-3">
+          <div className="col-span-3">
             <SectionHeader className="pb-6">
               About Me
               <h4 className="normal-case mt-3 font-bold text-black text-3xl">
