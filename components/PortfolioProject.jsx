@@ -15,7 +15,7 @@ export default function PortfolioProject({ project = null, domIndex = 0 }) {
               src={`/${project?.img}`}
               alt={project?.img}
               priority
-              width={1920}
+              width={1280}
               height={360}
               className="rounded-2xl w-full h-full object-cover object-top hover:object-bottom transition-all duration-[5000ms] ease-in-out"
             />
