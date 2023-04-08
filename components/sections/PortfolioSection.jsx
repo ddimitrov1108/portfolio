@@ -49,7 +49,7 @@ const portfolioProjects = [
     url: "https://github.com/ddimitrov1108/tickets-burgas",
     type: "Course Work",
     name: "Bus Tickets App",
-    description: `Application that helps the city bus transport by integrating online system for buying and verifying tickets using QR code.`,
+    description: `Application that helps the bus transport system by integrating online system for buying and verifying tickets using QR code.`,
     technologies: [
       { id: uuidv4(), src: "react.svg" },
       {
@@ -72,7 +72,7 @@ export default function PortfolioSection() {
   return (
     <Section id="portfolio" className="py-8 md:py-24">
       <SectionHeader className="pb-16">
-        Featured Projects
+        Portfolio
         <h4 className="normal-case mt-3 font-bold text-black text-3xl">
           Each project is a unique piece of development 🧩
         </h4>
