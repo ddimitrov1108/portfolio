@@ -22,7 +22,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black w-full py-12">
+    <footer className="bg-black w-full py-8 md:py-12">
       <Section className="flex flex-col sm:flex-row gap-y-4 sm:justify-between items-center text-white font-semibold">
         <span className="text-center">Copyright © 2023. All rights are reserved</span>
 
