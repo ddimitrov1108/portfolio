@@ -32,7 +32,7 @@ export default function Footer() {
             <Link
               key={id}
               href={href}
-              ariaLabel={ariaLabel}
+              aria-label={ariaLabel}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white"

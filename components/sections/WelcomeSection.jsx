@@ -23,7 +23,7 @@ export default function WelcomeSection() {
                 <Link
                   key={id}
                   href={href}
-                  ariaLabel={ariaLabel}
+                  aria-label={ariaLabel}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-primary transition-all"

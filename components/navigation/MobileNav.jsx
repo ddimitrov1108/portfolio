@@ -31,7 +31,7 @@ export default function MobileNav({
             <Logo className="block sm:hidden" />
 
             <button
-              ariaLabel="Затвори меню"
+              aria-label="Close Menu"
               className="text-4xl w-fit ml-auto text-headerText hover:text-primary transition-all duration-300"
               onClick={onClose}
             >
