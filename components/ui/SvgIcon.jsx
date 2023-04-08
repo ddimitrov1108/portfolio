@@ -15,7 +15,7 @@ export default function SvgIcon({ src, size = 32, className, ...restProps }) {
         alt={src}
         width={size}
         height={size}
-        className="w-[24px] h-[24px] md:w-[32px] md:h-[32px]"
+        className="object-fill w-[24px] h-[24px] md:w-[32px] md:h-[32px]"
       />
     </div>
   );
