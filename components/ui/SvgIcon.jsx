@@ -2,8 +2,6 @@ import clsx from "clsx";
 import Image from "next/image";
 
 export default function SvgIcon({ src, size = 32, className, ...restProps }) {
-  const sizeClasses = `w-[${size}px] h-[${size}px]`;
-
   return (
     <div
       className={clsx(
@@ -17,7 +15,7 @@ export default function SvgIcon({ src, size = 32, className, ...restProps }) {
         alt={src}
         width={size}
         height={size}
-        className={sizeClasses}
+        className="max-w-[32px] max-h-[32px]"
       />
     </div>
   );
