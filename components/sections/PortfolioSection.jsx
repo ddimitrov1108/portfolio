@@ -71,7 +71,7 @@ const portfolioProjects = [
 export default function PortfolioSection() {
   return (
     <Section id="portfolio" className="py-8 md:py-24">
-      <SectionHeader className="pb-16">
+      <SectionHeader className="pb-12">
         Portfolio
         <h4 className="normal-case mt-3 font-bold text-black text-3xl">
           Each project is a unique piece of development 🧩
