@@ -1,22 +1,7 @@
 import Image from "next/image";
 import Section from "../ui/Section";
 import SectionHeader from "../ui/SectionHeader";
-import { v4 as uuidv4 } from "uuid";
-
-const contactDetails = [
-  {
-    id: uuidv4(),
-    src: "location.webp",
-    title: "Location",
-    description: "Bulgaria, Burgas",
-  },
-  {
-    id: uuidv4(),
-    src: "email.webp",
-    title: "Email Address",
-    description: "ddimitrov1108@gmail.com",
-  },
-];
+import { contactDetails } from "../staticData";
 
 export default function ContactSection() {
   return (
@@ -30,7 +15,7 @@ export default function ContactSection() {
         </SectionHeader>
 
         <div className="pt-12 flex flex-col sm:flex-row gap-y-8 gap-x-20">
-          {contactDetails.map(({ id, src, title, description }) => (
+          {contactDetails?.map(({ id, src, title, description }) => (
             <div
               key={id}
               className="flex flex-col sm:flex-row items-center gap-6"

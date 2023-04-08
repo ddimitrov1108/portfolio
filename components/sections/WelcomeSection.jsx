@@ -1,56 +1,7 @@
 import Image from "next/image";
 import Section from "../ui/Section";
 import SvgIcon from "../ui/SvgIcon";
-import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
-import { v4 as uuidv4 } from "uuid";
-
-const socials = [
-  {
-    id: uuidv4(),
-    icon: <FiLinkedin />,
-    href: "https://www.linkedin.com",
-  },
-  {
-    id: uuidv4(),
-    icon: <FiGithub />,
-    href: "https://github.com",
-  },
-  {
-    id: uuidv4(),
-    icon: <FiInstagram />,
-    href: "https://www.instagram.com",
-  },
-];
-
-const techStack = [
-  { id: uuidv4(), src: "nextjs.svg" },
-  { id: uuidv4(), src: "react.svg" },
-  { id: uuidv4(), src: "redux.svg" },
-  {
-    id: uuidv4(),
-    src: "tailwindcss.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "mui.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "sass.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "html.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "css.svg",
-  },
-  {
-    id: uuidv4(),
-    src: "js.svg",
-  },
-];
+import { socials, techStack } from "../staticData";
 
 export default function WelcomeSection() {
   return (
@@ -67,7 +18,7 @@ export default function WelcomeSection() {
             </div>
 
             <div className="flex justify-center lg:justify-start gap-3 text-3xl pt-4">
-              {socials.map(({ id, icon, href }) => (
+              {socials?.map(({ id, icon, href }) => (
                 <a
                   key={id}
                   href={href}
@@ -96,7 +47,7 @@ export default function WelcomeSection() {
             <div className="h-[2px] w-[40%] lg:h-[25px] lg:w-[2px] bg-primary rounded-full"></div>
           </div>
           <div className="flex justify-center lg:justify-start flex-wrap gap-6">
-            {techStack.map(({ id, src }) => (
+            {techStack?.map(({ id, src }) => (
               <SvgIcon key={id} src={src} size={32} />
             ))}
           </div>
