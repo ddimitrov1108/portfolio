@@ -26,7 +26,7 @@ export default function Footer() {
       <Section className="flex flex-col sm:flex-row gap-y-4 sm:justify-between items-center text-white font-semibold">
         <span className="text-center">Copyright © 2023. All rights are reserved</span>
 
-        <div className="flex justify-center lg:justify-start gap-3 text-2xl pt-4">
+        <div className="flex justify-center lg:justify-start gap-3 text-2xl">
           {socials.map(({ id, icon, href }) => (
             <a
               key={id}
