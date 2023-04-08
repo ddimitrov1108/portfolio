@@ -91,8 +91,9 @@ export default function WelcomeSection() {
           </div>
         </div>
         <div className="mt-16 md:mt-24 flex flex-col lg:flex-row items-center gap-10">
-          <div className="min-w-fit max-h-fit border-b-2 text-center px-6 py-2 lg:py-0 lg:pl-0 lg:pr-6 lg:border-b-0 lg:border-r-2 border-black/60 font-semibold">
-            Tech Stack
+          <div className="min-w-fit flex flex-col items-center lg:flex-row gap-x-6">
+            <span className="min-w-fit font-semibold">Tech Stack</span>
+            <div className="h-[2px] w-[40%] lg:h-[25px] lg:w-[2px] bg-primary rounded-full"></div>
           </div>
           <div className="flex justify-center lg:justify-start flex-wrap gap-6">
             {techStack.map(({ id, src }) => (
