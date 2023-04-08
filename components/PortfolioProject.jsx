@@ -9,7 +9,7 @@ export default function PortfolioProject({ project = null, domIndex = 0 }) {
   return (
     project != null && (
       <div className="w-full relative flex flex-col lg:flex-row even:lg:justify-end even:lg:text-left odd:lg:text-right">
-        <div className="z-30 overflow-hidden w-full h-full lg:max-w-[600px] max-h-[165px] xs:max-h-[192px] sm:max-h-[240px] md:max-h-[320px] rounded-2xl">
+        <div className="z-30 overflow-hidden w-full h-full lg:max-w-[600px] max-h-[140px] xs:max-h-[200px] sm:max-h-[260px] md:max-h-[360px] lg:max-h-[310px] rounded-2xl">
           <Link href={project?.url} target="_blank" rel="noopener noreferrer">
             <Image
               src={`/${project?.img}`}
@@ -17,7 +17,7 @@ export default function PortfolioProject({ project = null, domIndex = 0 }) {
               priority
               width={1920}
               height={360}
-              className="w-full h-full object-cover object-top hover:object-bottom transition-all duration-[7000ms] ease-in-out"
+              className="w-full h-full object-cover object-top hover:object-bottom transition-all duration-[5000ms] ease-in-out"
             />
           </Link>
         </div>

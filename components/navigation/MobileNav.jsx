@@ -28,7 +28,7 @@ export default function MobileNav({
       >
         <div className="p-6 pt-4 pr-4 grid">
           <div className="flex items-center justify-between sm:justify-end">
-            <Logo className="block sm:hidden"/>
+            <Logo className="block sm:hidden" />
 
             <button
               aria-label="Затвори меню"
@@ -50,12 +50,10 @@ export default function MobileNav({
             ))}
 
             <Link
-              href="/cv_eng.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/#contact"
               className="py-2 px-6 bg-primary text-white font-semibold rounded-full"
             >
-              {"Resume"}
+              {"Get in touch"}
             </Link>
           </nav>
         </div>
