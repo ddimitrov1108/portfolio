@@ -39,7 +39,7 @@ export default function WelcomeSection() {
               alt="avatar.webp"
               width="440"
               height="440"
-              className="w-[220px] xs:w-[320px] sm:w-[360px] lg:w-[440px]"
+              className="w-[220px] xs:w-[260px] sm:w-[300px] lg:w-[440px]"
             />
           </div>
         </div>
