@@ -32,10 +32,6 @@ export const techStack = [
   },
   {
     id: uuidv4(),
-    src: "mui.svg",
-  },
-  {
-    id: uuidv4(),
     src: "sass.svg",
   },
   {
