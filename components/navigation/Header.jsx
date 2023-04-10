@@ -88,7 +88,7 @@ export default function Header() {
 
           <Link
             href="/#contact"
-            className="py-2 px-6 bg-primary text-white font-semibold rounded-2xl"
+            className="py-2 px-6 bg-primary text-white font-semibold rounded-full"
           >
             {"Get in touch"}
           </Link>
