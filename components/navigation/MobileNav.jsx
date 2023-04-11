@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import Link from "next/link";
 import StyledLink from "../ui/StyledLink";
 import Logo from "../ui/Logo";
@@ -11,6 +12,8 @@ export default function MobileNav({
   onClose,
   ...restProps
 }) {
+  const router = useRouter();
+
   return (
     <div className={clsx("lg:hidden z-50 w-full h-full")} {...restProps}>
       <div
@@ -45,6 +48,7 @@ export default function MobileNav({
                 key={id}
                 href={href}
                 text={text}
+                active={router.asPath === href}
                 onClick={onNavLinkClick}
               />
             ))}

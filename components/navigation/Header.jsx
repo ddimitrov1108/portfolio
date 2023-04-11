@@ -1,6 +1,5 @@
-"use client";
-
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Logo from "../ui/Logo";
 import StyledLink from "../ui/StyledLink";
@@ -15,6 +14,7 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(0);
@@ -83,7 +83,12 @@ export default function Header() {
 
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map(({ id, text, href }) => (
-            <StyledLink key={id} href={href} text={text} />
+            <StyledLink
+              key={id}
+              href={href}
+              text={text}
+              active={router.asPath === href}
+            />
           ))}
 
           <Link
