@@ -25,7 +25,6 @@ export const socials = [
 export const techStack = [
   { id: uuidv4(), src: "nextjs.svg" },
   { id: uuidv4(), src: "react.svg" },
-  { id: uuidv4(), src: "redux.svg" },
   {
     id: uuidv4(),
     src: "tailwindcss.svg",
@@ -73,13 +72,10 @@ export const portfolioProjects = [
     description: `Application that helps the public transport system by integrating web application for buying and verifying tickets using QR code.`,
     technologies: [
       { id: uuidv4(), src: "react.svg" },
+      { id: uuidv4(), src: "redux.svg" },
       {
         id: uuidv4(),
         src: "tailwindcss.svg",
-      },
-      {
-        id: uuidv4(),
-        src: "sass.svg",
       },
       {
         id: uuidv4(),
