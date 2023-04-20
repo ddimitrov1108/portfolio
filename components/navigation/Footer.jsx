@@ -1,25 +1,6 @@
 import Link from "next/link";
 import Section from "../ui/Section";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { v4 as uuidv4 } from "uuid";
-
-const socials = [
-  {
-    id: uuidv4(),
-    icon: <FiLinkedin />,
-    href: "https://www.linkedin.com",
-  },
-  {
-    id: uuidv4(),
-    icon: <FiGithub />,
-    href: "https://github.com",
-  },
-  {
-    id: uuidv4(),
-    icon: <FiInstagram />,
-    href: "https://www.instagram.com",
-  },
-];
+import { socials } from "../staticData";
 
 export default function Footer() {
   return (
@@ -32,7 +13,6 @@ export default function Footer() {
             <Link
               key={id}
               href={href}
-              title={ariaLabel}
               aria-label={ariaLabel}
               target="_blank"
               rel="noopener noreferrer"
