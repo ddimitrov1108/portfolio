@@ -14,12 +14,6 @@ export const socials = [
     icon: <FiGithub />,
     href: "https://github.com/ddimitrov1108",
   },
-  {
-    id: uuidv4(),
-    ariaLabel: "Instagram",
-    icon: <FiInstagram />,
-    href: "https://www.instagram.com/ddimit7r0v/",
-  },
 ];
 
 export const techStack = [
