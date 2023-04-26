@@ -1,7 +1,6 @@
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
 
-
 export const navLinks = [
   { id: uuidv4(), text: "Home", href: "/" },
   { id: uuidv4(), text: "About", href: "/#about" },
