@@ -6,12 +6,7 @@ import MobileNav from "./MobileNav";
 import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
 import StyledLink from "../ui/StyledLink";
-
-const navLinks = [
-  { id: uuidv4(), text: "Home", href: "/" },
-  { id: uuidv4(), text: "About", href: "/#about" },
-  { id: uuidv4(), text: "Portfolio", href: "/#portfolio" },
-];
+import { navLinks } from "../staticData";
 
 export default function Header() {
   const router = useRouter();
