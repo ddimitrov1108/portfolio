@@ -11,7 +11,7 @@ export default function Logo({ className, ...restProps }) {
       )}
       {...restProps}
     >
-      {"Dimitrov.dev"}
+      {"Dimitrov.DEV"}
     </Link>
   );
 }
