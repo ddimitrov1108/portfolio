@@ -40,6 +40,7 @@ export default function WelcomeSection() {
               width="600"
               height="600"
               className="w-[220px] xs:w-[260px] sm:w-[300px] lg:w-[460px]"
+              priority={true}
             />
           </div>
         </div>

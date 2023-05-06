@@ -1,12 +1,13 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Logo from "../ui/Logo";
 import MobileNav from "./MobileNav";
-import { v4 as uuidv4 } from "uuid";
-import clsx from "clsx";
 import StyledLink from "../ui/StyledLink";
 import { navLinks } from "../staticData";
+import clsx from "clsx";
 
 export default function Header() {
   const router = useRouter();

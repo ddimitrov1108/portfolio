@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/navigation';
 import Link from "next/link";
 import StyledLink from "../ui/StyledLink";
 import Logo from "../ui/Logo";
