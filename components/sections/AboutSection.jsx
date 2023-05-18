@@ -7,7 +7,7 @@ export default function AboutSection() {
     <div id="about" className="bg-white py-24">
       <Section>
         <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-28">
-          <div className="col-span-2 mb-8 lg:mb-0 bg-[#EAF2FD] rounded-2xl">
+          <div className="hidden lg:block col-span-2 mb-8 lg:mb-0 bg-[#EAF2FD] rounded-2xl">
             <Image
               src="/responsive-svgrepo-com.svg"
               width="360"
