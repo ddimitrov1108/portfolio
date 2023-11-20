@@ -1,17 +1,12 @@
 import Link from "next/link";
-import clsx from "clsx";
+import { FaCode } from "react-icons/fa6";
 
-export default function Logo({ className, ...restProps }) {
+const Logo = () => {
   return (
-    <Link
-      href="/"
-      className={clsx(
-        "font-bold text-xl",
-        className
-      )}
-      {...restProps}
-    >
-      {"Dimitrov.DEV"}
+    <Link href="/" className="flex items-center gap-3">
+      <FaCode className="text-2xl text-active-blue" />
+      <h1 className="text-white font-semibold text-xl">Dimitrov.DEV</h1>
     </Link>
   );
-}
+};
+export default Logo;

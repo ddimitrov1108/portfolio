@@ -6,7 +6,7 @@ export default function Section({
   ...restProps
 }) {
   return (
-    <div className={clsx("px-6 max-w-5xl mx-auto", className)} {...restProps}>
+    <div className={clsx("container py-24", className)} {...restProps}>
       {children}
     </div>
   );

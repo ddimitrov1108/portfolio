@@ -6,15 +6,32 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        lg: "3rem",
+        xl: "4rem",
+      },
+    },
     extend: {
       screens: {
         xs: "375px",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
       colors: {
-        black: "#2d2e32",
-        primary: "#2F80ED",
-        lightgray: "#EAF2FD",
-        secondary: "#767676",
+        active: {
+          blue: "#008ae6",
+          red: "#cb2431",
+        },
+        // header: "#f1f5f9",
+        bodyBg: "#101010",
+        containerBg: "#1d1d1d",
+        linkHover: "#f3f4f6",
       },
     },
   },
