@@ -19,9 +19,9 @@ const GetInTouchSection = () => {
               <Image
                 src={`/${src}`}
                 alt={src}
-                width={64}
-                height={64}
-                className="object-fill w-[32px] h-[32px] md:w-[48px] md:h-[48px]"
+                width={32}
+                height={32}
+                className="object-fill w-[32px] h-[32px]"
               />
             </div>
             <div className="flex flex-col gap-1 text-center sm:text-left">
