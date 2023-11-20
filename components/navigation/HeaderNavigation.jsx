@@ -29,6 +29,7 @@ const HeaderNavigation = () => {
           <button
             onClick={() => setOpen(true)}
             className="group lg:hidden grid gap-1.5 w-[20px]"
+            title="Open Navigation"
           >
             <div className="w-full h-[2px] rounded-full bg-gray-400 group-hover:bg-slate-100"></div>
             <div className="w-full h-[2px] rounded-full bg-gray-400 ml-1.5 group-hover:bg-slate-100"></div>

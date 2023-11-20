@@ -46,6 +46,7 @@ const SideBar = ({
                 type="button"
                 className="grid items-center justify-center transition-all rounded-full outline-none text-gray-400 hover:text-slate-100 text-xl"
                 onClick={onClose}
+                title="Close Navigation"
               >
                 <FaXmark />
               </button>
