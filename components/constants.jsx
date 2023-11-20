@@ -10,13 +10,28 @@ export const headerNavLinks = [
 ];
 
 export const socialNavLinks = [
-  { id: uuidv4(), name: "LinkedIn", href: "/", icon: <FaLinkedinIn /> },
-  { id: uuidv4(), name: "Github", href: "#aboutme", icon: <FiGithub /> },
-  { id: uuidv4(), name: "Telegram", href: "#mywork", icon: <LiaTelegram /> },
+  {
+    id: uuidv4(),
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
+    icon: <FaLinkedinIn />,
+  },
+  {
+    id: uuidv4(),
+    name: "Github",
+    href: "https://github.com/ddimitrov1108",
+    icon: <FiGithub />,
+  },
+  {
+    id: uuidv4(),
+    name: "Telegram",
+    href: "https://t.me/@d_dimitrov",
+    icon: <LiaTelegram />,
+  },
   {
     id: uuidv4(),
     name: "Instagram",
-    href: "#getintouch",
+    href: "https://www.instagram.com/",
     icon: <FaInstagram />,
   },
 ];

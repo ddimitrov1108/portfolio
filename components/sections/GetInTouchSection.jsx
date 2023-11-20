@@ -25,7 +25,7 @@ const GetInTouchSection = () => {
               />
             </div>
             <div className="flex flex-col gap-1 text-center sm:text-left">
-              <h5 className="font-semibold">{title}</h5>
+              <h1 className="font-semibold">{title}</h1>
               <span className="text-slate-400">{description}</span>
             </div>
           </div>

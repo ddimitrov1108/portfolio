@@ -9,13 +9,13 @@ const SocialLinks = () => {
           key={id}
           href={href}
           title={name}
-          className="transition-all text-gray-400 hover:text-active-blue text-2xl"
+          className="transition-all text-gray-400 hover:text-slate-100 text-2xl"
         >
           {icon}
         </Link>
       ))}
 
-      <div className="w-[0.1px] h-20 bg-gray-400"></div>
+      <div className="w-[0.1px] h-16 bg-gray-400"></div>
     </div>
   );
 };
