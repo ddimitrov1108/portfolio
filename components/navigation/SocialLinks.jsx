@@ -9,6 +9,9 @@ const SocialLinks = () => {
           key={id}
           href={href}
           title={name}
+          aria-label={name}
+          target="_blank"
+          rel="noopener noreferrer"
           className="transition-all text-gray-400 hover:text-slate-100 text-2xl"
         >
           {icon}
