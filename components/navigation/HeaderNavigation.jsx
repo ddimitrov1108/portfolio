@@ -21,7 +21,7 @@ const HeaderNavigation = () => {
       </SideBar>
 
       <header className="z-40 fixed top-0 w-full bg-bodyBg/50 backdrop-blur-md">
-        <div className="bg-transparent container py-5 flex items-center justify-between">
+        <div className="bg-transparent container py-4 flex items-center justify-between">
           <Logo />
 
           <NavList className="hidden lg:flex items-center gap-8" />
