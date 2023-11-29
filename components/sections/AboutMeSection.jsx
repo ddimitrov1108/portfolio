@@ -48,7 +48,7 @@ const AboutMeSection = () => {
                   <div>
                     <span className="font-semibold">{years}</span>
                     {` years using `}
-                    <span className="font-[500] text-active-blue">{name}</span>
+                    <span className="font-[medium] text-active-blue">{name}</span>
                   </div>
                 </div>
               ))}
