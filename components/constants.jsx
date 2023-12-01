@@ -96,7 +96,7 @@ export const projects = [
     url: "https://github.com/ddimitrov1108/todoapp",
     type: "course work",
     name: "Todoist - To Do",
-    description: `Application that will help you to manage your day and future activities`,
+    description: `Application that will help you to manage your day to day and future activities.`,
     technologies: [
       { id: uuidv4(), src: "nextjs.svg" },
       {
