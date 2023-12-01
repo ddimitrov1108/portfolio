@@ -92,6 +92,24 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
+    img: "todoist-todoapp.webp",
+    url: "https://github.com/ddimitrov1108/todoapp",
+    type: "course work",
+    name: "Todoist - To Do",
+    description: `Application that will help you to manage your day and future activities`,
+    technologies: [
+      { id: uuidv4(), src: "nextjs.svg" },
+      {
+        id: uuidv4(),
+        src: "tailwindcss.svg",
+      },
+      { id: uuidv4(), src: "prisma.svg" },
+      { id: uuidv4(), src: "mysql.svg" },
+    ],
+  },
+  {
+    id: uuidv4(),
+    view: true,
     img: "sellstone-screen.webp",
     url: "https://sellstone.eu/",
     type: "freelance",
