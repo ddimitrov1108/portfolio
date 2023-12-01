@@ -49,7 +49,11 @@ const Project = ({ project = null }) => {
 
           <div className="relative z-30 w-full lg:w-fit flex flex-wrap gap-4 group-odd:lg:ml-auto group-even:lg:mr-auto">
             {project.technologies.map(({ id, src }) => (
-              <SvgIcon key={id} src={`/tech/${src}`} />
+              <SvgIcon
+                key={id}
+                src={`/tech/${src}`}
+                className="bg-containerBg"
+              />
             ))}
           </div>
         </div>

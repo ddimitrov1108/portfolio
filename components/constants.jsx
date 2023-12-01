@@ -49,42 +49,42 @@ export const technologies = [
 ];
 
 export const technologiesIcons = [
-  { id: uuidv4(), src: "nextjs.svg", className: "top-[16%] right-[20%]" },
-  { id: uuidv4(), src: "react.svg", className: "top-[3%] left-[30%]" },
+  { id: uuidv4(), src: "nextjs.svg", className: "top-[18%] right-[20%]" },
+  { id: uuidv4(), src: "react.svg", className: "top-[3%] left-[37.5%]" },
   {
     id: uuidv4(),
     src: "tailwindcss.svg",
-    className: "top-[36%] left-[1%]",
+    className: "top-[35%] left-[8.5%]",
   },
   {
     id: uuidv4(),
     src: "scss.svg",
-    className: "top-[32%] left-[25%]",
+    className: "top-[26%] left-[45%]",
   },
   {
     id: uuidv4(),
     src: "html.svg",
-    className: "bottom-[6%] left-[50%]",
+    className: "bottom-[6%] left-[54%]",
   },
   {
     id: uuidv4(),
     src: "css.svg",
-    className: "bottom-[17%] left-[5%]",
+    className: "bottom-[21%] left-[4%]",
   },
   {
     id: uuidv4(),
     src: "js.svg",
-    className: "bottom-[28%] left-[32%]",
+    className: "bottom-[21%] left-[32%]",
   },
   {
     id: uuidv4(),
     src: "mysql.svg",
-    className: "top-[60%] right-[11%]",
+    className: "bottom-[24%] right-[4%]",
   },
   {
     id: uuidv4(),
     src: "prisma.svg",
-    className: "bottom-[50%] right-[33%]",
+    className: "bottom-[36%] right-[29%]",
   },
 ];
 

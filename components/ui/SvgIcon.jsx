@@ -5,7 +5,7 @@ export default function SvgIcon({ src, size = 24, className, ...restProps }) {
   return (
     <div
       className={clsx(
-        "grid items-center p-3 shadow-md rounded-full cursor-pointer bg-containerBg",
+        "grid items-center p-3 shadow-md rounded-full cursor-pointer",
         className
       )}
       {...restProps}
