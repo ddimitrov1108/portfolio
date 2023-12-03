@@ -95,7 +95,7 @@ export const projects = [
     img: "todoist-todoapp.webp",
     url: "https://github.com/ddimitrov1108/todoapp",
     type: "course work",
-    name: "Todoist - To Do",
+    name: "TaskDoer",
     description: `Application that will help you to manage your day to day and future activities.`,
     technologies: [
       { id: uuidv4(), src: "nextjs.svg" },
