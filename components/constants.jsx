@@ -93,7 +93,7 @@ export const projects = [
     id: uuidv4(),
     view: true,
     img: "todoist-todoapp.webp",
-    url: "https://github.com/ddimitrov1108/todoapp",
+    url: "https://github.com/ddimitrov1108/taskdoer",
     type: "course work",
     name: "TaskDoer",
     description: `Application that will help you to manage your day to day and future activities.`,
