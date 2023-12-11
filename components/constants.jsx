@@ -92,7 +92,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "taskdoer-app.png",
+    img: "taskdoer-app.webp",
     url: "https://github.com/ddimitrov1108/taskdoer",
     type: "course work",
     name: "TaskDoer",
