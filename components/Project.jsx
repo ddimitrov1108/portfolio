@@ -12,8 +12,8 @@ const Project = ({ project = null }) => {
             src={`/projects/${project.img}`}
             alt={project.img}
             priority
-            width={1980}
-            height={1080}
+            width={1280}
+            height={1024}
             className="overflow-hidden rounded-xl w-full h-full object-cover object-top hover:object-bottom transition-all duration-[5000ms] ease-in-out"
           />
         </div>
