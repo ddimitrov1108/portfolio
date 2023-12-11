@@ -13,7 +13,7 @@ const Project = ({ project = null }) => {
             alt={project.img}
             priority
             width={1280}
-            height={1024}
+            height={360}
             className="overflow-hidden rounded-xl w-full h-full object-cover object-top hover:object-bottom transition-all duration-[5000ms] ease-in-out"
           />
         </div>
