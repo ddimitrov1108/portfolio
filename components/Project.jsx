@@ -7,7 +7,7 @@ const Project = ({ project = null }) => {
   return (
     project != null && (
       <div className="max-w-5xl group w-full gap-y-2 relative flex flex-col lg:flex-row even:lg:justify-end even:lg:text-left odd:lg:text-right odd:lg:ml-auto even:lg:mr-auto odd:xl:mr-24 even:xl:ml-24">
-        <div className="z-30 overflow-hidden rounded-xl w-full lg:w-[600px] h-[160px] xs:h-[180px] sm:h-[260px] md:h-[310px] lg:h-[315px] border-8 border-containerBg bg-containerBg">
+        <div className="z-30 overflow-hidden rounded-xl w-full lg:w-[640px] h-[160px] xs:h-[180px] sm:h-[260px] md:h-[300px] lg:h-[310px] border-8 border-containerBg bg-containerBg">
           <Image
             src={`/projects/${project.img}`}
             alt={project.img}
