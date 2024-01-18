@@ -23,14 +23,13 @@ const NavList = ({ className, onLinkClick }: Props) => {
       ))}
 
       <Link
-        href="public/me/cv.pdf"
+        href="/me/cv.pdf"
         title="Resume"
         aria-label="Resume"
         onClick={onLinkClick}
         target="_blank"
         download="CV-Daniel-Dimitrov"
         rel="noopener noreferrer"
-        locale={false}
         className="group relative duration-500 ease-in-out text-light font-medium rounded-md bg-gradient-to-r from-primary-main to-secondary-main p-[1px]"
       >
         <div className="transition-all px-4 py-1.5 bg-bodyBg group-hover:bg-transparent rounded-md overflow-hidden">
