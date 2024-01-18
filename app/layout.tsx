@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import HeaderNav from "@/components/navigation/HeaderNav";
-import SocialLinks from "@/components/navigation/SocialLinks";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +23,6 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <HeaderNav />
-        <SocialLinks />
 
         <main>{children}</main>
       </body>
