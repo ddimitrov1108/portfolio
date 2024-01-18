@@ -2,10 +2,10 @@ import { Github, Linkedin, Send } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
 export const headerNavLinks = [
-  { id: uuidv4(), name: "Home", href: "/#home" },
-  { id: uuidv4(), name: "About Me", href: "/#about-me" },
-  { id: uuidv4(), name: "Projects", href: "/#projects" },
-  { id: uuidv4(), name: "Get In Touch", href: "/#get-in-touch" },
+  { id: uuidv4(), name: "Home", href: "#home" },
+  { id: uuidv4(), name: "About Me", href: "#about-me" },
+  { id: uuidv4(), name: "Projects", href: "#projects" },
+  { id: uuidv4(), name: "Get In Touch", href: "#get-in-touch" },
 ];
 
 export const socialNavLinks = [

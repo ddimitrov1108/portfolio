@@ -27,9 +27,10 @@ const Project = ({ project }: Props) => {
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
-          priority
-          width={1920}
-          height={1080}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
           className="overflow-hidden rounded-xl"
         />
       </div>

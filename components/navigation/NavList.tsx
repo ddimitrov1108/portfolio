@@ -23,7 +23,7 @@ const NavList = ({ className, onLinkClick }: Props) => {
       ))}
 
       <Link
-        href="/me/cv.pdf"
+        href="/cv.pdf"
         title="Resume"
         aria-label="Resume"
         onClick={onLinkClick}
