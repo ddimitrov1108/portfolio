@@ -1,12 +1,11 @@
-import { FiGithub } from "react-icons/fi";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { LiaTelegram } from "react-icons/lia";
+import { Github, Linkedin, Send } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
 export const headerNavLinks = [
   { id: uuidv4(), name: "Home", href: "/#home" },
-  { id: uuidv4(), name: "About me", href: "/#about-me" },
-  { id: uuidv4(), name: "My work", href: "/#my-work" },
+  { id: uuidv4(), name: "About Me", href: "/#about-me" },
+  { id: uuidv4(), name: "Projects", href: "/#projects" },
+  { id: uuidv4(), name: "Get In Touch", href: "/#get-in-touch" },
 ];
 
 export const socialNavLinks = [
@@ -14,41 +13,40 @@ export const socialNavLinks = [
     id: uuidv4(),
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
-    icon: <FaLinkedinIn />,
+    icon: <Linkedin size={28} />,
   },
   {
     id: uuidv4(),
     name: "Github",
     href: "https://github.com/ddimitrov1108",
-    icon: <FiGithub />,
+    icon: <Github size={28} />,
   },
   {
     id: uuidv4(),
     name: "Telegram",
     href: "https://t.me/@d_dimitrov",
-    icon: <LiaTelegram />,
-  },
-  {
-    id: uuidv4(),
-    name: "Instagram",
-    href: "https://www.instagram.com/",
-    icon: <FaInstagram />,
+    icon: <Send size={28} />,
   },
 ];
 
-export const technologies = [
-  { id: uuidv4(), name: "React.js", years: "3" },
-  { id: uuidv4(), name: "TailwindCSS", years: "3" },
-  { id: uuidv4(), name: "Next.js", years: "1" },
-  { id: uuidv4(), name: "HTML, SCSS, JS", years: "5+" },
-  { id: uuidv4(), name: "MySQL", years: "2" },
-  { id: uuidv4(), name: "C++", years: "5+" },
-  { id: uuidv4(), name: "Express.js", years: "1" },
-  { id: uuidv4(), name: "Node.js", years: "1" },
-  { id: uuidv4(), name: "C#", years: "1" },
-];
+export const techStack = {
+  "Front-End": [
+    { id: uuidv4(), name: "Next.js", timestamp: "1", suffix: "year" },
+    { id: uuidv4(), name: "React.js", timestamp: "3", suffix: "years" },
+    { id: uuidv4(), name: "TypeScript", timestamp: "Half a", suffix: "year" },
+    { id: uuidv4(), name: "TailwindCSS", timestamp: "3", suffix: "years" },
+    { id: uuidv4(), name: "SCSS", timestamp: "3", suffix: "years" },
+    { id: uuidv4(), name: "HTML5, CSS3, JS", timestamp: "5+", suffix: "years" },
+  ],
+  "Back-End": [
+    { id: uuidv4(), name: "MySQL", timestamp: "2", suffix: "years" },
+    { id: uuidv4(), name: "Express.js", timestamp: "1", suffix: "year" },
+    { id: uuidv4(), name: "Node.js", timestamp: "1", suffix: "year" },
+    { id: uuidv4(), name: "C#", timestamp: "1", suffix: "year" },
+  ],
+};
 
-export const technologiesIcons = [
+export const techStackIcons = [
   { id: uuidv4(), src: "nextjs.svg", className: "top-[18%] right-[20%]" },
   { id: uuidv4(), src: "react.svg", className: "top-[3%] left-[37.5%]" },
   {
@@ -83,7 +81,7 @@ export const technologiesIcons = [
   },
   {
     id: uuidv4(),
-    src: "prisma.svg",
+    src: "ts.svg",
     className: "bottom-[36%] right-[29%]",
   },
 ];
@@ -92,13 +90,14 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "taskdoer-app.webp",
+    img: "task-doer.webp",
     url: "https://github.com/ddimitrov1108/taskdoer",
     type: "course work",
     name: "TaskDoer",
     description: `Application that will help you to manage your day to day and future activities.`,
     technologies: [
       { id: uuidv4(), src: "nextjs.svg" },
+      { id: uuidv4(), src: "ts.svg" },
       {
         id: uuidv4(),
         src: "tailwindcss.svg",
@@ -110,7 +109,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "sellstone-screen.webp",
+    img: "sellstone.jpg",
     url: "https://sellstone.eu/",
     type: "freelance",
     name: "Marketing Landing Page",
@@ -126,7 +125,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "tickets-burgas-screen.webp",
+    img: "tickets-burgas.jpg",
     url: "https://github.com/ddimitrov1108/tickets-burgas",
     type: "course work",
     name: "Public Transport Ticketing App",
@@ -147,7 +146,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: false,
-    img: "saxo-trading-screen.webp",
+    img: "saxo-trading.webp",
     url: "#",
     type: "freelance",
     name: "Trading Platform",

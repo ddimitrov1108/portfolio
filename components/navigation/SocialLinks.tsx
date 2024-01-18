@@ -3,7 +3,7 @@ import { socialNavLinks } from "../constants";
 
 const SocialLinks = () => {
   return (
-    <div className="hidden xl:flex flex-col items-center gap-6 fixed bottom-0 right-6">
+    <div className="hidden xl:flex flex-col items-center gap-6 fixed bottom-0 right-8">
       {socialNavLinks.map(({ id, name, href, icon }) => (
         <Link
           key={id}
@@ -12,13 +12,13 @@ const SocialLinks = () => {
           aria-label={name}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-all text-gray-400 hover:text-slate-100 text-2xl"
+          className="transition-all text-main hover:text-light"
         >
           {icon}
         </Link>
       ))}
 
-      <div className="w-[0.1px] h-16 bg-gray-400"></div>
+      <div className="w-[0.1px] h-24 bg-main"></div>
     </div>
   );
 };

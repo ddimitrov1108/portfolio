@@ -1,13 +1,14 @@
 import Project from "../Project";
 import { projects } from "../constants";
-import { Section, SectionHeader } from "../ui";
+import HeaderText from "../ui/HeaderText";
+import Section from "../ui/Section";
 
-const MyWorkSection = () => {
+const ProjectsSection = () => {
   return (
-    <Section id="my-work">
-      <SectionHeader subtext="my work" containerClassName="mb-20 lg:mb-28 lg:text-center">
+    <Section id="projects">
+      <HeaderText subText="Projects" containerClassName="mb-20 lg:mb-28 lg:text-center">
         Each project is a unique piece of development 🧩
-      </SectionHeader>
+      </HeaderText>
 
       <div className="w-full grid gap-16 lg:gap-32">
         {projects.map((project) => (
@@ -17,4 +18,4 @@ const MyWorkSection = () => {
     </Section>
   );
 };
-export default MyWorkSection;
+export default ProjectsSection;
