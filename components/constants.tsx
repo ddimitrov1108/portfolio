@@ -90,7 +90,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "task-doer.webp",
+    img: "task-doer.jpg",
     url: "https://github.com/ddimitrov1108/taskdoer",
     type: "course work",
     name: "TaskDoer",
@@ -146,7 +146,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: false,
-    img: "saxo-trading.webp",
+    img: "saxo-trading.png",
     url: "#",
     type: "freelance",
     name: "Trading Platform",
