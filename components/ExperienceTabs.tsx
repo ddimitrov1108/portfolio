@@ -28,7 +28,7 @@ const ExperienceTabs = () => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-3">
+        <Tab.Panels className="mt-4">
           {Object.values(categories).map((technologies, index) => (
             <Tab.Panel
               key={index}
