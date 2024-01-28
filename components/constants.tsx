@@ -91,7 +91,7 @@ export const projects = [
     id: uuidv4(),
     view: true,
     img: "task-doer.jpg",
-    url: "https://github.com/ddimitrov1108/taskdoer",
+    url: "https://github.com/ddimitrov1108/task-doer",
     type: "course work",
     name: "TaskDoer",
     description: `Application that will help you to manage your day to day and future activities.`,
