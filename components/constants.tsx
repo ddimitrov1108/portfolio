@@ -90,7 +90,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
-    img: "task-doer.jpg",
+    img: "task-doer.png",
     url: "https://github.com/ddimitrov1108/task-doer",
     type: "course work",
     name: "TaskDoer",
