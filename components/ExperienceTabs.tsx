@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Tab, Transition } from "@headlessui/react";
+import { Tab } from "@headlessui/react";
 import { cn } from "@/lib/utils";
 import { techStack } from "./constants";
 
@@ -30,14 +30,6 @@ const ExperienceTabs = () => {
         </Tab.List>
         <Tab.Panels className="mt-4">
           {Object.values(categories).map((technologies, index) => (
-          <Transition
-            enter="transition duration-100 ease-out"
-            enterFrom="scale-95 opacity-0"
-            enterTo="scale-100 opacity-100"
-            leave="transition duration-75 ease-out"
-            leaveFrom="scale-100 opacity-100"
-            leaveTo="scale-95 opacity-0"
-          >
             <Tab.Panel
               key={index}
               className="sm:px-2 rounded-xl outline-none select-none"
@@ -50,7 +42,6 @@ const ExperienceTabs = () => {
                 </div>
               ))}
             </Tab.Panel>
-          </Transition>
           ))}
         </Tab.Panels>
       </Tab.Group>
