@@ -24,7 +24,7 @@ interface Props {
 const Project = ({ project }: Props) => {
   return (
     <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col md:flex-row md:even:flex-row-reverse">
-      <div className="transition-all z-30 w-full max-w-[700px] max-h-[240px] md:max-h-[320px] rounded-lg overflow-hidden bg-transparent">
+      <div className="z-30 w-full max-w-[700px] max-h-[240px] md:max-h-[320px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
