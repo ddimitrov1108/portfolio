@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Link as LinkIcon } from "lucide-react";
+import { ExternalLink, MoveRight } from "lucide-react";
 import HeaderText from "./ui/HeaderText";
 import SvgIcon from "./ui/SvgIcon";
 
@@ -8,6 +8,7 @@ interface Props {
   project: {
     id: string;
     view: boolean;
+    showLink: boolean;
     img: string;
     url: string;
     type: string;
@@ -22,8 +23,8 @@ interface Props {
 
 const Project = ({ project }: Props) => {
   return (
-    <div className="max-w-5xl group w-full gap-y-2 relative flex flex-col lg:flex-row even:lg:justify-end even:lg:text-left odd:lg:text-right odd:lg:ml-auto even:lg:mr-auto odd:xl:mr-24 even:xl:ml-24">
-      <div className="z-30 overflow-hidden rounded-xl w-full lg:w-[640px] h-[160px] xs:h-[180px] sm:h-[260px] md:h-[300px] lg:h-[310px] border-8 border-containerBg bg-containerBg">
+    <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col md:flex-row md:even:flex-row-reverse">
+      <div className="transition-all z-30 w-full max-w-[700px] max-h-[240px] md:max-h-[320px] rounded-lg overflow-hidden border-[8px] border-containerBg bg-containerBg">
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
@@ -31,45 +32,56 @@ const Project = ({ project }: Props) => {
           height={0}
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
-          className="overflow-hidden rounded-xl"
+          className="transition-all duration-300 ease-in-out hover:scale-110 overflow-hidden max-h-[240px] md:max-h-[320px]"
         />
       </div>
 
-      <div className="lg:absolute flex flex-col gap-4 top-0 bottom-0 py-4 lg:p-0 lg:w-[50%] group-odd:lg:right-0 group-even:lg:left-0">
-        {project.view ? (
-          <Link href={project.url} target="_blank" rel="noopener noreferrer">
-            <HeaderText
-              subText={project.type}
-              containerClassName="max-w-fit group-odd:lg:ml-auto group-even:lg:mr-auto"
-              className="flex items-center gap-2 w-fit"
-              ignoreResponsiveText
+      <div className="w-full grid gap-4">
+        <HeaderText
+          subText={project.type}
+          containerClassName="max-w-fit"
+          className="flex items-center gap-2 w-fit"
+        >
+          {project.name}
+        </HeaderText>
+
+        {project.showLink ? (
+          <div className="flex items-center gap-3">
+            <Link
+              href={project.url}
+              className="text-xl text-primary-main font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <LinkIcon size={20} className="text-primary-main" />{" "}
-              {project.name}
-            </HeaderText>
-          </Link>
-        ) : (
-          <HeaderText
-            subText={project.type}
-            containerClassName="max-w-fit group-odd:lg:ml-auto group-even:lg:mr-auto"
-            className="flex items-center gap-2 w-fit"
-            ignoreResponsiveText
-          >
-            <LinkIcon size={20} className="text-primary-main" /> {project.name}
-          </HeaderText>
-        )}
+              {project.url}
+            </Link>
+            <ExternalLink size={20} className="text-primary-main" />
+          </div>
+        ) : null}
 
-        <div className="z-30 rounded-xl overflow-hidden lg:bg-gradient-to-r lg:from-primary-main lg:to-secondary-main lg:p-[1px]">
-          <p className="relative z-30 rounded-xl bg-transparent lg:bg-containerBg text-gray-400 lg:p-6 h-fit text-left">
-            {project.description}
-          </p>
-        </div>
+        <p className="">{project.description}</p>
 
-        <div className="relative z-30 w-full lg:w-fit flex flex-wrap gap-4 group-odd:lg:ml-auto group-even:lg:mr-auto">
+        <div className="flex items-center flex-wrap gap-1">
           {project.technologies.map(({ id, src }) => (
-            <SvgIcon key={id} src={`/tech/${src}`} className="bg-containerBg" />
+            <SvgIcon
+              key={id}
+              src={`/tech/${src}`}
+              className="rounded-lg bg-bodyBg hover:bg-containerBg"
+            />
           ))}
         </div>
+
+        {project.view && project.url ? (
+          <Link
+            href={project.url}
+            className="flex items-center gap-2 bg-primary-main rounded-lg w-fit px-4 py-2  text-white font-medium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+            <MoveRight size={20} className="text-white" />
+          </Link>
+        ) : null}
       </div>
     </div>
   );

@@ -11,13 +11,13 @@ const ExperienceTabs = () => {
   return (
     <div className="w-full">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-bodyBg">
+        <Tab.List className="flex space-x-1 rounded-lg bg-bodyBg">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 cn(
-                  "w-full md:w-fit rounded-xl text-sm py-2 px-2 md:px-4 font-medium leading-5 outline-none select-none",
+                  "w-full md:w-fit rounded-lg text-sm py-2 px-2 md:px-4 font-medium leading-5 outline-none select-none",
                   selected
                     ? "bg-primary-main/20 text-light"
                     : "text-main hover:text-light"
@@ -32,7 +32,7 @@ const ExperienceTabs = () => {
           {Object.values(categories).map((technologies, index) => (
             <Tab.Panel
               key={index}
-              className="sm:px-2 rounded-xl outline-none select-none"
+              className="sm:px-2 rounded-lg outline-none select-none"
             >
               {technologies.map(({ id, name, timestamp, suffix }) => (
                 <div key={id} className="font-medium">

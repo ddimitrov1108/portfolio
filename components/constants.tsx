@@ -90,11 +90,12 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
+    showLink: false,
     img: "task-doer.png",
     url: "https://github.com/ddimitrov1108/task-doer",
     type: "course work",
     name: "TaskDoer",
-    description: `Application that will help you to manage your day to day and future activities.`,
+    description: `Application that will help you to manage your day to day and future activities. Help yourself and get productive!`,
     technologies: [
       { id: uuidv4(), src: "nextjs.svg" },
       { id: uuidv4(), src: "ts.svg" },
@@ -109,8 +110,9 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
+    showLink: true,
     img: "sellstone.jpg",
-    url: "https://sellstone.eu/",
+    url: "https://sellstone.eu",
     type: "freelance",
     name: "Marketing Landing Page",
     description: `Freelance project to help a small company with their growth in the industry of Digital Marketing.`,
@@ -125,6 +127,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: true,
+    showLink: false,
     img: "tickets-burgas.jpg",
     url: "https://github.com/ddimitrov1108/tickets-burgas",
     type: "course work",
@@ -146,6 +149,7 @@ export const projects = [
   {
     id: uuidv4(),
     view: false,
+    showLink: false,
     img: "saxo-trading.png",
     url: "#",
     type: "freelance",

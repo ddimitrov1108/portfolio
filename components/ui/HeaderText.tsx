@@ -27,7 +27,7 @@ const HeaderText = ({
       <h1
         className={cn(
           "text-light font-bold",
-          ignoreResponsiveText ? "text-lg" : "text-xl sm:text-2xl md:text-3xl",
+          ignoreResponsiveText ? "text-lg" : "text-xl xs:text-2xl lg:text-3xl",
           className
         )}
       >

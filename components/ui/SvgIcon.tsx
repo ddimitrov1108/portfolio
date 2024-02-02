@@ -11,7 +11,7 @@ const SvgIcon = ({ src, size = 24, className }: Props) => {
   return (
     <div
       className={cn(
-        "grid items-center p-2 shadow-md rounded-full",
+        "transition-all grid items-center p-2 shadow-md rounded-full",
         className
       )}
     >
