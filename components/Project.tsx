@@ -74,7 +74,7 @@ const Project = ({ project }: Props) => {
         {project.view && project.url ? (
           <Link
             href={project.url}
-            className="flex items-center gap-2 bg-primary-main rounded-lg w-fit px-4 py-2  text-white font-medium"
+            className="transition-all ease-in-out flex items-center gap-2 bg-primary-main hover:bg-primary-dark rounded-lg w-fit px-4 py-2  text-white font-medium"
             target="_blank"
             rel="noopener noreferrer"
           >
