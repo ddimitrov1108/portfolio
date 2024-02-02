@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { headerNavLinks } from "../constants";
+import { ArrowDownToLine, Download, FileDown } from "lucide-react";
 
 interface Props {
   className?: string;
@@ -30,9 +31,10 @@ const NavList = ({ className, onLinkClick }: Props) => {
         target="_blank"
         download="CV-Daniel-Dimitrov"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 hover:text-light"
+        className="flex items-center gap-2 bg-primary-main rounded-md px-4 py-2 text-white"
       >
-        Resume
+        Download CV
+        <ArrowDownToLine  size={20} />
       </Link>
     </nav>
   );
