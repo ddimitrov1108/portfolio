@@ -89,6 +89,27 @@ export const techStackIcons = [
 export const projects = [
   {
     id: uuidv4(),
+    view: false,
+    showLink: false,
+    img: "gymnetwork.png",
+    url: "https://github.com/ddimitrov1108/gym-network-app",
+    type: "Work In Progress",
+    name: "GymNetwork",
+    description: `Social Media to connect with gym enthusiasts and trainers to share fitness/nutrion programs and expertise via posts and blogs`,
+    technologies: [
+      { id: uuidv4(), src: "nextjs.svg" },
+      { id: uuidv4(), src: "ts.svg" },
+      {
+        id: uuidv4(),
+        src: "tailwindcss.svg",
+      },
+      { id: uuidv4(), src: "nestjs.svg" },
+      { id: uuidv4(), src: "prisma.svg" },
+      { id: uuidv4(), src: "mysql.svg" },
+    ],
+  },
+  {
+    id: uuidv4(),
     view: true,
     showLink: false,
     img: "task-doer.png",

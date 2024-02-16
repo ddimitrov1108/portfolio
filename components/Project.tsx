@@ -24,15 +24,15 @@ interface Props {
 const Project = ({ project }: Props) => {
   return (
     <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col md:flex-row md:even:flex-row-reverse">
-      <div className="z-30 w-full max-w-[700px] max-h-[240px] md:max-h-[320px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
+      <div className="z-30 w-full max-w-[700px] max-h-[140px] xs:max-h-[180px] sm:max-h-[240px] lg:max-h-[280px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
-          className="transition-all duration-300 ease-in-out hover:scale-110 overflow-hidden max-h-[240px] md:max-h-[320px]"
+          style={{ width: "100vw", height: "auto" }}
+          className="object-cover transition-all duration-300 ease-in-out hover:scale-110 overflow-hidden max-h-[140px] xs:max-h-[180px] sm:max-h-[240px] lg:max-h-[280px]"
         />
       </div>
 
