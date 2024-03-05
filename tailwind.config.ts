@@ -23,7 +23,8 @@ const config: Config = {
       },
       screens: {
         xxs: "375px",
-        xs: "420px",
+        xs: "425px",
+        xsm: "496px",
       },
       colors: {
         primary: {

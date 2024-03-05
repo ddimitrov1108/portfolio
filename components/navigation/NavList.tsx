@@ -34,7 +34,7 @@ const NavList = ({ className, onLinkClick }: Props) => {
         className="flex items-center gap-2 bg-primary-main rounded-lg px-4 py-2 text-white"
       >
         Download CV
-        <ArrowDownToLine size={20} />
+        <ArrowDownToLine size={18} />
       </Link>
     </nav>
   );
