@@ -31,7 +31,7 @@ const NavList = ({ className, onLinkClick }: Props) => {
         target="_blank"
         download="CV-Daniel-Dimitrov"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 bg-primary-main rounded-lg px-4 py-2 text-white"
+        className="text-sm flex items-center gap-2 bg-primary-main rounded-lg px-4 py-2 text-white"
       >
         Download CV
         <ArrowDownToLine size={18} />

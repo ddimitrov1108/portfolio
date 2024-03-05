@@ -23,7 +23,7 @@ interface Props {
 const Project = ({ project }: Props) => {
   return (
     <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col lg:flex-row lg:even:flex-row-reverse">
-      <div className="z-30 w-full max-w-[700px] max-h-[127px] xxs:max-h-[154px] xs:max-h-[178px] xsm:max-h-[210px] sm:max-h-[260px] md:max-h-[300px] lg:max-h-[200px] xl:max-h-[280px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
+      <div className="z-30 w-full max-h-[127px] xxs:max-h-[154px] xs:max-h-[178px] xsm:max-h-[210px] sm:max-h-[260px] md:max-h-[300px] lg:max-h-[200px] xl:max-h-[280px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
@@ -31,7 +31,7 @@ const Project = ({ project }: Props) => {
           height={0}
           sizes="100vw"
           style={{ width: "100vw", height: "auto" }}
-          className="object-cover transition-all duration-500 ease-in-out hover:scale-110 overflow-hidden"
+          className="object-cover transition-all duration-500 ease-in-out hover:scale-110 overflow-hidden max-h-[127px] xxs:max-h-[154px] xs:max-h-[178px] xsm:max-h-[210px] sm:max-h-[260px] md:max-h-[300px] lg:max-h-[200px] xl:max-h-[280px]"
         />
       </div>
 
