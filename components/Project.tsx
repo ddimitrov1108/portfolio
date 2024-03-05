@@ -48,7 +48,7 @@ const Project = ({ project }: Props) => {
           <div className="flex items-center gap-3">
             <Link
               href={project.url}
-              className="text-primary-main font-semibold"
+              className="max-w-[240px] xxs:max-w-[280px] xs:max-w-[320px] xsm:max-w-none truncate ... text-primary-main font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
