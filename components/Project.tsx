@@ -7,10 +7,9 @@ import SvgIcon from "./ui/SvgIcon";
 interface Props {
   project: {
     id: string;
-    view: boolean;
-    showLink: boolean;
     img: string;
-    url: string;
+    url: string | null;
+    source: string | null;
     type: string;
     name: string;
     description: string;
@@ -23,8 +22,8 @@ interface Props {
 
 const Project = ({ project }: Props) => {
   return (
-    <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col md:flex-row md:even:flex-row-reverse">
-      <div className="z-30 w-full max-w-[700px] max-h-[140px] xs:max-h-[180px] sm:max-h-[240px] lg:max-h-[280px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
+    <div className="group flex items-center gap-y-8 gap-x-12 lg:gap-x-16 flex-col lg:flex-row lg:even:flex-row-reverse">
+      <div className="z-30 w-full max-w-[700px] max-h-[127px] xxs:max-h-[154px] xs:max-h-[178px] xsm:max-h-[210px] sm:max-h-[260px] md:max-h-[300px] lg:max-h-[200px] xl:max-h-[280px] rounded-lg overflow-hidden bg-transparent border-4 border-containerBg">
         <Image
           src={`/projects/${project.img}`}
           alt={project.img}
@@ -32,7 +31,7 @@ const Project = ({ project }: Props) => {
           height={0}
           sizes="100vw"
           style={{ width: "100vw", height: "auto" }}
-          className="object-cover transition-all duration-300 ease-in-out hover:scale-110 overflow-hidden max-h-[140px] xs:max-h-[180px] sm:max-h-[240px] lg:max-h-[280px]"
+          className="object-cover transition-all duration-500 ease-in-out hover:scale-110 overflow-hidden"
         />
       </div>
 
@@ -45,21 +44,21 @@ const Project = ({ project }: Props) => {
           {project.name}
         </HeaderText>
 
-        {project.showLink ? (
+        {project.url && (
           <div className="flex items-center gap-3">
             <Link
               href={project.url}
-              className="text-xl text-primary-main font-semibold"
+              className="text-primary-main font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
               {project.url}
             </Link>
-            <ExternalLink size={20} className="text-primary-main" />
+            <ExternalLink size={18} className="text-primary-main" />
           </div>
-        ) : null}
+        )}
 
-        <p className="">{project.description}</p>
+        <p>{project.description}</p>
 
         <div className="flex items-center flex-wrap gap-1">
           {project.technologies.map(({ id, src }) => (
@@ -71,17 +70,17 @@ const Project = ({ project }: Props) => {
           ))}
         </div>
 
-        {project.view && project.url ? (
+        {project.source && (
           <Link
-            href={project.url}
-            className="flex items-center gap-2 bg-primary-main rounded-lg w-fit px-4 py-2  text-white font-medium"
+            href={project.source}
+            className="text-sm flex items-center gap-2 bg-primary-main rounded-lg w-fit px-4 py-2 text-white font-medium"
             target="_blank"
             rel="noopener noreferrer"
           >
             View Project
-            <MoveRight size={20} className="text-white" />
+            <MoveRight size={18} className="text-white" />
           </Link>
-        ) : null}
+        )}
       </div>
     </div>
   );
