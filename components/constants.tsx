@@ -102,7 +102,6 @@ export const projects = [
         id: uuidv4(),
         src: "tailwindcss.svg",
       },
-      { id: uuidv4(), src: "nestjs.svg" },
       { id: uuidv4(), src: "prisma.svg" },
       { id: uuidv4(), src: "mysql.svg" },
     ],
