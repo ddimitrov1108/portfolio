@@ -27,7 +27,7 @@ const circleVariants = {
     width: "20%",
     height: "20%",
     opacity: 1,
-    transition: { duration: 1, delay: 0.8 },
+    transition: { duration: 1, delay: 0.6 },
   },
 };
 
@@ -36,7 +36,7 @@ const textVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, delay: 0.3 },
+    transition: { duration: 0.8, delay: 0.1 },
   },
 };
 
@@ -45,7 +45,7 @@ const iconsVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, delay: 0.5 },
+    transition: { duration: 0.8, delay: 0.3 },
   },
 };
 
@@ -53,7 +53,7 @@ const dotVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 1, delay: 1 },
+    transition: { duration: 1, delay: 0.8 },
   },
 };
 
