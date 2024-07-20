@@ -15,7 +15,7 @@ export const sendEmail = async (values: ContactFormValues) => {
       from: data.email,
       to: process.env.NODEMAILER_EMAIL,
       subject: `Message from ${data.fullName} - ${data.subject}`,
-      text: data.description,
+      text: `from: ${data.email}\n\n${data.description}`,
     });
   } catch (error) {
     console.error(error);
