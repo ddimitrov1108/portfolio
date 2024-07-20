@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="icon.svg" type="image/svg" sizes="64" />
+      </head>
+
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
