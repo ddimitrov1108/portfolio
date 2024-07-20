@@ -180,11 +180,11 @@ const ContactForm = (props: Props) => {
               <br />
               <Link
                 href="mailto:ddimitrov1108@gmail.com"
-                className="flex items-center gap-2 text-foreground"
                 title="Email Me"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                className="flex items-center gap-2 text-foreground"
+                >
                 <Mail size={18} />
                 Email Me
               </Link>

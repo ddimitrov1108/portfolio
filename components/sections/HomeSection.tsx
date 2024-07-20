@@ -102,6 +102,7 @@ const HomeSection = () => {
           <motion.div variants={dotVariants} initial="hidden" animate="visible">
             <Link
               href="/#about"
+              title="About Me"
               className="transition-all absolute bottom-6 left-1/2 -translate-x-1/2 mx-auto max-w-fit border py-2 px-0 rounded-full text-secondary-foreground border-secondary-foreground hover:border-foreground hover:text-foreground"
             >
               <Dot className="animate-bounce" />

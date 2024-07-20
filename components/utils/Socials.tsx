@@ -12,11 +12,11 @@ const Socials = ({ className, ...props }: React.ComponentProps<"div">) => {
         <Link
           key={name}
           href={href}
+          title={name}
+          aria-label={name}
           target="_blank"
           rel="noopener noreferrer"
           className="transition-colors text-secondary-foreground hover:text-foreground"
-          title={name}
-          aria-label={name}
         >
           {icon}
         </Link>
