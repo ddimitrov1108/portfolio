@@ -131,8 +131,11 @@ const ContactForm = (props: Props) => {
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger disabled={isFormDisabled}>
-                      <SelectValue placeholder="Select a subject" />
+                    <SelectTrigger
+                      title="Select subject"
+                      disabled={isFormDisabled}
+                    >
+                      <SelectValue placeholder="Select subject" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -184,7 +187,7 @@ const ContactForm = (props: Props) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-foreground"
-                >
+              >
                 <Mail size={18} />
                 Email Me
               </Link>
