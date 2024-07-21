@@ -86,10 +86,10 @@
     right: 0;
     bottom: 0;
     background-image:
-      -webkit-linear-gradient(#a1a1a10d 1px, transparent 1px),
-      -webkit-linear-gradient(90deg, #a1a1a10d 1px, transparent 1px),
-      linear-gradient(#a1a1a10d 1px, transparent 1px),
-      linear-gradient(90deg, #a1a1a10d 1px, transparent 1px);
+      -webkit-linear-gradient(#a1a1a11a 1px, transparent 1px),
+      -webkit-linear-gradient(90deg, #a1a1a11a 1px, transparent 1px),
+      linear-gradient(#a1a1a11a 1px, transparent 1px),
+      linear-gradient(90deg, #a1a1a11a 1px, transparent 1px);
     background-size: 4.2em 4.2em;
 
     -webkit-mask-image: -webkit-radial-gradient(ellipse at center, black 0%, transparent 70%);
