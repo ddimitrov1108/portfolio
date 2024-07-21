@@ -85,7 +85,7 @@ const HomeSection = () => {
         >
           <h1 className="text-white text-lg xxs:text-[20px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-snug">
             Turning Your Vision into Reality,
-            <br /> The Front-end Odyssey
+            <br /> The Front-End Odyssey
           </h1>
 
           <motion.div variants={textVariants}>
