@@ -80,7 +80,7 @@ const AboutSection = () => {
             alt="avatar.jpg"
             width={500}
             height={500}
-            className="w-[55%] xs:!w-[50%] sm:!w-[40%] lg:!w-[70%]"
+            className="w-[55%] xxs:!w-[60%] xs:!w-[60%] md:!w-[70%]"
           />
         </motion.div>
 
