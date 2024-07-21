@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 6%;
+    --background: 0 0% 10%;
     --foreground: 210 40% 96%;
     --card: 0 0% 6%;
     --card-foreground: 210 40% 96%;
@@ -13,7 +13,7 @@
     --primary: 204 100% 45%;
     --primary-foreground: 210 40% 96%;
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 218 11% 65%;
+    --secondary-foreground: 220 10% 72%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 217.2 32.6% 17.5%;
@@ -55,7 +55,7 @@
 
   body::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #242424;
+    background-color: #a1a1a11a;
   }
 
   textarea::-webkit-scrollbar-track {
@@ -68,7 +68,7 @@
 
   textarea::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #242424;
+    background-color: #a1a1a11a;
   }
 
 }
@@ -82,14 +82,14 @@
     content: '';
     position: absolute;
     top: -35px;
-    left: 0px;
+    left: -6px;
     right: 0;
     bottom: 0;
     background-image:
-      -webkit-linear-gradient(#242424d9 1px, transparent 1px),
-      -webkit-linear-gradient(90deg, #242424d9 1px, transparent 1px),
-      linear-gradient(#242424d9 1px, transparent 1px),
-      linear-gradient(90deg, #242424d9 1px, transparent 1px);
+      -webkit-linear-gradient(#a1a1a10d 1px, transparent 1px),
+      -webkit-linear-gradient(90deg, #a1a1a10d 1px, transparent 1px),
+      linear-gradient(#a1a1a10d 1px, transparent 1px),
+      linear-gradient(90deg, #a1a1a10d 1px, transparent 1px);
     background-size: 4.2em 4.2em;
 
     -webkit-mask-image: -webkit-radial-gradient(ellipse at center, black 0%, transparent 70%);
@@ -109,5 +109,4 @@
   box-shadow: 0 0 50px 20px #ffffff99;
   z-index: -10;
   filter: blur(100px);
-
 }
