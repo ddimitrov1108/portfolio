@@ -39,14 +39,14 @@ const AboutSection = () => {
     <Container id="about">
       <Title title="Get to know me" />
 
-      <div className="grid !grid-cols-2 lg:!grid-cols-7 gap-y-4 lg:gap-x-4 text-secondary-foreground">
+      <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-secondary-foreground">
         <motion.div
           variants={fromLeftVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className={cn(
-            "col-span-2 lg:col-span-5 order-2 lg:order-1",
+            "col-span-2 lg:col-span-7 order-2 lg:order-1",
             gridColumnClassName
           )}
         >
@@ -80,7 +80,7 @@ const AboutSection = () => {
             alt="avatar.jpg"
             width={500}
             height={500}
-            className="w-[55%] xs:!w-[50%] lg:!w-[55%]"
+            className="w-[55%] xs:!w-[50%] sm:!w-[40%] lg:!w-[70%]"
           />
         </motion.div>
 
@@ -90,11 +90,20 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromLeftVariants}
           className={cn(
-            "text-center grid items-center space-y-2 col-span-1 order-4 mr-2 lg:mr-0",
+            "text-center grid items-center space-y-2 col-span-1 lg:col-span-2 order-4 mr-2 lg:mr-0",
             gridColumnClassName
           )}
         >
-          <ProjectCounter title="Freelance projects" count={2} />
+          <ProjectCounter
+            title={
+              <>
+                Freelance
+                <br />
+                Projects
+              </>
+            }
+            count={2}
+          />
         </motion.div>
         <motion.div
           initial="hidden"
@@ -102,11 +111,20 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromLeftVariants}
           className={cn(
-            "text-center grid items-center space-y-2 col-span-1 order-4 ml-2 lg:ml-0",
+            "text-center grid items-center col-span-1 lg:col-span-2 order-4 ml-2 lg:ml-0",
             gridColumnClassName
           )}
         >
-          <ProjectCounter title="Completed projects" count={7} />
+          <ProjectCounter
+            title={
+              <>
+                Completed
+                <br />
+                Projects
+              </>
+            }
+            count={7}
+          />
         </motion.div>
 
         <motion.div
@@ -115,17 +133,18 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromRightVariants}
           className={cn(
-            "grid col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
+            "grid  space-y-4 col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
             gridColumnClassName
           )}
         >
-          <p className="py-2">
+          <p>
             Front-End developer passionate about creating intuitive engaging and
-            visually appealing web experiences. Eager to collaborate on
-            challenging projects that push the boundaries of frontend
-            technology. Experienced in building scalable, responsive, and
-            accessible user interfaces. Adept at problem-solving and finding
-            creative solutions to complex technical challenges.
+            visually appealing web experiences. 
+          </p>
+
+          <p>
+          Experienced in building
+          scalable responsive and accessible user interfaces.
           </p>
         </motion.div>
         <motion.div
@@ -134,7 +153,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromLeftVariants}
           className={cn(
-            "grid items-center justify-center col-span-2 lg:col-span-1 order-5 lg:order-6",
+            "min-h-[168px] sm:min-h-[152px] lg:min-h-[160px] xl:min-h-[204px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
             gridColumnClassName
           )}
         >
@@ -157,11 +176,11 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromRightVariants}
           className={cn(
-            "space-y-6 col-span-2 lg:col-span-6 order-7",
+            "space-y-8 col-span-2 lg:col-span-7 order-7",
             gridColumnClassName
           )}
         >
-          <h1 className="text-foreground font-semibold text-center">
+          <h1 className="text-secondary-foreground font-medium text-center">
             My Tech Stack
           </h1>
           <TechStackCarousel />

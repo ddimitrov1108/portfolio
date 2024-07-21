@@ -48,7 +48,7 @@ const Title = ({
       {description ? (
         <p
           className={cn(
-            "text-base xs:text-lg text-secondary-foreground font-semibold",
+            "text-base xs:text-lg text-secondary-foreground font-medium",
             descriptionClassName
           )}
         >

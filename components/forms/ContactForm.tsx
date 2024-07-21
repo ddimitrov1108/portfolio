@@ -36,8 +36,7 @@ const formVariants = {
   },
 };
 
-interface Props {}
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -192,6 +191,7 @@ const ContactForm = (props: Props) => {
                 Email Me
               </Link>
             </p>
+            
             <Button
               type="submit"
               variant="default"

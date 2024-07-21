@@ -22,6 +22,7 @@ const ContactSection = () => {
         variants={circleVariants}
         initial="hidden"
         animate="visible"
+        viewport={{ once: true }}
         className="circle-glow !backdrop-blur-2xl mt-12"
       />
 
