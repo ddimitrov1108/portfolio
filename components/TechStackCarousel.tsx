@@ -15,7 +15,7 @@ const TechStackCarousel = () => {
         {techStackIcons.map((icon) => (
           <CarouselItem
             key={icon}
-            className="grid items-center justify-center basis-1/3 xs:basis-1/4 md:basis-[15%] lg:basis-[12.5%]"
+            className="grid items-center justify-center basis-[90.66px]"
           >
             <Image
               src={`/tech/${icon}`}
