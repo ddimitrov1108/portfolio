@@ -7,7 +7,7 @@ import TechStackCarousel from "../TechStackCarousel";
 import Avatar from "../utils/Avatar";
 import Title from "../utils/Title";
 import Container from "../utils/Container";
-import ProjectCounter from "../utils/ProjectCounter";
+import ProjectCounter from "../ProjectCounter";
 import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
 
