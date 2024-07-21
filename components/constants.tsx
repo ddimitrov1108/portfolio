@@ -34,8 +34,6 @@ export const techStackIcons = [
   "tailwindcss.svg",
   "shadcnui.svg",
   "headlessui.svg",
-  "bootstrap.svg",
-  "materialui.svg",
   "scss.svg",
   "supabase.svg",
   "prisma.svg",
