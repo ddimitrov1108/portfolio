@@ -90,8 +90,9 @@ const HomeSection = () => {
 
           <motion.div variants={textVariants}>
             <p className="mx-auto max-w-md text-secondary-foreground text-sm xs:text-base">
-              A passionate software engineer from Bulgaria crafting cutting-edge
-              user-centric web experiences that push front-end boundaries.
+              A passionate software engineer from Bulgaria, crafting
+              cutting-edge, user-centric web experiences that push front-end
+              boundaries.
             </p>
           </motion.div>
 

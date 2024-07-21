@@ -54,15 +54,15 @@ const AboutSection = () => {
             <p>Im Daniel,</p>
 
             <p>
-              As a seasoned Front-End Developer I blend expertise in building
+              As a seasoned Front-End Developer, I blend expertise in building
               robust web applications with a strong foundation in web
-              technologies and UI/UX principles creating visually appealing and
+              technologies and UI/UX principles, creating visually appealing and
               user-friendly interfaces.
             </p>
 
             <p>
               With a strong foundation in computer science and a keen eye on
-              ui/ux design principles I bring a holistic approach to each
+              UI/UX design principles, I bring a holistic approach to each
               project.
             </p>
           </div>
@@ -138,13 +138,13 @@ const AboutSection = () => {
           )}
         >
           <p>
-            Front-End developer passionate about creating intuitive engaging and
-            visually appealing web experiences. 
+            Front-End developer passionate about creating intuitive, engaging,
+            and visually appealing web experiences.
           </p>
 
           <p>
-          Experienced in building
-          scalable responsive and accessible user interfaces.
+            Experienced in building scalable, responsive, and accessible user
+            interfaces.
           </p>
         </motion.div>
         <motion.div
