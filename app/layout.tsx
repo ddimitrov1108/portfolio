@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 import Header from "@/components/navigation/Header";
+import Footer from "@/components/navigation/Footer";
 import Toaster from "@/components/ui/sonner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -37,6 +38,8 @@ export default function RootLayout({
         <Header />
         <Toaster position="bottom-left" />
         {children}
+
+        <Footer />
 
         <SpeedInsights />
       </body>
