@@ -1,6 +1,5 @@
 "use client";
 
-import { easeInOut, motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -27,14 +26,6 @@ import { Mail } from "lucide-react";
 import { toast } from "sonner";
 import DOMPurify from "dompurify";
 
-const formVariants = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: 0.9, easeInOut },
-  },
-};
 
 const ContactForm = () => {
   const form = useForm<ContactFormValues>({
@@ -68,13 +59,7 @@ const ContactForm = () => {
   const onSubmitHandler = form.handleSubmit(onSubmit);
 
   return (
-    <motion.div
-      variants={formVariants}
-      initial="hidden"
-      animate="visible"
-      viewport={{ once: true }}
-    >
-      <Form {...form}>
+    <Form {...form}>
         <form
           onSubmit={onSubmitHandler}
           className="!bg-opacity-100 p-4 py-8 sm:p-6 xl:p-10 rounded-md bg-background/95 border border-secondary-foreground/10 max-w-screen-sm space-y-4"
@@ -191,7 +176,7 @@ const ContactForm = () => {
                 Email Me
               </Link>
             </p>
-            
+
             <Button
               type="submit"
               variant="default"
@@ -204,8 +189,7 @@ const ContactForm = () => {
             </Button>
           </div>
         </form>
-      </Form>
-    </motion.div>
+    </Form>
   );
 };
 export default ContactForm;
