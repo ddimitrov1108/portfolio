@@ -5,7 +5,7 @@ import Link from "next/link";
 const Socials = ({ className, ...props }: React.ComponentProps<"div">) => {
   return (
     <div
-      className={cn("flex items-center gap-6 justify-center", className)}
+      className={cn("flex items-center gap-4 justify-center", className)}
       {...props}
     >
       {socialProviders.map(({ name, href, icon }) => (
