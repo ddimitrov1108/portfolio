@@ -138,13 +138,14 @@ const AboutSection = () => {
           )}
         >
           <p>
-            Front-End developer passionate about creating intuitive, engaging,
-            and visually appealing web experiences.
+            Front-End Developer with a disciplined approach to creativity,
+            dedicated to building dynamic web experiences that leave a lasting
+            impression.
           </p>
-
           <p>
-            Experienced in building scalable, responsive, and accessible user
-            interfaces.
+            Expert in crafting intuitive, responsive, and accessible user
+            interfaces that prioritize user engagement, innovation, and
+            adaptability.
           </p>
         </motion.div>
         <motion.div
@@ -153,7 +154,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromLeftVariants}
           className={cn(
-            "min-h-[168px] sm:min-h-[152px] lg:min-h-[160px] xl:min-h-[204px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
+            "min-h-[168px] sm:min-h-[152px] lg:min-h-[208px] xl:min-h-[204px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
             gridColumnClassName
           )}
         >

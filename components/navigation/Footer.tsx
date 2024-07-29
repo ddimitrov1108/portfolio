@@ -1,11 +1,12 @@
 import Socials from "../utils/Socials";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="flex flex-col-reverse gap-y-8 items-center justify-between lg:flex-row text-sm text-secondary-foreground container py-8">
+    <footer className="container py-6 flex flex-col-reverse gap-y-8 items-center justify-between lg:flex-row text-sm text-secondary-foreground">
       <span className="text-center">
-        Copyright &copy; {new Date().getFullYear()} DimitrovDEV. All rights
-        reserved.
+        Copyright &copy; {year} DimitrovDEV. All rights reserved.
       </span>
       <Socials />
     </footer>

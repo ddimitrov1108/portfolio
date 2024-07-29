@@ -11,17 +11,17 @@ export const socialProviders = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/daniel-dimitrov-94593a180/",
-    icon: <Linkedin size={30} strokeWidth={1.5} />,
+    icon: <Linkedin size={28} strokeWidth={1.5} />,
   },
   {
     name: "Github",
     href: "https://github.com/ddimitrov1108",
-    icon: <Github size={30} strokeWidth={1.5} />,
+    icon: <Github size={28} strokeWidth={1.5} />,
   },
   {
     name: "Telegram",
     href: "https://t.me/@d_dimitrov",
-    icon: <Send size={30} strokeWidth={1.5} />,
+    icon: <Send size={28} strokeWidth={1.5} />,
   },
 ];
 
