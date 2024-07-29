@@ -10,6 +10,7 @@ import {
 import Logo from "../utils/Logo";
 import NavLink from "./components/NavLink";
 import { headerNavLinks } from "../constants";
+import Socials from "../utils/Socials";
 
 const NavigationSheet = () => {
   return (

@@ -3,7 +3,7 @@ interface Props {
   title: React.ReactNode;
 }
 
-const ProjectCounter = ({ count, title }: Props) => {
+const Counter = ({ count, title }: Props) => {
   return (
     <div className="space-y-2">
       <h1 className="text-foreground text-5xl xl:text-6xl font-bold">{count}</h1>
@@ -11,4 +11,4 @@ const ProjectCounter = ({ count, title }: Props) => {
     </div>
   );
 };
-export default ProjectCounter;
+export default Counter;

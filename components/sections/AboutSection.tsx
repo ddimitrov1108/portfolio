@@ -7,7 +7,7 @@ import TechStackCarousel from "../TechStackCarousel";
 import Avatar from "../utils/Avatar";
 import Title from "../utils/Title";
 import Container from "../utils/Container";
-import ProjectCounter from "../ProjectCounter";
+import Counter from "../utils/Counter";
 import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
 
@@ -94,7 +94,7 @@ const AboutSection = () => {
             gridColumnClassName
           )}
         >
-          <ProjectCounter
+          <Counter
             title={
               <>
                 Freelance
@@ -115,7 +115,7 @@ const AboutSection = () => {
             gridColumnClassName
           )}
         >
-          <ProjectCounter
+          <Counter
             title={
               <>
                 Completed
