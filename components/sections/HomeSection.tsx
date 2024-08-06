@@ -5,7 +5,7 @@ import { Dot } from "lucide-react";
 import { motion } from "framer-motion";
 import Socials from "../utils/Socials";
 import Avatar from "../utils/Avatar";
-import Container from "../utils/Container";
+import Section from "../utils/Section";
 
 const avatarVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -59,7 +59,7 @@ const dotVariants = {
 
 const HomeSection = () => {
   return (
-    <Container id="#" className="bg-grid min-h-screen items-center">
+    <Section id="#" className="bg-grid min-h-screen items-center">
       <motion.div
         variants={circleVariants}
         initial="hidden"
@@ -111,7 +111,7 @@ const HomeSection = () => {
           </motion.div>
         </motion.div>
       </div>
-    </Container>
+    </Section>
   );
 };
 

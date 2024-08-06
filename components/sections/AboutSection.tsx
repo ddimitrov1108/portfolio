@@ -6,7 +6,7 @@ import Link from "next/link";
 import TechStackCarousel from "../TechStackCarousel";
 import Avatar from "../utils/Avatar";
 import Title from "../utils/Title";
-import Container from "../utils/Container";
+import Section from "../utils/Section";
 import Counter from "../utils/Counter";
 import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
@@ -36,7 +36,7 @@ const fromLeftVariants = {
 
 const AboutSection = () => {
   return (
-    <Container id="about">
+    <Section id="about">
       <Title title="Get to know me" />
 
       <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-secondary-foreground">
@@ -187,7 +187,7 @@ const AboutSection = () => {
           <TechStackCarousel />
         </motion.div>
       </div>
-    </Container>
+    </Section>
   );
 };
 export default AboutSection;

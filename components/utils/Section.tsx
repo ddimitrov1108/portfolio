@@ -1,13 +1,12 @@
 import { cn } from "@/lib/utils";
 
-const Container = ({
+const Section = ({
   className,
   children,
   ...props
 }: React.ComponentProps<"section">) => {
   return (
     <section
-      id="contact"
       className={cn("container grid space-y-16 py-24", className)}
       {...props}
     >
@@ -15,4 +14,4 @@ const Container = ({
     </section>
   );
 };
-export default Container;
+export default Section;

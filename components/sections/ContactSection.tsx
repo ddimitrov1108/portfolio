@@ -1,7 +1,7 @@
 "use client";
 
 import ContactForm from "../forms/ContactForm";
-import Container from "../utils/Container";
+import Section from "../utils/Section";
 import Title from "../utils/Title";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ const circleVariants = {
 
 const ContactSection = () => {
   return (
-    <Container id="contact" className="bg-grid min-h-screen items-center pb-44">
+    <Section id="contact" className="bg-grid min-h-screen items-center pb-44">
       <motion.div
         variants={circleVariants}
         initial="hidden"
@@ -33,7 +33,7 @@ const ContactSection = () => {
         />
         <ContactForm />
       </div>
-    </Container>
+    </Section>
   );
 };
 export default ContactSection;
