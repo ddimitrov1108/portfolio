@@ -178,7 +178,7 @@ const ContactForm = () => {
             type="submit"
             variant="default"
             size="lg"
-            className="w-full lg:w-fit"
+            className="bg-white hover:bg-white/90 !ring-white text-black w-full lg:w-fit"
             disabled={isFormDisabled}
             loading={isFormDisabled}
           >
