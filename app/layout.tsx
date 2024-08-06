@@ -6,7 +6,6 @@ import "./globals.css";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import Toaster from "@/components/ui/sonner";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -40,8 +39,6 @@ export default function RootLayout({
         {children}
 
         <Footer />
-
-        <SpeedInsights />
       </body>
     </html>
   );
