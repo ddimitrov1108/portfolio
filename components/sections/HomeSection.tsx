@@ -85,7 +85,7 @@ const HomeSection = () => {
           animate="visible"
         >
           <Title
-            titleClassName="text-lg xxs:text-[20px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-snug"
+            titleClassName="text-lg xxs:text-[20px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center !leading-tight"
             title={
               <>
                 Turning Your Vision into Reality,
