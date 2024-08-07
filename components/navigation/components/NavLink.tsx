@@ -9,7 +9,7 @@ const NavLink = ({
   return (
     <Link
       className={cn(
-        "capitalize text-center transition-all text-secondary-foreground hover:text-foreground",
+        "capitalize text-center transition-all text-muted-foreground hover:text-foreground",
         className
       )}
       {...props}

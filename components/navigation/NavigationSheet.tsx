@@ -10,21 +10,25 @@ import {
 import Logo from "../utils/Logo";
 import NavLink from "./components/NavLink";
 import { headerNavLinks } from "../constants";
-import Socials from "../utils/Socials";
+import ThemeSwitch from "../ThemeSwitch";
 
 const NavigationSheet = () => {
   return (
     <Sheet>
-      <SheetTrigger className="lg:hidden" asChild>
-        <button
-          className="group lg:hidden flex flex-col items-end gap-1.5 w-[22px]"
-          title="Open navigation"
-        >
-          <div className="transition-all w-full h-[2px] rounded-full bg-secondary-foreground group-hover:bg-foreground group-hover:w-[80%]"></div>
-          <div className="transition-all w-[60%] h-[2px] rounded-full bg-secondary-foreground ml-1.5 group-hover:bg-foreground group-hover:w-full"></div>
-          <div className="transition-all w-[80%] h-[2px] rounded-full bg-secondary-foreground group-hover:bg-foreground group-hover:w-[60%]"></div>
-        </button>
-      </SheetTrigger>
+      <div className="flex items-center gap-4 lg:hidden"> 
+        <ThemeSwitch />
+        <SheetTrigger asChild>
+          <button
+            className="group lg:hidden flex flex-col items-end gap-1.5 w-[22px]"
+            title="Open navigation"
+          >
+            <div className="transition-all w-full h-[2px] rounded-full bg-muted-foreground group-hover:bg-foreground group-hover:w-[80%]"></div>
+            <div className="transition-all w-[60%] h-[2px] rounded-full bg-muted-foreground ml-1.5 group-hover:bg-foreground group-hover:w-full"></div>
+            <div className="transition-all w-[80%] h-[2px] rounded-full bg-muted-foreground group-hover:bg-foreground group-hover:w-[60%]"></div>
+          </button>
+        </SheetTrigger>
+      </div>
+
       <SheetContent
         overlayClassName="lg:hidden"
         className="lg:!hidden transition-all bg-background w-full"

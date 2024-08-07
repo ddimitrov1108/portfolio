@@ -119,7 +119,7 @@ const SheetTitle = React.forwardRef<
   >
     {children}
 
-    <SheetPrimitive.Close className="transition-all text-secondary-foreground hover:text-foreground">
+    <SheetPrimitive.Close className="transition-all text-muted-foreground hover:text-foreground">
       <X />
       <span className="sr-only">Close</span>
     </SheetPrimitive.Close>

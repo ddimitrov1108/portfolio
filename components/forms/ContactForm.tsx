@@ -61,7 +61,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={onSubmitHandler}
-        className="!bg-opacity-100 p-4 py-8 sm:p-6 xl:p-10 rounded-md bg-background/95 border border-secondary-foreground/10 max-w-screen-sm space-y-4"
+        className="!bg-opacity-100 p-4 py-8 sm:p-6 xl:p-10 rounded-md bg-background border border-input max-w-screen-sm space-y-4"
       >
         <div className="flex flex-col gap-y-4 lg:flex-row items-center gap-x-4 justify-between">
           <FormField
@@ -159,7 +159,7 @@ const ContactForm = () => {
         />
 
         <div className="!mt-8 flex flex-col-reverse gap-y-8 lg:items-center lg:flex-row lg:justify-between">
-          <p className="text-left text-sm text-secondary-foreground">
+          <p className="text-left text-sm text-foreground">
             Hate Contact Forms?
             <br />
             <Link
@@ -167,7 +167,7 @@ const ContactForm = () => {
               title="Email Me"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-foreground"
+              className="flex items-center gap-2 text-muted-foreground"
             >
               <Mail size={18} />
               Email Me
@@ -178,7 +178,7 @@ const ContactForm = () => {
             type="submit"
             variant="default"
             size="lg"
-            className="bg-white hover:bg-white/90 !ring-white text-black w-full lg:w-fit"
+            className="w-full lg:w-fit"
             disabled={isFormDisabled}
             loading={isFormDisabled}
           >

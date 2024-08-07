@@ -16,7 +16,7 @@ const Socials = ({ className, ...props }: React.ComponentProps<"div">) => {
           aria-label={name}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-colors text-secondary-foreground hover:text-foreground"
+          className="transition-colors text-muted-foreground hover:text-foreground"
         >
           {icon}
         </Link>

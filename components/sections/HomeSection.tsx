@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Socials from "../utils/Socials";
 import Avatar from "../utils/Avatar";
 import Section from "../utils/Section";
+import Title from "../utils/Title";
 
 const avatarVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -83,13 +84,18 @@ const HomeSection = () => {
           initial="hidden"
           animate="visible"
         >
-          <h1 className="text-white text-lg xxs:text-[20px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-snug">
-            Turning Your Vision into Reality,
-            <br /> The Front-End Odyssey
-          </h1>
+          <Title
+            titleClassName="text-lg xxs:text-[20px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-snug"
+            title={
+              <>
+                Turning Your Vision into Reality,
+                <br /> The Front-End Odyssey
+              </>
+            }
+          />
 
           <motion.div variants={textVariants}>
-            <p className="mx-auto max-w-md text-secondary-foreground text-sm xs:text-base">
+            <p className="mx-auto max-w-md text-muted-foreground text-sm xs:text-base">
               A passionate software engineer from Bulgaria, crafting
               cutting-edge, user-centric web experiences that push front-end
               boundaries.
@@ -104,7 +110,7 @@ const HomeSection = () => {
             <Link
               href="/#about"
               title="About Me"
-              className="transition-all absolute bottom-6 left-1/2 -translate-x-1/2 mx-auto max-w-fit border py-2 px-0 rounded-full text-secondary-foreground border-secondary-foreground hover:border-foreground hover:text-foreground"
+              className="transition-all absolute bottom-6 left-1/2 -translate-x-1/2 mx-auto max-w-fit border py-2 px-0 rounded-full text-muted-foreground border-secondary-foreground hover:border-foreground hover:text-foreground"
             >
               <Dot className="animate-bounce" />
             </Link>

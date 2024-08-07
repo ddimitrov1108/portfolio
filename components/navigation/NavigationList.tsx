@@ -1,5 +1,6 @@
 import NavLink from "./components/NavLink";
 import { headerNavLinks } from "../constants";
+import ThemeSwitch from "../ThemeSwitch";
 
 const NavigationList = () => {
   return (
@@ -9,6 +10,8 @@ const NavigationList = () => {
           {name}
         </NavLink>
       ))}
+
+      <ThemeSwitch />
     </nav>
   );
 };

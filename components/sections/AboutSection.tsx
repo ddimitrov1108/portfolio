@@ -39,7 +39,7 @@ const AboutSection = () => {
     <Section id="about">
       <Title title="Get to know me" />
 
-      <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-secondary-foreground">
+      <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-foreground">
         <motion.div
           variants={fromLeftVariants}
           initial="hidden"
@@ -167,7 +167,7 @@ const AboutSection = () => {
           >
             <Github
               strokeWidth={1}
-              className="text-secondary-foreground hover:text-foreground transition-all w-[64px] h-[64px] xs:w-[86px] xs:h-[86px]"
+              className="text-muted-foreground hover:text-foreground transition-all w-[64px] h-[64px] xs:w-[86px] xs:h-[86px]"
             />
           </Link>
         </motion.div>
@@ -181,7 +181,7 @@ const AboutSection = () => {
             gridColumnClassName
           )}
         >
-          <h1 className="text-secondary-foreground font-medium text-center">
+          <h1 className="text-muted-foreground font-medium text-center">
             My Tech Stack
           </h1>
           <TechStackCarousel />
