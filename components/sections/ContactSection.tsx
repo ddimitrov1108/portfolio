@@ -26,7 +26,7 @@ const ContactSection = () => {
         className="circle-glow !backdrop-blur-2xl mt-12"
       />
 
-      <div className="grid items-center justify-center z-10 space-y-16">
+      <div className="grid items-center justify-center z-10 space-y-[4.5rem]">
         <Title
           title="Contact me"
           description="Dont hesitate to let me hear from you!"

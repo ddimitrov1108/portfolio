@@ -12,7 +12,7 @@ const Avatar = ({
       src={src}
       alt={alt}
       className={cn(
-        "mx-auto rounded-full overflow-hidden border-2 border-background/20 bg-background w-[120px] sm:w-[140px]",
+        "mx-auto rounded-full overflow-hidden border-2 border-bg-grid bg-background w-[120px] sm:w-[140px]",
         className
       )}
       priority
