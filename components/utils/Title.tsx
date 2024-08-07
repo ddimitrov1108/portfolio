@@ -2,14 +2,12 @@
 
 import { cn } from "@/lib/utils";
 import { easeInOut, motion } from "framer-motion";
-import React from "react";
 
-interface Props {
+interface Props extends Omit<React.ComponentProps<typeof motion.div>, "title"> {
   title: React.ReactNode;
   description?: React.ReactNode;
   titleClassName?: string;
   descriptionClassName?: string;
-  className?: string;
 }
 
 const titleAnimation = {
