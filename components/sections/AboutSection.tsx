@@ -12,7 +12,7 @@ import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
 
 const gridColumnClassName = cn(
-  "bg-secondary-foreground/5 rounded-md p-4 py-8",
+  "bg-secondary-foreground/5 rounded-lg p-4 py-8",
   "sm:p-6 xl:p-10"
 );
 
@@ -73,7 +73,7 @@ const AboutSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fromRightAnimation}
-          className="grid items-center justify-center col-span-2 bg-transparent lg:bg-secondary-foreground/5 order-1 lg:order-2 rounded-md"
+          className="grid items-center justify-center col-span-2 bg-transparent lg:bg-secondary-foreground/5 order-1 lg:order-2 rounded-lg"
         >
           <Avatar
             src="/me/avatar.jpg"

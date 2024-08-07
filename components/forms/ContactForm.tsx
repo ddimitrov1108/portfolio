@@ -61,7 +61,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={onSubmitHandler}
-        className="!bg-opacity-100 p-4 py-8 sm:p-6 xl:p-10 rounded-md bg-background border border-input max-w-[600px] space-y-4"
+        className="!bg-opacity-100 p-4 py-8 sm:p-6 xl:p-10 rounded-lg bg-background border border-input max-w-[600px] space-y-4"
       >
         <div className="flex flex-col gap-y-4 lg:flex-row items-center gap-x-4 justify-between">
           <FormField
