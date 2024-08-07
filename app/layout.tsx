@@ -5,6 +5,7 @@ import "./globals.css";
 
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
+import RootProviders from "./providers";
 import Toaster from "@/components/ui/sonner";
 
 const fontSans = FontSans({
@@ -34,11 +35,14 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Header />
-        <Toaster position="bottom-left" />
-        {children}
+        <RootProviders>
+          <Header />
+          <Toaster position="bottom-left" />
 
-        <Footer />
+          {children}
+          
+          <Footer />
+        </RootProviders>
       </body>
     </html>
   );
