@@ -33,7 +33,7 @@ const Title = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={cn("text-center grid gap-4", className)}
+      className={cn("text-center grid gap-2", className)}
       {...props}
     >
       <h1

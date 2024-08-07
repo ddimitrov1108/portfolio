@@ -30,8 +30,8 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --circle-bg: #7ca1f3;
-    --bg-grid: #a1a1a114;
+    --circle-bg: #92b1f5;
+    --bg-grid: #a1a1a11f;
   }
 
   .dark {
@@ -60,7 +60,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
     --circle-bg: #2563eb;
-    --bg-grid: #a1a1a114;
+    --bg-grid: #a1a1a11a;
   }
 }
 
@@ -88,7 +88,7 @@
 
   body::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: hsl(var(--secondary));
+    background-color: hsla(var(--border));
   }
 
   textarea::-webkit-scrollbar-track {
@@ -101,7 +101,7 @@
 
   textarea::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: hsl(var(--secondary));
+    background-color: hsla(var(--border));
   }
 
 }
@@ -125,8 +125,8 @@
       linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
     background-size: 4.2em 4.2em;
 
-    -webkit-mask-image: -webkit-radial-gradient(ellipse at center, black 0%, transparent 85%);
-    mask-image: radial-gradient(ellipse at center, black 0%, transparent 85%);
+    -webkit-mask-image: -webkit-radial-gradient(ellipse at center, black 0%, transparent 80%);
+    mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);
   }
 }
 
