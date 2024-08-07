@@ -16,7 +16,7 @@ const ThemeSwitch = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground hover:!bg-background">
+        <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground hover:!bg-transparent">
           <Sun strokeWidth={1.5} size={24} className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon strokeWidth={1.5} size={24} className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
