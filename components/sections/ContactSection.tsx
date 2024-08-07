@@ -5,7 +5,7 @@ import Section from "../utils/Section";
 import Title from "../utils/Title";
 import { motion } from "framer-motion";
 
-const circleVariants = {
+const circleAnimation = {
   hidden: { width: 0, height: 0, opacity: 0 },
   visible: {
     width: "30%",
@@ -19,7 +19,7 @@ const ContactSection = () => {
   return (
     <Section id="contact" className="bg-grid min-h-screen items-center pb-44">
       <motion.div
-        variants={circleVariants}
+        variants={circleAnimation}
         initial="hidden"
         animate="visible"
         viewport={{ once: true }}

@@ -2,13 +2,24 @@
 
 import { cn } from "@/lib/utils";
 import { easeInOut, motion } from "framer-motion";
+import React from "react";
 
-interface Props extends React.ComponentProps<typeof motion.div> {
+interface Props {
   title: React.ReactNode;
   description?: React.ReactNode;
   titleClassName?: string;
   descriptionClassName?: string;
+  className?: string;
 }
+
+const titleAnimation = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: 0.1, easeInOut },
+  },
+};
 
 const Title = ({
   title,
@@ -18,18 +29,9 @@ const Title = ({
   descriptionClassName,
   ...props
 }: Props) => {
-  const headerVariants = {
-    hidden: { opacity: 0, y: 25 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, delay: 0.1, easeInOut },
-    },
-  };
-
   return (
     <motion.div
-      variants={headerVariants}
+      variants={titleAnimation}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

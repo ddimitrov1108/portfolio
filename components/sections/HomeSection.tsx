@@ -13,7 +13,7 @@ const avatarVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-const headerVariants = {
+const headerAnimation = {
   hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
@@ -22,7 +22,7 @@ const headerVariants = {
   },
 };
 
-const circleVariants = {
+const circleAnimation = {
   hidden: { width: 0, height: 0, opacity: 0 },
   visible: {
     width: "20%",
@@ -32,7 +32,7 @@ const circleVariants = {
   },
 };
 
-const textVariants = {
+const textAnimation = {
   hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
@@ -41,7 +41,7 @@ const textVariants = {
   },
 };
 
-const iconsVariants = {
+const iconsAnimation = {
   hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
@@ -50,7 +50,7 @@ const iconsVariants = {
   },
 };
 
-const dotVariants = {
+const dotAnimation = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -62,7 +62,7 @@ const HomeSection = () => {
   return (
     <Section id="#" className="bg-grid min-h-screen items-center">
       <motion.div
-        variants={circleVariants}
+        variants={circleAnimation}
         initial="hidden"
         animate="visible"
         className="circle-glow !backdrop-blur-2xl"
@@ -80,7 +80,7 @@ const HomeSection = () => {
 
         <motion.div
           className="grid gap-8"
-          variants={headerVariants}
+          variants={headerAnimation}
           initial="hidden"
           animate="visible"
         >
@@ -94,7 +94,7 @@ const HomeSection = () => {
             }
           />
 
-          <motion.div variants={textVariants}>
+          <motion.div variants={textAnimation}>
             <p className="mx-auto max-w-md text-muted-foreground text-sm xs:text-base">
               A passionate software engineer from Bulgaria, crafting
               cutting-edge, user-centric web experiences that push front-end
@@ -102,11 +102,11 @@ const HomeSection = () => {
             </p>
           </motion.div>
 
-          <motion.div variants={iconsVariants}>
+          <motion.div variants={iconsAnimation}>
             <Socials />
           </motion.div>
 
-          <motion.div variants={dotVariants} initial="hidden" animate="visible">
+          <motion.div variants={dotAnimation} initial="hidden" animate="visible">
             <Link
               href="/#about"
               title="About Me"

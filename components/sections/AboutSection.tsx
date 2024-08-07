@@ -16,7 +16,7 @@ const gridColumnClassName = cn(
   "sm:p-6 xl:p-10"
 );
 
-const fromRightVariants = {
+const fromRightAnimation = {
   hidden: { opacity: 0, x: 20 },
   visible: {
     opacity: 1,
@@ -25,7 +25,7 @@ const fromRightVariants = {
   },
 };
 
-const fromLeftVariants = {
+const fromLeftAnimation = {
   hidden: { opacity: 0, x: -20 },
   visible: {
     opacity: 1,
@@ -41,7 +41,7 @@ const AboutSection = () => {
 
       <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-foreground">
         <motion.div
-          variants={fromLeftVariants}
+          variants={fromLeftAnimation}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -72,7 +72,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightVariants}
+          variants={fromRightAnimation}
           className="grid items-center justify-center col-span-2 bg-transparent lg:bg-secondary-foreground/5 order-1 lg:order-2 rounded-md"
         >
           <Avatar
@@ -88,7 +88,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftVariants}
+          variants={fromLeftAnimation}
           className={cn(
             "text-center grid items-center space-y-2 col-span-1 lg:col-span-2 order-4 mr-2 lg:mr-0",
             gridColumnClassName
@@ -109,7 +109,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftVariants}
+          variants={fromLeftAnimation}
           className={cn(
             "text-center grid items-center col-span-1 lg:col-span-2 order-4 ml-2 lg:ml-0",
             gridColumnClassName
@@ -131,7 +131,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightVariants}
+          variants={fromRightAnimation}
           className={cn(
             "grid  space-y-4 col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
             gridColumnClassName
@@ -152,7 +152,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftVariants}
+          variants={fromLeftAnimation}
           className={cn(
             "min-h-[168px] sm:min-h-[152px] lg:min-h-[208px] xl:min-h-[204px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
             gridColumnClassName
@@ -175,7 +175,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightVariants}
+          variants={fromRightAnimation}
           className={cn(
             "space-y-8 col-span-2 lg:col-span-7 order-7",
             gridColumnClassName
