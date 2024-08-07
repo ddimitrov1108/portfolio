@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 import { easeInOut, motion } from "framer-motion";
 
 interface Props extends React.ComponentProps<typeof motion.div> {
-  title: string;
-  description?: string;
+  title: React.ReactNode;
+  description?: React.ReactNode;
   titleClassName?: string;
   descriptionClassName?: string;
 }
@@ -48,7 +48,7 @@ const Title = ({
       {description ? (
         <p
           className={cn(
-            "text-base xs:text-lg text-secondary-foreground font-medium",
+            "text-base xs:text-lg text-muted-foreground font-medium",
             descriptionClassName
           )}
         >
