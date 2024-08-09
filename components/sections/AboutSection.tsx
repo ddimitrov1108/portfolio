@@ -12,7 +12,7 @@ import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
 
 const gridColumnClassName = cn(
-  "bg-secondary/40 dark:bg-secondary/40 rounded-lg p-4 py-8",
+  "bg-secondary/60 dark:bg-secondary/40 rounded-lg p-4 py-8",
   "sm:p-6 xl:p-10"
 );
 
