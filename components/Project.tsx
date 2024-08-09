@@ -60,7 +60,7 @@ const Project = ({ data }: Props) => {
               aria-label={data.name}
               title={`${data.name} - Source Code`}
             >
-              <Github size={24} />
+              <Github size={24} strokeWidth={1.5} />
             </Link>
 
             <Link
@@ -71,7 +71,7 @@ const Project = ({ data }: Props) => {
               aria-label={data.name}
               title={`${data.name} - Live Demo`}
             >
-              <SquareArrowOutUpRight size={24} />
+              <SquareArrowOutUpRight size={24} strokeWidth={1.5} />
             </Link>
           </div>
         </div>
