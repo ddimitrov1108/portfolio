@@ -16,6 +16,8 @@ const projectAnimation = {
 };
 
 const Project = ({ data }: Props) => {
+  const compressedImg = data.img.split(".")[0].concat(".jpg");
+
   return (
     <motion.div
       variants={projectAnimation}
@@ -25,11 +27,9 @@ const Project = ({ data }: Props) => {
     >
       <div className="w-full rounded-lg relative overflow-hidden">
         <div
-          className="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-cover blur-md"
+          className="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-cover blur-sm"
           style={{
-            background: `url(/projects/compressed/${data.img
-              .split(".")[0]
-              .concat(".jpg")})`,
+            background: `url(/projects/compressed/${compressedImg})`,
           }}
         ></div>
 
@@ -53,9 +53,9 @@ const Project = ({ data }: Props) => {
 
           <div className="flex items-center gap-4">
             <Link
-              href={data.source || "#"}
+              href={data.source ?? "#"}
               className="transition-all text-muted-foreground hover:text-foreground"
-              target="_blank"
+              target={data.source ?? "_blank"}
               rel="noopener noreferrer"
               aria-label={data.name}
               title={`${data.name} - Source Code`}
@@ -64,9 +64,9 @@ const Project = ({ data }: Props) => {
             </Link>
 
             <Link
-              href={data.url || "#"}
+              href={data.url ?? "#"}
               className="transition-all text-muted-foreground hover:text-foreground"
-              target="_blank"
+              target={data.url ? "_blank" : ""}
               rel="noopener noreferrer"
               aria-label={data.name}
               title={`${data.name} - Live Demo`}
