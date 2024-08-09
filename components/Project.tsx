@@ -40,6 +40,7 @@ const Project = ({ data }: Props) => {
             width={1920}
             height={1080}
             className="max-w-full h-auto min-h-[180px] max-h-[180px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-center rounded-lg"
+            priority
           />
         </div>
       </div>
