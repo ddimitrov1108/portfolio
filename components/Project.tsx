@@ -16,8 +16,6 @@ const projectAnimation = {
 };
 
 const Project = ({ data }: Props) => {
-  const compressedImg = data.img.split(".")[0].concat(".jpg");
-
   return (
     <motion.div
       variants={projectAnimation}
@@ -29,7 +27,7 @@ const Project = ({ data }: Props) => {
         <div
           className="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-cover blur-sm"
           style={{
-            background: `url(/projects/compressed/${compressedImg})`,
+            background: `url(/projects/${data.img})`,
           }}
         ></div>
 
@@ -39,7 +37,7 @@ const Project = ({ data }: Props) => {
             alt={data.name}
             width={1920}
             height={1080}
-            className="max-w-full h-auto min-h-[160px] max-h-[160px] xs:min-h-[220px] xs:max-h-[220px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-top rounded-lg"
+            className="max-w-full h-auto min-h-[160px] max-h-[160px] xs:min-h-[220px] xs:max-h-[220px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-centerrounded-lg"
             priority
           />
         </div>

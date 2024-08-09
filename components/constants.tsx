@@ -64,7 +64,25 @@ export const projects: {
   ],
   data: [
     {
-      img: "hair-products.jpg",
+      img: "linkhub.avif",
+      url: undefined,
+      source: undefined,
+      type: "application",
+      name: "Linkhub - Work In Progress",
+      description: "Link-in-bio solution to be used in social platforms",
+      tech: [
+        "nextjs.svg",
+        "ts.svg",
+        "supabase.svg",
+        "prisma.svg",
+        "postgresql.svg",
+        "stripe.svg",
+        "tailwindcss.svg",
+        "shadcnui.svg",
+      ],
+    },
+    {
+      img: "hair-products.avif",
       url: "https://hair-products-itm9.onrender.com/",
       source: "https://github.com/ddimitrov1108/hair-products",
       type: "branding",
@@ -73,7 +91,7 @@ export const projects: {
       tech: ["react.svg", "ts.svg", "tailwindcss.svg"],
     },
     {
-      img: "taskdoer.png",
+      img: "taskdoer.avif",
       url: undefined,
       source: "https://github.com/ddimitrov1108/task-doer",
       type: "application",
@@ -88,7 +106,7 @@ export const projects: {
       ],
     },
     {
-      img: "sellstone.jpg",
+      img: "sellstone.avif",
       url: "https://sellstone.eu",
       source: undefined,
       type: "branding",
@@ -97,7 +115,7 @@ export const projects: {
       tech: ["react.svg", "tailwindcss.svg"],
     },
     {
-      img: "tickets-burgas.jpg",
+      img: "tickets-burgas.avif",
       url: undefined,
       source: "https://github.com/ddimitrov1108/tickets-burgas",
       type: "application",
@@ -106,7 +124,7 @@ export const projects: {
       tech: ["react.svg", "redux.svg", "tailwindcss.svg", "csharp.svg"],
     },
     {
-      img: "saxo-trading.png",
+      img: "saxo-trading.avif",
       url: undefined,
       source: undefined,
       type: "application",
