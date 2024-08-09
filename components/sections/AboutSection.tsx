@@ -12,7 +12,7 @@ import { socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
 
 const gridColumnClassName = cn(
-  "bg-secondary-foreground/5 rounded-lg p-4 py-8",
+  "bg-secondary/40 dark:bg-secondary/40 rounded-lg p-4 py-8",
   "sm:p-6 xl:p-10"
 );
 
@@ -50,7 +50,7 @@ const AboutSection = () => {
             gridColumnClassName
           )}
         >
-          <div className="grid space-y-4 text-sm xs:text-base">
+          <div className="space-y-4 text-sm xs:text-base">
             <p>Im Daniel,</p>
 
             <p>
@@ -60,11 +60,6 @@ const AboutSection = () => {
               user-friendly interfaces.
             </p>
 
-            <p>
-              With a strong foundation in computer science and a keen eye on
-              UI/UX design principles, I bring a holistic approach to each
-              project.
-            </p>
           </div>
         </motion.div>
 
@@ -73,14 +68,14 @@ const AboutSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fromRightAnimation}
-          className="grid items-center justify-center col-span-2 bg-transparent lg:bg-secondary-foreground/5 order-1 lg:order-2 rounded-lg"
+          className="grid items-center justify-center col-span-2 bg-transparent lg:min-h-[208px] xl:min-h-[204px] lg:bg-secondary/50 order-1 lg:order-2 rounded-lg"
         >
           <Avatar
             src="/me/avatar.jpg"
             alt="avatar.jpg"
             width={500}
             height={500}
-            className="w-[50%] sm:!w-[40%] lg:!w-[75%] xl:!w-[70%] mb-8 lg:mb-0"
+            className="w-[50%] sm:!w-[40%] lg:!w-[70%] mb-8 lg:mb-0"
           />
         </motion.div>
 
@@ -177,7 +172,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromRightAnimation}
           className={cn(
-            "space-y-8 col-span-2 lg:col-span-7 order-7",
+            "overflow-x-hidden space-y-8 col-span-2 lg:col-span-7 order-7",
             gridColumnClassName
           )}
         >
