@@ -40,7 +40,14 @@ const ProjectsTabs = () => {
       </TabsList>
 
       <TabsContent value="all" tabIndex={-1}>
-        <Carousel opts={{ align: "center" }}>
+        <Carousel
+          opts={{
+            align: "center",
+            breakpoints: {
+              "(min-width: 1024px)": { dragFree: true },
+            },
+          }}
+        >
           <CarouselContent>
             {projects.data.map((project) => (
               <CarouselItem
@@ -56,7 +63,14 @@ const ProjectsTabs = () => {
 
       {projects.tabs.map((tab) => (
         <TabsContent key={tab.type} value={tab.type} tabIndex={-1}>
-          <Carousel opts={{ align: "center" }}>
+          <Carousel
+            opts={{
+              align: "center",
+              breakpoints: {
+                "(min-width: 1024px)": { dragFree: true },
+              },
+            }}
+          >
             <CarouselContent>
               {projects.data
                 .filter((project) => project.type === tab.type)

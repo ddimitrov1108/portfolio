@@ -33,13 +33,13 @@ const Project = ({ data }: Props) => {
           }}
         ></div>
 
-        <div className="p-4 !overflow-hidden">
+        <div className="p-4 md:p-6 !overflow-hidden">
           <Image
             src={`/projects/${data.img}`}
             alt={data.name}
             width={1920}
             height={1080}
-            className="max-w-full h-auto min-h-[180px] max-h-[180px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-center rounded-lg"
+            className="max-w-full h-auto min-h-[160px] max-h-[160px] xs:min-h-[220px] xs:max-h-[220px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-top rounded-lg"
             priority
           />
         </div>
@@ -47,7 +47,7 @@ const Project = ({ data }: Props) => {
 
       <div className="bg-background py-4 grid space-y-4 rounded-b-lg">
         <div className="flex items-center justify-between">
-          <span className="capitalize p-2 px-3 rounded-full border border-muted-foreground text-muted-foreground text-sm max-w-fit">
+          <span className="capitalize p-1.5 px-2.5 rounded-full border border-muted-foreground text-muted-foreground text-sm max-w-fit">
             {data.type}
           </span>
 
