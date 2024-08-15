@@ -54,12 +54,11 @@ const AboutSection = () => {
             <p>Im Daniel,</p>
 
             <p>
-              As a seasoned Front-End Developer, I blend expertise in building
-              robust web applications with a strong foundation in web
-              technologies and UI/UX principles, creating visually appealing and
-              user-friendly interfaces.
+              Being a skille­d front-end develope­r, I use what I know about
+              creating solid web apps. I form inte­rfaces that are pleasing to
+              the­ eye and simple to use­. I do this by utilizing web
+              technologies and UI UX rule­s.
             </p>
-
           </div>
         </motion.div>
 
@@ -68,7 +67,7 @@ const AboutSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fromRightAnimation}
-          className="grid items-center justify-center col-span-2 bg-transparent lg:min-h-[208px] xl:min-h-[204px] lg:bg-secondary/50 order-1 lg:order-2 rounded-lg"
+          className="grid items-center justify-center col-span-2 bg-transparent lg:min-h-[200px] xl:min-h-[208px] lg:bg-secondary/50 order-1 lg:order-2 rounded-lg"
         >
           <Avatar
             src="/me/avatar.jpg"
@@ -128,19 +127,19 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromRightAnimation}
           className={cn(
-            "grid  space-y-4 col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
+            "grid  space-y-2 col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
             gridColumnClassName
           )}
         >
           <p>
-            Front-End Developer with a disciplined approach to creativity,
-            dedicated to building dynamic web experiences that leave a lasting
-            impression.
+            {`As a web developer, I create websites that are easy to understand,
+            interact with, and are usable. I make sure that every website I
+            create is timeless by improving people's satisfaction while adapting
+            to new things.`}
           </p>
           <p>
-            Expert in crafting intuitive, responsive, and accessible user
-            interfaces that prioritize user engagement, innovation, and
-            adaptability.
+            {`I ensure interactive websites which favor a site. By making use of
+            these two approaches together, I will consider everyone's needs.`}
           </p>
         </motion.div>
         <motion.div
@@ -149,7 +148,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           variants={fromLeftAnimation}
           className={cn(
-            "min-h-[168px] sm:min-h-[152px] lg:min-h-[208px] xl:min-h-[204px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
+            "min-h-[168px] sm:min-h-[152px] lg:min-h-[200px] xl:min-h-[208px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
             gridColumnClassName
           )}
         >

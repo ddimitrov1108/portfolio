@@ -96,9 +96,9 @@ const HomeSection = () => {
 
           <motion.div variants={textAnimation}>
             <p className="mx-auto max-w-md text-muted-foreground text-sm xs:text-base">
-              A passionate software engineer from Bulgaria, crafting
-              cutting-edge, user-centric web experiences that push front-end
-              boundaries.
+              A software engineer from Bulgaria, with a high level of
+              enthusiasm, makes web experiences with technology
+              that are user-centered and new.
             </p>
           </motion.div>
 
@@ -106,7 +106,11 @@ const HomeSection = () => {
             <Socials />
           </motion.div>
 
-          <motion.div variants={dotAnimation} initial="hidden" animate="visible">
+          <motion.div
+            variants={dotAnimation}
+            initial="hidden"
+            animate="visible"
+          >
             <Link
               href="/#about"
               title="About Me"
