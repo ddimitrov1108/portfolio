@@ -106,8 +106,8 @@ export const projects: {
     },
     {
       img: "sellstone.avif",
-      url: "https://sellstone.eu",
-      source: undefined,
+      url: "https://sellstone.vercel.app",
+      source: "https://github.com/ddimitrov1108/sellstone",
       type: "branding",
       name: "Marketing Landing Page",
       description: "Boost your business with effective marketing.",
