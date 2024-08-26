@@ -83,6 +83,10 @@ const Project = ({ data }: Props) => {
         <div className="flex items-center gap-4 !mt-4">
           {data.tech.map((tech) => (
             <Image
+              title={
+                tech.split(".")[0].charAt(0).toUpperCase() +
+                tech.split(".")[0].slice(1)
+              }
               key={tech}
               src={`/tech/${tech}`}
               alt={tech}
