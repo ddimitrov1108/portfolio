@@ -76,7 +76,6 @@ export const projects: {
         "supabase.svg",
         "clerk.svg",
         "postgresql.svg",
-        "stripe.svg",
         "tailwindcss.svg",
         "shadcnui.svg",
       ],
