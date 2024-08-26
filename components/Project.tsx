@@ -80,7 +80,7 @@ const Project = ({ data }: Props) => {
           <p className="text-sm text-muted-foreground">{data.description}</p>
         </div>
 
-        <div className="flex items-center gap-4 !mt-4">
+        <div className="flex items-center flex-wrap gap-4 !mt-4">
           {data.tech.map((tech) => (
             <Image
               title={
