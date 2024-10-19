@@ -182,7 +182,7 @@ const ContactForm = () => {
             disabled={isFormDisabled}
             loading={isFormDisabled}
           >
-            Send
+            Send Message
           </Button>
         </div>
       </form>
