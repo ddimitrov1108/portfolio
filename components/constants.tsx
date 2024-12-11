@@ -66,18 +66,18 @@ export const projects: {
     {
       img: "linkhub.avif",
       url: undefined,
-      source: "https://github.com/ddimitrov1108/linkhub-app",
+      source: "https://github.com/ddimitrov1108/app-linkhub",
       type: "application",
       name: "Linkhub - Work In Progress",
       description: "Link-in-bio solution to be used in social platforms",
       tech: [
         "nextjs.svg",
         "ts.svg",
-        "supabase.svg",
         "clerk.svg",
-        "postgresql.svg",
+        "mysql.svg",
         "tailwindcss.svg",
         "shadcnui.svg",
+        "stripe.svg",
       ],
     },
     {
