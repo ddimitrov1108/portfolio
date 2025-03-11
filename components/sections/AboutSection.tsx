@@ -96,7 +96,7 @@ const AboutSection = () => {
                 Projects
               </>
             }
-            count={2}
+            count={5}
           />
         </motion.div>
         <motion.div
@@ -117,7 +117,7 @@ const AboutSection = () => {
                 Projects
               </>
             }
-            count={7}
+            count={9}
           />
         </motion.div>
 
