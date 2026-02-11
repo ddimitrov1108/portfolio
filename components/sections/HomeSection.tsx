@@ -7,62 +7,18 @@ import Socials from "../utils/Socials";
 import Avatar from "../utils/Avatar";
 import Section from "../utils/Section";
 import Title from "../utils/Title";
+import { circleGlow, fadeIn, fadeInUpDelayed } from "@/lib/animations";
 
 const avatarVariant = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-const headerAnimation = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, delay: 0.1 },
-  },
-};
-
-const circleAnimation = {
-  hidden: { width: 0, height: 0, opacity: 0 },
-  visible: {
-    width: "20%",
-    height: "20%",
-    opacity: 1,
-    transition: { duration: 1, delay: 0.6 },
-  },
-};
-
-const textAnimation = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, delay: 0.1 },
-  },
-};
-
-const iconsAnimation = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, delay: 0.3 },
-  },
-};
-
-const dotAnimation = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { duration: 0.5, delay: 1 },
-  },
-};
-
 const HomeSection = () => {
   return (
     <Section id="#" className="bg-grid min-h-screen items-center">
       <motion.div
-        variants={circleAnimation}
+        variants={circleGlow("20%", 0.6)}
         initial="hidden"
         animate="visible"
         className="circle-glow !backdrop-blur-2xl"
@@ -80,7 +36,7 @@ const HomeSection = () => {
 
         <motion.div
           className="grid gap-8"
-          variants={headerAnimation}
+          variants={fadeInUpDelayed(0.1)}
           initial="hidden"
           animate="visible"
         >
@@ -94,7 +50,7 @@ const HomeSection = () => {
             }
           />
 
-          <motion.div variants={textAnimation}>
+          <motion.div variants={fadeInUpDelayed(0.1)}>
             <p className="mx-auto max-w-md text-muted-foreground text-sm xs:text-base">
               A software engineer from Bulgaria, with a high level of
               enthusiasm, makes web experiences with technology
@@ -102,12 +58,12 @@ const HomeSection = () => {
             </p>
           </motion.div>
 
-          <motion.div variants={iconsAnimation}>
+          <motion.div variants={fadeInUpDelayed(0.3)}>
             <Socials />
           </motion.div>
 
           <motion.div
-            variants={dotAnimation}
+            variants={fadeIn}
             initial="hidden"
             animate="visible"
           >

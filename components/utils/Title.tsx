@@ -1,7 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { fadeInUpDelayed } from "@/lib/animations";
 
 interface Props extends Omit<React.ComponentProps<typeof motion.div>, "title"> {
   title: React.ReactNode;
@@ -9,15 +10,6 @@ interface Props extends Omit<React.ComponentProps<typeof motion.div>, "title"> {
   titleClassName?: string;
   descriptionClassName?: string;
 }
-
-const titleAnimation = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, delay: 0.1, easeInOut },
-  },
-};
 
 const Title = ({
   title,
@@ -29,7 +21,7 @@ const Title = ({
 }: Props) => {
   return (
     <motion.div
-      variants={titleAnimation}
+      variants={fadeInUpDelayed(0.1)}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

@@ -1,53 +1,65 @@
 "use client";
 
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import TechIcon from "./utils/TechIcon";
 import { IProject } from "@/lib/interfaces";
-import { Github, SquareArrowOutUpRight } from "lucide-react";
+import {
+  Code2,
+  Construction,
+  Github,
+  Palette,
+  SquareArrowOutUpRight,
+} from "lucide-react";
+import type { ProjectType } from "@/lib/interfaces";
+import { fadeInScale } from "@/lib/animations";
+
+const typeIcons: Record<ProjectType, React.ComponentType<{ size?: number }>> = {
+  application: Code2,
+  branding: Palette,
+};
 
 interface Props {
   data: IProject;
 }
 
-const projectAnimation = {
-  initial: { opacity: 0, scale: 0.95 },
-  animate: { opacity: 1, scale: 1 },
-};
-
 const Project = ({ data }: Props) => {
+  const TypeIcon = typeIcons[data.type];
   return (
     <motion.div
-      variants={projectAnimation}
+      variants={fadeInScale(0.95)}
       initial="initial"
       animate="animate"
-      transition={{ duration: 0.5, easeInOut }}
+      className="flex h-full flex-col border p-4 md:p-6 rounded-lg group"
     >
-      <div className="w-full rounded-lg relative overflow-hidden">
-        <div
-          className="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-cover blur-sm"
-          style={{
-            background: `url(/projects/${data.img})`,
-          }}
-        ></div>
-
-        <div className="p-4 md:p-6 !overflow-hidden">
+      <div className="w-full rounded-lg relative overflow-hidden!">
+        <div className="border overflow-hidden! rounded-lg">
           <Image
-            src={`/projects/${data.img}`}
+            src={`/projects/${data.img}.${data.imgFormat ?? "avif"}`}
             alt={data.name}
             width={1920}
             height={1080}
-            className="max-w-full h-auto min-h-[160px] max-h-[160px] xs:min-h-[220px] xs:max-h-[220px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-center rounded-md"
+            className="max-w-full h-auto min-h-[160px] max-h-[160px] xs:min-h-[220px] xs:max-h-[220px] sm:min-h-[280px] sm:max-h-[280px] md:min-h-[320px] md:max-h-[320px] object-cover object-center rounded-md group-hover:scale-105! transition-all duration-300 "
             priority
+            unoptimized={data.unoptimized}
           />
         </div>
       </div>
 
-      <div className="bg-background py-4 grid space-y-4 rounded-b-lg">
+      <div className="flex flex-1 flex-col gap-4 rounded-b-lg bg-background py-4">
         <div className="flex items-center justify-between">
-          <span className="capitalize p-1.5 px-2.5 rounded-full border border-muted-foreground text-muted-foreground text-sm max-w-fit">
-            {data.type}
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="flex items-center gap-2 capitalize p-1.5 px-2.5 rounded-full border text-foreground text-xs sm:text-sm max-w-fit">
+              {TypeIcon && <TypeIcon size={16} />}
+              {data.type}
+            </span>
+            {data.wip && (
+              <span className="flex items-center gap-2 capitalize p-1.5 px-2.5 rounded-full border text-foreground text-xs sm:text-sm max-w-fit">
+                <Construction size={16} /> WIP
+              </span>
+            )}
+          </div>
 
           <div className="flex items-center gap-4">
             <Link
@@ -58,7 +70,7 @@ const Project = ({ data }: Props) => {
               aria-label={data.name}
               title={`${data.name} - Source Code`}
             >
-              <Github size={24} strokeWidth={1.5} />
+              <Github size={22} strokeWidth={1.5} />
             </Link>
 
             <Link
@@ -69,7 +81,7 @@ const Project = ({ data }: Props) => {
               aria-label={data.name}
               title={`${data.name} - Live Demo`}
             >
-              <SquareArrowOutUpRight size={24} strokeWidth={1.5} />
+              <SquareArrowOutUpRight size={22} strokeWidth={1.5} />
             </Link>
           </div>
         </div>
@@ -82,14 +94,7 @@ const Project = ({ data }: Props) => {
 
         <div className="flex items-center flex-wrap gap-4 !mt-4">
           {data.tech.map((tech) => (
-            <Image
-              key={tech}
-              src={`/tech/${tech}`}
-              alt={tech}
-              width={24}
-              height={24}
-              className="select-none"
-            />
+            <TechIcon key={tech} tech={tech} size={24} />
           ))}
         </div>
       </div>

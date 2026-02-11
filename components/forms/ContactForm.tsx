@@ -39,19 +39,16 @@ const ContactForm = () => {
 
   const onSubmit = async (data: ContactFormValues) => {
     const { sendEmail } = await import("@/actions/send-email");
-
-    await sendEmail({
-      ...data,
-      description: DOMPurify.sanitize(data.description),
-    })
-      .then(() => {
-        toast.success("Your message was sent.");
-      })
-      .catch((e) => {
-        toast.error((e as Error).message);
+    try {
+      await sendEmail({
+        ...data,
+        description: DOMPurify.sanitize(data.description),
       });
-
-    form.reset();
+      toast.success("Your message was sent.");
+      form.reset();
+    } catch (e) {
+      toast.error((e as Error).message);
+    }
   };
 
   const isFormDisabled = form.formState.isSubmitting;

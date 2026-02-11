@@ -40,7 +40,6 @@ export default function RootLayout({
           <Toaster position="bottom-left" />
 
           {children}
-          
           <Footer />
         </RootProviders>
       </body>

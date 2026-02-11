@@ -6,18 +6,16 @@ const Avatar = ({
   alt,
   className,
   ...props
-}: React.ComponentProps<typeof Image>) => {
-  return (
-    <Image
-      src={src}
-      alt={alt}
-      className={cn(
-        "mx-auto rounded-full overflow-hidden border border-border bg-background w-[120px] sm:w-[140px]",
-        className
-      )}
-      priority
-      {...props}
-    />
-  );
-};
+}: React.ComponentProps<typeof Image>) => (
+  <Image
+    src={src}
+    alt={alt}
+    className={cn(
+      "mx-auto rounded-full overflow-hidden border border-border bg-background w-[120px] sm:w-[140px]",
+      className
+    )}
+    priority
+    {...props}
+  />
+);
 export default Avatar;

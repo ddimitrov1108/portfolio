@@ -45,7 +45,7 @@ const NavigationSheet = () => {
         <nav className="h-[80vh] flex flex-col items-center justify-center gap-8 py-24">
           {headerNavLinks.map(({ name, href }) => (
             <SheetClose key={href} asChild>
-              <NavLink key={href} href={href} title={name} aria-label={name}>
+              <NavLink href={href} title={name} aria-label={name}>
                 {name}
               </NavLink>
             </SheetClose>

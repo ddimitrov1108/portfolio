@@ -4,22 +4,13 @@ import ContactForm from "../forms/ContactForm";
 import Section from "../utils/Section";
 import Title from "../utils/Title";
 import { motion } from "framer-motion";
-
-const circleAnimation = {
-  hidden: { width: 0, height: 0, opacity: 0 },
-  visible: {
-    width: "30%",
-    height: "30%",
-    opacity: 1,
-    transition: { duration: 1, delay: 0.8 },
-  },
-};
+import { circleGlow } from "@/lib/animations";
 
 const ContactSection = () => {
   return (
     <Section id="contact" className="bg-grid min-h-screen items-center pb-44">
       <motion.div
-        variants={circleAnimation}
+        variants={circleGlow("30%", 0.8)}
         initial="hidden"
         animate="visible"
         viewport={{ once: true }}

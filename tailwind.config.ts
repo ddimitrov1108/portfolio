@@ -1,8 +1,17 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+
+const defaultSans = [
+  "ui-sans-serif",
+  "system-ui",
+  "sans-serif",
+  '"Apple Color Emoji"',
+  '"Segoe UI Emoji"',
+  '"Segoe UI Symbol"',
+  '"Noto Color Emoji"',
+];
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -28,7 +37,7 @@ const config = {
         xs: "425px",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...defaultSans],
       },
       colors: {
         "bg-grid": "hsl(var(--bg-grid))",

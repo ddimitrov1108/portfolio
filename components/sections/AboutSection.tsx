@@ -1,38 +1,16 @@
 "use client";
 
 import { Github } from "lucide-react";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import TechStackCarousel from "../TechStackCarousel";
 import Avatar from "../utils/Avatar";
 import Title from "../utils/Title";
 import Section from "../utils/Section";
 import Counter from "../utils/Counter";
-import { socialProviders } from "../constants";
+import { gridCardClassName, socialProviders } from "../constants";
 import { cn } from "@/lib/utils";
-
-const gridColumnClassName = cn(
-  "bg-secondary/60 dark:bg-secondary/40 rounded-lg p-4 py-8",
-  "sm:p-6 xl:p-10"
-);
-
-const fromRightAnimation = {
-  hidden: { opacity: 0, x: 20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: 0.5, easeInOut },
-  },
-};
-
-const fromLeftAnimation = {
-  hidden: { opacity: 0, x: -20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: 0.5, easeInOut },
-  },
-};
+import { fadeInFromLeft, fadeInFromRight } from "@/lib/animations";
 
 const AboutSection = () => {
   return (
@@ -41,13 +19,13 @@ const AboutSection = () => {
 
       <div className="grid !grid-cols-2 lg:!grid-cols-9 gap-y-4 lg:gap-x-4 text-foreground">
         <motion.div
-          variants={fromLeftAnimation}
+          variants={fadeInFromLeft}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           className={cn(
             "col-span-2 lg:col-span-7 order-2 lg:order-1",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
           <div className="space-y-4 text-sm xs:text-base">
@@ -66,7 +44,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightAnimation}
+          variants={fadeInFromRight}
           className="grid items-center justify-center col-span-2 bg-transparent lg:min-h-[200px] xl:min-h-[208px] lg:bg-secondary/50 order-1 lg:order-2 rounded-lg"
         >
           <Avatar
@@ -82,10 +60,10 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftAnimation}
+          variants={fadeInFromLeft}
           className={cn(
             "text-center grid items-center space-y-2 col-span-1 lg:col-span-2 order-4 mr-2 lg:mr-0",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
           <Counter
@@ -96,17 +74,17 @@ const AboutSection = () => {
                 Projects
               </>
             }
-            count={5}
+            count={6}
           />
         </motion.div>
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftAnimation}
+          variants={fadeInFromLeft}
           className={cn(
             "text-center grid items-center col-span-1 lg:col-span-2 order-4 ml-2 lg:ml-0",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
           <Counter
@@ -117,7 +95,7 @@ const AboutSection = () => {
                 Projects
               </>
             }
-            count={9}
+            count={11}
           />
         </motion.div>
 
@@ -125,10 +103,10 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightAnimation}
+          variants={fadeInFromRight}
           className={cn(
             "grid  space-y-2 col-span-2 lg:col-span-5 order-6 lg:order-5 text-sm xs:text-base",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
           <p>
@@ -146,10 +124,10 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromLeftAnimation}
+          variants={fadeInFromLeft}
           className={cn(
             "min-h-[168px] sm:min-h-[152px] lg:min-h-[200px] xl:min-h-[208px] grid items-center justify-center col-span-2 lg:col-span-2 order-5 lg:order-6",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
           <Link
@@ -158,24 +136,28 @@ const AboutSection = () => {
             aria-label={socialProviders[1].name}
             target="_blank"
             rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2"
           >
             <Github
-              strokeWidth={1}
-              className="text-muted-foreground hover:text-foreground transition-all w-[64px] h-[64px] xs:w-[86px] xs:h-[86px]"
+              strokeWidth={1.1}
+              className="text-foreground transition-all w-[64px] h-[64px]"
             />
+            <span className="text-center text-muted-foreground hover:text-foreground transition-all text-base xl:text-lg font-medium">
+              More on<br/>Github
+            </span>
           </Link>
         </motion.div>
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fromRightAnimation}
+          variants={fadeInFromRight}
           className={cn(
             "overflow-x-hidden space-y-8 col-span-2 lg:col-span-7 order-7",
-            gridColumnClassName
+            gridCardClassName
           )}
         >
-          <h1 className="text-muted-foreground font-medium text-center">
+          <h1 className="text-center text-muted-foreground text-base xl:text-lg font-medium!">
             My Tech Stack
           </h1>
           <TechStackCarousel />
