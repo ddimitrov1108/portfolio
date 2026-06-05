@@ -69,6 +69,16 @@ export const projects: {
   ],
   data: [
     {
+      img: "bs-transfers",
+      url: "https://www.bstransfers.com/",
+      source: undefined,
+      type: "branding",
+      name: "BSTransfers",
+      description:
+        "Airport and taxi transfers across Bulgaria — fixed prices, flight tracking, and 24/7 online booking.",
+      tech: ["nextjs", "ts", "tailwindcss", "shadcnui"],
+    },
+    {
       img: "bunnyclaim",
       url: "https://www.bunnyclaim.com/",
       source: undefined,
