@@ -74,8 +74,7 @@ export const projects: {
       source: undefined,
       type: "branding",
       name: "BSTransfers",
-      description:
-        "Airport and taxi transfers across Bulgaria — fixed prices, flight tracking, and 24/7 online booking.",
+      description: "Airport and taxi transfers across Bulgaria.",
       tech: ["nextjs", "ts", "tailwindcss", "shadcnui"],
     },
     {
