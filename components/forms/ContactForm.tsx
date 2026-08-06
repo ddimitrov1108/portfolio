@@ -40,14 +40,20 @@ const ContactForm = () => {
   const onSubmit = async (data: ContactFormValues) => {
     const { sendEmail } = await import("@/actions/send-email");
     try {
-      await sendEmail({
+      const result = await sendEmail({
         ...data,
         description: DOMPurify.sanitize(data.description),
       });
+
+      if (!result.success) {
+        toast.error(result.error ?? "Failed to send message. Please try again later.");
+        return;
+      }
+
       toast.success("Your message was sent.");
       form.reset();
-    } catch (e) {
-      toast.error((e as Error).message);
+    } catch {
+      toast.error("Failed to send message. Please try again later.");
     }
   };
 
